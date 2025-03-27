@@ -15,11 +15,7 @@ import Illustrations from "../components/team/illustrations";
 import Assets from "../components/team/assets";
 import DataVisualization from "../components/call-to-action/dataVisualization";
 import UIElements from "../components/sign-in/uiElements";
-import IndexSectionCallToAction21 from "../components/call-to-action/IndexSectionCallToAction21";
-import IndexSectionPricing23 from "../components/pricing/IndexSectionPricing23";
-import IndexSectionHowItWorks34 from "../components/how-it-works/IndexSectionHowItWorks34";
-import IndexSectionBlog27 from "../components/blog/IndexSectionBlog27";
-import IndexSectionFaq24 from "../components/faq/IndexSectionFaq24";
+import Writing from "../components/call-to-action/writing";
 
 const meta = {
   title: "",
@@ -59,11 +55,7 @@ export default function Index() {
       <Assets />
       <DataVisualization />
       <UIElements />
-      <IndexSectionCallToAction21 />
-      <IndexSectionPricing23 />
-      <IndexSectionHowItWorks34 />
-      <IndexSectionBlog27 />
-      <IndexSectionFaq24 />
+      <Writing />
     </React.Fragment>
   );
 }

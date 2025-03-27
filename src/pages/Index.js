@@ -12,7 +12,7 @@ import Type from "../components/pricing/type";
 import Photography from "../components/__structures/photography";
 import Icons from "../components/application/icons";
 import Illustrations from "../components/team/illustrations";
-import IndexSectionTeam18 from "../components/team/IndexSectionTeam18";
+import Assets from "../components/team/assets";
 import IndexSectionCallToAction19 from "../components/call-to-action/IndexSectionCallToAction19";
 import IndexSectionSignIn20 from "../components/sign-in/IndexSectionSignIn20";
 import IndexSectionCallToAction21 from "../components/call-to-action/IndexSectionCallToAction21";
@@ -56,7 +56,7 @@ export default function Index() {
       <Photography />
       <Icons />
       <Illustrations />
-      <IndexSectionTeam18 />
+      <Assets />
       <IndexSectionCallToAction19 />
       <IndexSectionSignIn20 />
       <IndexSectionCallToAction21 />

@@ -11,7 +11,7 @@ import Colors from "../components/call-to-action/colors";
 import Type from "../components/pricing/type";
 import Photography from "../components/__structures/photography";
 import Icons from "../components/application/icons";
-import IndexSectionTeam17 from "../components/team/IndexSectionTeam17";
+import Illustrations from "../components/team/illustrations";
 import IndexSectionTeam18 from "../components/team/IndexSectionTeam18";
 import IndexSectionCallToAction19 from "../components/call-to-action/IndexSectionCallToAction19";
 import IndexSectionSignIn20 from "../components/sign-in/IndexSectionSignIn20";
@@ -55,7 +55,7 @@ export default function Index() {
       <Type />
       <Photography />
       <Icons />
-      <IndexSectionTeam17 />
+      <Illustrations />
       <IndexSectionTeam18 />
       <IndexSectionCallToAction19 />
       <IndexSectionSignIn20 />

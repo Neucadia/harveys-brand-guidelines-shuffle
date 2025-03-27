@@ -8,7 +8,7 @@ import Purpose from "../components/how-it-works/purpose";
 import Values from "../components/__structures/values";
 import Logos from "../components/call-to-action/logos";
 import Colors from "../components/call-to-action/colors";
-import IndexSectionPricing13 from "../components/pricing/IndexSectionPricing13";
+import Type from "../components/pricing/type";
 import IndexSection__structures29 from "../components/__structures/IndexSection__structures29";
 import IndexSection__structures28 from "../components/__structures/IndexSection__structures28";
 import IndexSectionPortfolio14 from "../components/portfolio/IndexSectionPortfolio14";
@@ -59,7 +59,7 @@ export default function Index() {
       <Values />
       <Logos />
       <Colors />
-      <IndexSectionPricing13 />
+      <Type />
       <IndexSection__structures29 />
       <IndexSection__structures28 />
       <IndexSectionPortfolio14 />

@@ -10,7 +10,7 @@ import Logos from "../components/call-to-action/logos";
 import Colors from "../components/call-to-action/colors";
 import Type from "../components/pricing/type";
 import Photography from "../components/__structures/photography";
-import IndexSectionApplication16 from "../components/application/IndexSectionApplication16";
+import Icons from "../components/application/icons";
 import IndexSectionTeam17 from "../components/team/IndexSectionTeam17";
 import IndexSectionTeam18 from "../components/team/IndexSectionTeam18";
 import IndexSectionCallToAction19 from "../components/call-to-action/IndexSectionCallToAction19";
@@ -54,7 +54,7 @@ export default function Index() {
       <Colors />
       <Type />
       <Photography />
-      <IndexSectionApplication16 />
+      <Icons />
       <IndexSectionTeam17 />
       <IndexSectionTeam18 />
       <IndexSectionCallToAction19 />

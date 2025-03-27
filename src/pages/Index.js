@@ -9,14 +9,7 @@ import Values from "../components/__structures/values";
 import Logos from "../components/call-to-action/logos";
 import Colors from "../components/call-to-action/colors";
 import Type from "../components/pricing/type";
-import IndexSection__structures29 from "../components/__structures/IndexSection__structures29";
-import IndexSection__structures28 from "../components/__structures/IndexSection__structures28";
-import IndexSectionPortfolio14 from "../components/portfolio/IndexSectionPortfolio14";
-import IndexSection__structures30 from "../components/__structures/IndexSection__structures30";
-import IndexSectionTeam15 from "../components/team/IndexSectionTeam15";
-import IndexSection__structures31 from "../components/__structures/IndexSection__structures31";
-import IndexSection__structures32 from "../components/__structures/IndexSection__structures32";
-import IndexSectionPortfolio26 from "../components/portfolio/IndexSectionPortfolio26";
+import Photography from "../components/__structures/photography";
 import IndexSectionApplication16 from "../components/application/IndexSectionApplication16";
 import IndexSectionTeam17 from "../components/team/IndexSectionTeam17";
 import IndexSectionTeam18 from "../components/team/IndexSectionTeam18";
@@ -60,14 +53,7 @@ export default function Index() {
       <Logos />
       <Colors />
       <Type />
-      <IndexSection__structures29 />
-      <IndexSection__structures28 />
-      <IndexSectionPortfolio14 />
-      <IndexSection__structures30 />
-      <IndexSectionTeam15 />
-      <IndexSection__structures31 />
-      <IndexSection__structures32 />
-      <IndexSectionPortfolio26 />
+      <Photography />
       <IndexSectionApplication16 />
       <IndexSectionTeam17 />
       <IndexSectionTeam18 />

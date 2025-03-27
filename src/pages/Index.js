@@ -7,8 +7,7 @@ import Origins from "../components/call-to-action/origins";
 import Purpose from "../components/how-it-works/purpose";
 import Values from "../components/__structures/values";
 import Logos from "../components/call-to-action/logos";
-import IndexSectionCallToAction11 from "../components/call-to-action/IndexSectionCallToAction11";
-import IndexSectionHowItWorks12 from "../components/how-it-works/IndexSectionHowItWorks12";
+import Colors from "../components/call-to-action/colors";
 import IndexSectionPricing13 from "../components/pricing/IndexSectionPricing13";
 import IndexSection__structures29 from "../components/__structures/IndexSection__structures29";
 import IndexSection__structures28 from "../components/__structures/IndexSection__structures28";
@@ -59,8 +58,7 @@ export default function Index() {
       <Purpose />
       <Values />
       <Logos />
-      <IndexSectionCallToAction11 />
-      <IndexSectionHowItWorks12 />
+      <Colors />
       <IndexSectionPricing13 />
       <IndexSection__structures29 />
       <IndexSection__structures28 />

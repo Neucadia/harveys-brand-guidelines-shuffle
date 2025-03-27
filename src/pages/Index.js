@@ -3,8 +3,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from "../components/headers/header";
 import Hero from "../components/call-to-action/hero";
 import Name from "../components/features/name";
-import IndexSectionCallToAction6 from "../components/call-to-action/IndexSectionCallToAction6";
-import IndexSection__structures25 from "../components/__structures/IndexSection__structures25";
+import Origins from "../components/call-to-action/origins";
 import IndexSectionHowItWorks8 from "../components/how-it-works/IndexSectionHowItWorks8";
 import IndexSection__structures33 from "../components/__structures/IndexSection__structures33";
 import IndexSectionCallToAction10 from "../components/call-to-action/IndexSectionCallToAction10";
@@ -56,8 +55,7 @@ export default function Index() {
       <Header />
       <Hero />
       <Name />
-      <IndexSectionCallToAction6 />
-      <IndexSection__structures25 />
+      <Origins />
       <IndexSectionHowItWorks8 />
       <IndexSection__structures33 />
       <IndexSectionCallToAction10 />

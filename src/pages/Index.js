@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from "../components/headers/header";
 import Hero from "../components/call-to-action/hero";
-import IndexSectionFeatures5 from "../components/features/IndexSectionFeatures5";
+import Name from "../components/features/name";
 import IndexSectionCallToAction6 from "../components/call-to-action/IndexSectionCallToAction6";
 import IndexSection__structures25 from "../components/__structures/IndexSection__structures25";
 import IndexSectionHowItWorks8 from "../components/how-it-works/IndexSectionHowItWorks8";
@@ -55,7 +55,7 @@ export default function Index() {
       </HelmetProvider>
       <Header />
       <Hero />
-      <IndexSectionFeatures5 />
+      <Name />
       <IndexSectionCallToAction6 />
       <IndexSection__structures25 />
       <IndexSectionHowItWorks8 />

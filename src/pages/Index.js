@@ -13,7 +13,7 @@ import Photography from "../components/__structures/photography";
 import Icons from "../components/application/icons";
 import Illustrations from "../components/team/illustrations";
 import Assets from "../components/team/assets";
-import IndexSectionCallToAction19 from "../components/call-to-action/IndexSectionCallToAction19";
+import DataVisualization from "../components/call-to-action/dataVisualization";
 import IndexSectionSignIn20 from "../components/sign-in/IndexSectionSignIn20";
 import IndexSectionCallToAction21 from "../components/call-to-action/IndexSectionCallToAction21";
 import IndexSectionPricing23 from "../components/pricing/IndexSectionPricing23";
@@ -57,7 +57,7 @@ export default function Index() {
       <Icons />
       <Illustrations />
       <Assets />
-      <IndexSectionCallToAction19 />
+      <DataVisualization />
       <IndexSectionSignIn20 />
       <IndexSectionCallToAction21 />
       <IndexSectionPricing23 />

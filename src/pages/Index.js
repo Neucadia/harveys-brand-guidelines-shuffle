@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from "../components/headers/header";
-import IndexSectionCallToAction4 from "../components/call-to-action/IndexSectionCallToAction4";
+import Hero from "../components/call-to-action/hero";
 import IndexSectionFeatures5 from "../components/features/IndexSectionFeatures5";
 import IndexSectionCallToAction6 from "../components/call-to-action/IndexSectionCallToAction6";
 import IndexSection__structures25 from "../components/__structures/IndexSection__structures25";
@@ -54,7 +54,7 @@ export default function Index() {
         <Helmet {...meta}></Helmet>
       </HelmetProvider>
       <Header />
-      <IndexSectionCallToAction4 />
+      <Hero />
       <IndexSectionFeatures5 />
       <IndexSectionCallToAction6 />
       <IndexSection__structures25 />

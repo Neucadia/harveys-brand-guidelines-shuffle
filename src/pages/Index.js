@@ -4,8 +4,8 @@ import Header from "../components/headers/header";
 import Hero from "../components/call-to-action/hero";
 import Name from "../components/features/name";
 import Origins from "../components/call-to-action/origins";
-import IndexSectionHowItWorks8 from "../components/how-it-works/IndexSectionHowItWorks8";
-import IndexSection__structures33 from "../components/__structures/IndexSection__structures33";
+import Purpose from "../components/how-it-works/purpose";
+import Values from "../components/__structures/values";
 import IndexSectionCallToAction10 from "../components/call-to-action/IndexSectionCallToAction10";
 import IndexSectionCallToAction11 from "../components/call-to-action/IndexSectionCallToAction11";
 import IndexSectionHowItWorks12 from "../components/how-it-works/IndexSectionHowItWorks12";
@@ -56,8 +56,8 @@ export default function Index() {
       <Hero />
       <Name />
       <Origins />
-      <IndexSectionHowItWorks8 />
-      <IndexSection__structures33 />
+      <Purpose />
+      <Values />
       <IndexSectionCallToAction10 />
       <IndexSectionCallToAction11 />
       <IndexSectionHowItWorks12 />

@@ -402,9 +402,9 @@ export default function IndexSection__structures29() {
                 </div>
               </div>
             </div>
-            <div className="mx-auto lg:w-1/2 mt-20">
+            <div className="mx-auto lg:w-1/2">
               <a
-                className="px-6 py-3 block text-center bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
+                className="px-6 py-3 hidden text-center bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
                 href="#"
               >
                 Download Photo Library

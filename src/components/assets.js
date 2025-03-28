@@ -35,7 +35,7 @@ export default function Assets() {
                       </h3>
                       <p className="font-bold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200"
+                        className="px-6 py-3 text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download
@@ -61,7 +61,7 @@ export default function Assets() {
                       </h3>
                       <p className="font-bold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200"
+                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download
@@ -87,7 +87,7 @@ export default function Assets() {
                       </h3>
                       <p className="font-bold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200"
+                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download
@@ -113,7 +113,7 @@ export default function Assets() {
                       </h3>
                       <p className="font-bold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200"
+                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download
@@ -139,7 +139,7 @@ export default function Assets() {
                       </h3>
                       <p className="font-bold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200"
+                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download
@@ -165,7 +165,7 @@ export default function Assets() {
                       </h3>
                       <p className="font-bold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200"
+                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download

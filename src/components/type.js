@@ -167,7 +167,7 @@ export default function Type() {
                       transform - uppercase
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
+                      className="px-6 py-3 mb-3 text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
                       href="#"
                     >
                       Download
@@ -318,7 +318,7 @@ export default function Type() {
                       line height - 1.25
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
                       href="#"
                     >
                       Download
@@ -468,7 +468,7 @@ export default function Type() {
                       line height - 1.33
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
                       href="#"
                     >
                       Download
@@ -595,7 +595,7 @@ export default function Type() {
                       tracking - 160
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
                       href="#"
                     >
                       Download
@@ -718,7 +718,7 @@ export default function Type() {
                       line height - 1.4545
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
                       href="#"
                     >
                       Download

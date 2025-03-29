@@ -37,7 +37,7 @@ export default function Origins() {
                 alt
               />
             </div>
-            <div className="relative" style={{ height: 512 }}>
+            <div className="py-20 relative" style={{ height: 512 }}>
               <img
                 className="relative w-full object-cover h-full"
                 src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/history-2-1.jpg"

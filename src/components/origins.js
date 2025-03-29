@@ -22,16 +22,6 @@ export default function Origins() {
             </p>
             <div className="relative" style={{ height: 512 }}>
               <img
-                className="absolute hidden lg:block bottom-0 left-0 w-80 h-80 -ml-40"
-                src="cronos-assets/elements/green-group-square.svg"
-                alt
-              />
-              <img
-                className="absolute hidden lg:block top-0 right-0 w-80 h-80 -mr-64"
-                src="cronos-assets/elements/green-squares-big-green.svg"
-                alt
-              />
-              <img
                 className="relative w-full object-cover h-full"
                 src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/history-1.jpg"
                 alt

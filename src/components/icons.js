@@ -4,7 +4,7 @@ export default function Icons() {
   return (
     <React.Fragment>
       <>
-        <section className="relative bg-green-700 py-20">
+        <section className="hidden relative bg-green-700 py-20">
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-5xl mx-auto">
               <div className="flex justify-center mb-6">

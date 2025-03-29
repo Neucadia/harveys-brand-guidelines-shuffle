@@ -1,21 +1,21 @@
 import React, { useEffect } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Header from "../components/headers/header";
-import Hero from "../components/call-to-action/hero";
-import Name from "../components/features/name";
-import Origins from "../components/call-to-action/origins";
-import Purpose from "../components/how-it-works/purpose";
-import Values from "../components/__structures/values";
-import Logos from "../components/call-to-action/logos";
-import Colors from "../components/call-to-action/colors";
-import Type from "../components/pricing/type";
-import Photography from "../components/__structures/photography";
-import Icons from "../components/application/icons";
-import Illustrations from "../components/team/illustrations";
-import Assets from "../components/team/assets";
-import DataVisualization from "../components/call-to-action/dataVisualization";
-import UIElements from "../components/sign-in/uiElements";
-import Writing from "../components/call-to-action/writing";
+import Header from "../components/header";
+import Hero from "../components/hero";
+import Name from "../components/name";
+import Origins from "../components/origins";
+import Purpose from "../components/purpose";
+import Values from "../components/values";
+import Logos from "../components/logos";
+import Colors from "../components/colors";
+import Type from "../components/type";
+import Photography from "../components/photography";
+import Icons from "../components/icons";
+import Illustrations from "../components/illustrations";
+import Assets from "../components/assets";
+import DataVisualization from "../components/dataVisualization";
+import UIElements from "../components/uiElements";
+import Writing from "../components/writing";
 
 const meta = {
   title: "",

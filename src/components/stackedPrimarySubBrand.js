@@ -1,30 +1,70 @@
 import React from "react";
-import { ReactComponent as CommoditiesSVG } from "../assets/logos/primary-stacked-commodities-black.svg";
-import { ReactComponent as SeedSVG } from "../assets/logos/primary-stacked-seed-black.svg";
-import { ReactComponent as FeedSVG } from "../assets/logos/primary-stacked-feed-black.svg";
-import { ReactComponent as GardenCenterSVG } from "../assets/logos/primary-stacked-garden-center-black.svg";
-import { ReactComponent as RetailSVG } from "../assets/logos/primary-stacked-retail-black.svg";
+import { ReactComponent as CommoditiesBlackSVG } from "../assets/logos/primary-stacked-commodities-black.svg";
+import { ReactComponent as SeedBlackSVG } from "../assets/logos/primary-stacked-seed-black.svg";
+import { ReactComponent as FeedBlackSVG } from "../assets/logos/primary-stacked-feed-black.svg";
+import { ReactComponent as GardenCenterBlackSVG } from "../assets/logos/primary-stacked-garden-center-black.svg";
+import { ReactComponent as RetailBlackSVG } from "../assets/logos/primary-stacked-retail-black.svg";
+import { ReactComponent as CommoditiesGreenSVG } from "../assets/logos/primary-stacked-commodities-green.svg";
+import { ReactComponent as SeedGreenSVG } from "../assets/logos/primary-stacked-seed-green.svg";
+import { ReactComponent as FeedGreenSVG } from "../assets/logos/primary-stacked-feed-green.svg";
+import { ReactComponent as GardenCenterGreenSVG } from "../assets/logos/primary-stacked-garden-center-green.svg";
+import { ReactComponent as RetailGreenSVG } from "../assets/logos/primary-stacked-retail-green.svg";
+import { ReactComponent as CommoditiesOrangeSVG } from "../assets/logos/primary-stacked-commodities-orange.svg";
+import { ReactComponent as SeedOrangeSVG } from "../assets/logos/primary-stacked-seed-orange.svg";
+import { ReactComponent as FeedOrangeSVG } from "../assets/logos/primary-stacked-feed-orange.svg";
+import { ReactComponent as GardenCenterOrangeSVG } from "../assets/logos/primary-stacked-garden-center-orange.svg";
+import { ReactComponent as RetailOrangeSVG } from "../assets/logos/primary-stacked-retail-orange.svg";
+import { ReactComponent as CommoditiesWheatSVG } from "../assets/logos/primary-stacked-commodities-wheat.svg";
+import { ReactComponent as SeedWheatSVG } from "../assets/logos/primary-stacked-seed-wheat.svg";
+import { ReactComponent as FeedWheatSVG } from "../assets/logos/primary-stacked-feed-wheat.svg";
+import { ReactComponent as GardenCenterWheatSVG } from "../assets/logos/primary-stacked-garden-center-wheat.svg";
+import { ReactComponent as RetailWheatSVG } from "../assets/logos/primary-stacked-retail-wheat.svg";
+import { ReactComponent as CommoditiesWhiteSVG } from "../assets/logos/primary-stacked-commodities-white.svg";
+import { ReactComponent as SeedWhiteSVG } from "../assets/logos/primary-stacked-seed-white.svg";
+import { ReactComponent as FeedWhiteSVG } from "../assets/logos/primary-stacked-feed-white.svg";
+import { ReactComponent as GardenCenterWhiteSVG } from "../assets/logos/primary-stacked-garden-center-white.svg";
+import { ReactComponent as RetailWhiteSVG } from "../assets/logos/primary-stacked-retail-white.svg";
 
 const subBrandSVGs = {
   Commodities: {
-    svg: <CommoditiesSVG />,
+    black: <CommoditiesBlackSVG />,
+    green: <CommoditiesGreenSVG />,
+    orange: <CommoditiesOrangeSVG />,
+    wheat: <CommoditiesWheatSVG />,
+    white: <CommoditiesWhiteSVG />,
   },
   Seed: {
-    svg: <SeedSVG />,
+    black: <SeedBlackSVG />,
+    green: <SeedGreenSVG />,
+    orange: <SeedOrangeSVG />,
+    wheat: <SeedWheatSVG />,
+    white: <SeedWhiteSVG />,
   },
   Feed: {
-    svg: <FeedSVG />,
+    black: <FeedBlackSVG />,
+    green: <FeedGreenSVG />,
+    orange: <FeedOrangeSVG />,
+    wheat: <FeedWheatSVG />,
+    white: <FeedWhiteSVG />,
   },
   "Garden Center": {
-    svg: <GardenCenterSVG />,
+    black: <GardenCenterBlackSVG />,
+    green: <GardenCenterGreenSVG />,
+    orange: <GardenCenterOrangeSVG />,
+    wheat: <GardenCenterWheatSVG />,
+    white: <GardenCenterWhiteSVG />,
   },
   Retail: {
-    svg: <RetailSVG />,
+    black: <RetailBlackSVG />,
+    green: <RetailGreenSVG />,
+    orange: <RetailOrangeSVG />,
+    wheat: <RetailWheatSVG />,
+    white: <RetailWhiteSVG />,
   },
 };
 
 const StackedPrimarySubBrand = () => {
-  const [fill, setFill] = React.useState("#1A4121");
+  const [fill, setFill] = React.useState("green");
   const [subBrand, setSubBrand] = React.useState("Commodities");
 
   const handleSubBrandChange = (e) => {
@@ -35,7 +75,23 @@ const StackedPrimarySubBrand = () => {
     <div className="w-full shadow-lg bg-white flex flex-col mb-10">
       <div className="py-20 px-8 flex-col justify-center flex-grow flex">
         <div className="mb-6 flex justify-center mx-auto h-40 w-full">
-          {subBrandSVGs[subBrand].svg}
+          {
+            subBrandSVGs[subBrand][
+              fill === "black"
+                ? "black"
+                : fill === "green"
+                ? "green"
+                : fill === "orange"
+                ? "orange"
+                : fill === "wheat"
+                ? "wheat"
+                : fill === "wheat"
+                ? "wheat"
+                : fill === "white"
+                ? "white"
+                : "green"
+            ]
+          }
         </div>
         <h2 className="text-xl text-center mb-4">Stacked primary sub-brand</h2>
         <p className="text-gray-500 max-w-xs mx-auto text-center mb-5">
@@ -284,7 +340,10 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <span className="ml-2 absolute inset-0">
+            <a
+              onClick={() => setFill("black")}
+              className="ml-2 absolute inset-0"
+            >
               <svg
                 width={82}
                 height={90}
@@ -297,7 +356,7 @@ const StackedPrimarySubBrand = () => {
                   fill="#006251"
                 />
               </svg>
-            </span>
+            </a>
           </div>
         </div>
         <div className="w-full md:w-1/5 lg:w-1/5 p-4 mb-6 lg:mb-0 text-center">
@@ -318,7 +377,10 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <span className="ml-2 absolute inset-0">
+            <a
+              onClick={() => setFill("green")}
+              className="ml-2 absolute inset-0"
+            >
               <svg
                 width={82}
                 height={90}
@@ -331,7 +393,7 @@ const StackedPrimarySubBrand = () => {
                   fill="#006251"
                 />
               </svg>
-            </span>
+            </a>
           </div>
         </div>
         <div className="w-full md:w-1/5 lg:w-1/5 p-4 mb-6 lg:mb-0 text-center">
@@ -352,7 +414,10 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <span className="ml-2 absolute inset-0">
+            <a
+              onClick={() => setFill("orange")}
+              className="ml-2 absolute inset-0"
+            >
               <svg
                 width={82}
                 height={90}
@@ -365,7 +430,7 @@ const StackedPrimarySubBrand = () => {
                   fill="#006251"
                 />
               </svg>
-            </span>
+            </a>
           </div>
         </div>
         <div className="w-full md:w-1/5 lg:w-1/5 p-4 text-center">
@@ -386,7 +451,10 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <span className="ml-2 absolute inset-0">
+            <a
+              onClick={() => setFill("wheat")}
+              className="ml-2 absolute inset-0"
+            >
               <svg
                 width={82}
                 height={90}
@@ -399,7 +467,7 @@ const StackedPrimarySubBrand = () => {
                   fill="#006251"
                 />
               </svg>
-            </span>
+            </a>
           </div>
         </div>
         <div className="w-full md:w-1/5 lg:w-1/5 p-4 text-center">
@@ -420,7 +488,10 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <span className="ml-2 absolute inset-0">
+            <a
+              onClick={() => setFill("white")}
+              className="ml-2 absolute inset-0"
+            >
               <svg
                 width={82}
                 height={90}
@@ -433,7 +504,7 @@ const StackedPrimarySubBrand = () => {
                   fill="#006251"
                 />
               </svg>
-            </span>
+            </a>
           </div>
         </div>
       </div>

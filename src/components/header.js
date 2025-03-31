@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Header() {
+  const [openMenu, setOpenMenu] = React.useState(false);
   return (
     <React.Fragment>
       <>
@@ -26,16 +27,16 @@ export default function Header() {
                     <div className="w-auto hidden lg:block">
                       <ul className="flex items-center">
                         <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#">Story</a>
+                          <a href="#story">Story</a>
                         </li>
                         <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#">Visuals</a>
+                          <a href="#visuals">Visuals</a>
                         </li>
                         <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#">Writing</a>
+                          <a href="#writing">Writing</a>
                         </li>
                         <li className="text-sm hover:text-gray-700">
-                          <a href="#">Architecture</a>
+                          <a href="#architecture">Architecture</a>
                         </li>
                       </ul>
                     </div>
@@ -46,7 +47,11 @@ export default function Header() {
                     <div className="inline-block" />
                   </div>
                   <div className="lg:hidden flex items-center">
-                    <button>
+                    <button
+                      onClick={() => {
+                        setOpenMenu(true);
+                      }}
+                    >
                       <svg
                         width={24}
                         height={24}
@@ -65,8 +70,15 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <div className="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
-                <div className="fixed inset-0 bg-gray-800 opacity-80" />
+              <div
+                className={`top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 ${
+                  openMenu ? "fixed" : "hidden"
+                }`}
+              >
+                <div
+                  className="fixed inset-0 bg-gray-800 opacity-80"
+                  onClick={() => setOpenMenu(false)}
+                />
                 <nav className="relative z-10 px-9 pt-8 bg-white h-full overflow-y-auto">
                   <div className="flex flex-wrap h-full">
                     <div className="w-full">
@@ -74,13 +86,14 @@ export default function Header() {
                         <div className="w-auto p-2">
                           <a className="inline-block" href="#">
                             <img
-                              src="cronos-assets/logos/cronos-logo.svg"
+                              src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/H-Harveys-Green.svg"
                               alt
+                              className="w-full"
                             />
                           </a>
                         </div>
                         <div className="w-auto p-2">
-                          <button>
+                          <button onClick={() => setOpenMenu(false)}>
                             <svg
                               style={{ width: 18, height: 18 }}
                               xmlns="http://www.w3.org/2000/svg"
@@ -101,45 +114,41 @@ export default function Header() {
                       <div className="flex flex-col w-full">
                         <ul>
                           <li className="mb-6">
-                            <a className="text-sm hover:text-gray-700" href="#">
-                              About
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#story"
+                            >
+                              Story
                             </a>
                           </li>
                           <li className="mb-6">
-                            <a className="text-sm hover:text-gray-700" href="#">
-                              Company
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#visuals"
+                            >
+                              Visuals
                             </a>
                           </li>
                           <li className="mb-6">
-                            <a className="text-sm hover:text-gray-700" href="#">
-                              Services
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#writing"
+                            >
+                              Writing
                             </a>
                           </li>
                           <li>
-                            <a className="text-sm hover:text-gray-700" href="#">
-                              Testimonials
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#architecture"
+                            >
+                              Architecture
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div className="flex flex-col justify-end w-full pb-8">
-                      <div className="flex flex-wrap">
-                        <div className="w-full">
-                          <div className="block">
-                            <a
-                              className="px-6 py-3 block text-center bg-green-500 text-white text-sm font-bold w-full mb-6 hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
-                              href="#"
-                            >
-                              Try 14 Days Free Trial
-                            </a>
-                            <p className="text-sm mb-4 text-center text-gray-500">
-                              © 2021 All rights reserved.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <div className="flex flex-col justify-end w-full pb-8"></div>
                   </div>
                 </nav>
               </div>

@@ -4,7 +4,7 @@ export default function Name() {
   return (
     <React.Fragment>
       <>
-        <section className="py-20">
+        <section id="story" className="py-20">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center -m-4">
               <div className="w-full lg:w-1/2 p-4">

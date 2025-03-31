@@ -4,7 +4,7 @@ export default function Writing() {
   return (
     <React.Fragment>
       <>
-        <section className="py-20 mb-48 bg-yellow-500">
+        <section id="writing" className="py-20 mb-48 bg-yellow-500">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
               <div className="bg-yellow-100 py-1 px-2 font-bold inline-block">
@@ -462,7 +462,7 @@ export default function Writing() {
             </div>
           </div>
         </section>
-        <section className="py-20 bg-green-700 ">
+        <section id="architecture" className="py-20 bg-green-700 ">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
               <div className="bg-green-400 inline-block px-2 py-1 text-white font-bold">

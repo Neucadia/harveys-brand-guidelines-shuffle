@@ -155,7 +155,7 @@ export default function Header() {
             </div>
           </div>
           <div className="container mx-auto mt-12">
-            <h1 className="text-center text-green-900 text-5xl lg:text-6xl font-bold max-w-sm lg:max-w-lg mx-auto mb-10">
+            <h1 className="text-center text-green-900 text-5xl lg:text-6xl font-bold max-w-sm lg:max-w-lg mx-auto pb-10">
               <span className>Brand </span>
               <span className="text-green-500">Guidelines</span>
             </h1>

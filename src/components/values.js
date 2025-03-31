@@ -10,31 +10,31 @@ export default function Values() {
               Our values
             </div>
             <div className>
-              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-3xl">
+              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-xl md:text-3xl">
                 We are passionate about people and the work they do
               </h2>
-              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-3xl">
+              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-xl md:text-3xl">
                 We value our history
               </h2>
-              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-3xl">
+              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-xl md:text-3xl">
                 We value community
               </h2>
-              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-3xl">
+              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-xl md:text-3xl">
                 We value hard work
               </h2>
-              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-3xl">
+              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-xl md:text-3xl">
                 We value integrity, honesty, and respect
               </h2>
-              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-3xl">
+              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-xl md:text-3xl">
                 We are genuine
               </h2>
-              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-3xl">
+              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-xl md:text-3xl">
                 We are reliable
               </h2>
-              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-3xl">
+              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-xl md:text-3xl">
                 We are always evolving
               </h2>
-              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-3xl">
+              <h2 className="font-bold text-white font-heading tracking-widest uppercase text-xl md:text-3xl">
                 We are Harvey's
               </h2>
             </div>

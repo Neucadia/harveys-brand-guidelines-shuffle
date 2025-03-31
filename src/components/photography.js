@@ -446,11 +446,6 @@ export default function IndexSection__structures29() {
               <div className="w-full p-4">
                 <div className="relative">
                   <img
-                    className="absolute hidden lg:block right-0 -mr-20 z-10 -bottom-20"
-                    src="cronos-assets/elements/light-green-small.svg"
-                    alt
-                  />
-                  <img
                     className="w-full object-cover"
                     style={{ height: 500 }}
                     src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/edit-MartinezPhoto-S22-WomensBreadthofPuropleColorStory-20210817-7V0A3056-3.tiff"
@@ -566,11 +561,6 @@ export default function IndexSection__structures29() {
               <div className="w-full lg:w-1/2 p-4">
                 <div className="relative">
                   <img
-                    className="absolute hidden lg:block right-0 -mr-20 z-10 -top-20"
-                    src="cronos-assets/elements/warning-light-small.svg"
-                    alt
-                  />
-                  <img
                     className="w-full"
                     src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/monogram-2.jpg"
                     alt
@@ -593,11 +583,6 @@ export default function IndexSection__structures29() {
               </div>
               <div className="w-full p-4 lg:w-1/2">
                 <div className="relative">
-                  <img
-                    className="absolute hidden lg:block right-0 -mr-20 z-10 -bottom-20"
-                    src="cronos-assets/elements/light-green-small.svg"
-                    alt
-                  />
                   <img
                     className="w-full"
                     src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/monogram-4.jpg"

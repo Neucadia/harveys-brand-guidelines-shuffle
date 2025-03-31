@@ -40,7 +40,7 @@ export default function UIElements() {
                     UI Elements
                   </div>
                 </div>
-                <h2 className="font-heading text-center text-4xl font-bold mb-8 uppercase tracking-widest">
+                <h2 className="font-heading text-center text-2xl font-bold mb-8 uppercase tracking-widest">
                   components
                 </h2>
                 <form action>

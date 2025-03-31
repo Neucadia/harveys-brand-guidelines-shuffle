@@ -86,11 +86,11 @@ export default function Writing() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row">
-              <div className="bg-gray-50 p-12 w-1/2 mr-4">
+            <div className="flex flex-row flex-wrap">
+              <div className="bg-gray-50 p-12 w-full md:w-1/2">
                 <div className="flex flex-wrap items-center -m-4">
                   <div className="w-full p-4">
-                    <h2 className="font-heading text-4xl font-bold uppercase tracking-widest">
+                    <h2 className="font-heading text-2xl font-bold uppercase tracking-widest">
                       Harvey's is
                     </h2>
                   </div>
@@ -208,10 +208,10 @@ export default function Writing() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-50 p-12 w-1/2">
+              <div className="bg-gray-50 p-12 w-full md:w-1/2">
                 <div className="flex flex-wrap items-center -m-4">
                   <div className="w-full p-4">
-                    <h2 className="font-heading text-4xl font-bold uppercase tracking-widest">
+                    <h2 className="font-heading text-2xl font-bold uppercase tracking-widest">
                       Harvey's is not
                     </h2>
                   </div>

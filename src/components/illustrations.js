@@ -21,8 +21,7 @@ export default function Illustrations() {
               in the future.
             </p>
             <div className="flex flex-wrap -m-4">
-              <div className="w-full md:w-1/2 lg:w-1/3 p-4" />
-              <div className="w-full md:w-1/2 lg:w-1/3 p-4">
+              <div className="w-full md:w-1/2 lg:w-1/3 p-4 mx-auto">
                 <div className="bg-gray-50 p-8">
                   <img
                     className="mb-6 w-full"

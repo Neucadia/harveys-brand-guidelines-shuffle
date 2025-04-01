@@ -24,7 +24,7 @@ export default function Writing() {
             <div className="flex flex-wrap justify-center gap-4 mb-20"></div>
             <div className="flex flex-wrap" style={{ marginBottom: "-200px" }}>
               <div className="w-full lg:w-1/3">
-                <div className="bg-white py-20 px-8 mr-3 shadow-sm">
+                <div className="bg-white py-20 px-8 lg:mr-3 shadow-sm">
                   <span className="mb-6 flex justify-center"></span>
                   <h2 className="text-xl text-center mb-4 font-heading uppercase text-orange-500 font-bold tracking-widest">
                     Voice qualities
@@ -37,7 +37,7 @@ export default function Writing() {
                 </div>
               </div>
               <div className="w-full lg:w-1/3">
-                <div className="bg-white py-20 px-8 mx-2 shadow-sm">
+                <div className="bg-white py-20 px-8 lg:mx-2 shadow-sm">
                   <span className="mb-6 flex justify-center"></span>
                   <h2 className="text-xl text-center mb-4 text-orange-500 font-heading tracking-widest font-bold uppercase">
                     Tone
@@ -50,7 +50,7 @@ export default function Writing() {
                 </div>
               </div>
               <div className="w-full lg:w-1/3">
-                <div className="bg-white py-20 px-8 ml-3 shadow-sm">
+                <div className="bg-white py-20 px-8 lg:ml-3 shadow-sm">
                   <span className="mb-6 flex justify-center"></span>
                   <h2 className="text-xl text-center mb-4 font-heading text-orange-500 tracking-widest uppercase font-bold">
                     Who we serve

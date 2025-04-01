@@ -22,13 +22,13 @@ export default function DataVisualization() {
               lines that perform in the real world and we often have to tell
               that story through graphs and charts.
             </p>
-            <div className="w-1/2 mx-auto bg-white p-10">
+            <div className="w-full md:w-3/4 lg:w-1/2 mx-auto bg-white p-10">
               <img
                 src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/chart1.jpg"
                 alt="chart.jpg"
               />
             </div>
-            <div className="mx-auto pt-4 w-2/5">
+            <div className="w-full mx-auto pt-4 px-2 md:p-0 md:w-1/2">
               <p>
                 Use brand green for the main product bar and use a putrid/light
                 green for competitor products. All UI copy other than the title

@@ -165,7 +165,7 @@ export default function IndexSection__structures29() {
         </section>
         <section className="py-20 relative bg-yellow-50">
           <div
-            className="w-1/2 mt-20 absolute hidden lg:block top-0 left-0 -mr-32"
+            className="w-full lg:w-1/2 mt-20 relative lg:absolute lg:block top-0 left-0 -mr-32"
             style={{ height: 490 }}
           >
             <img
@@ -177,7 +177,7 @@ export default function IndexSection__structures29() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -m-4 lg:py-32">
               <div className="w-full lg:w-1/2 p-4 mb-12 lg:mb-0 ml-auto">
-                <div className="lg:max-w-md ml-auto">
+                <div className="pt-10 lg:pt-0 lg:max-w-md ml-auto">
                   <h1 className="font-heading text-4xl font-bold mb-6 max-w-md tracking-widest">
                     HARVEY– OUR STORE DOG &amp; MASCOT
                   </h1>

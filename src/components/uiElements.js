@@ -4,8 +4,8 @@ export default function UIElements() {
   return (
     <React.Fragment>
       <>
-        <section className="py-32 relative ">
-          <div className="mb-10 flex lg:hidden">
+        <section className="py-20 relative ">
+          <div className="mb-10 flex md:hidden">
             <img
               className="w-40"
               src="cronos-assets/elements/left-top-corner.svg"

@@ -497,10 +497,10 @@ export default function Writing() {
                     Tagline
                   </p>
                   <p className="text-gray-600 max-w-md mb-1">
-                    Generations of Service, Built on Trust.
+                    Generations Of Service, Built On Trust.
                   </p>
                   <p className="text-gray-600 max-w-md mb-8">
-                    Driven by quality, defined by service
+                    Driven By Quality, Defined By Service
                   </p>
                   <p className="gray-accent text-gray-400 font-bold mb-4 font-heading uppercase tracking-widest">
                     Brand history
@@ -549,7 +549,7 @@ export default function Writing() {
                     Tagline
                   </p>
                   <p className="text-gray-600 max-w-md mb-1">
-                    Flexible, reliable, feed solutions on time
+                    Flexible, Reliable, Feed Solutions On Time
                   </p>
                   <p className="text-gray-600 max-w-md mb-1">
                     Reliable Feed. Flexible Solutions. Always On Time
@@ -609,13 +609,13 @@ export default function Writing() {
                     Tagline
                   </p>
                   <p className="text-gray-600 max-w-md mb-1">
-                    Premium seed, season after season
+                    Premium Seed, Season After Season
                   </p>
                   <p className="text-gray-600 max-w-md mb-1">
                     Premium Seed. Proven Every Season
                   </p>
                   <p className="text-gray-600 max-w-md mb-8">
-                    Plant with Confidence. Harvest with Trust
+                    Plant With Confidence. Harvest With Trust
                   </p>
                   <p className="gray-accent text-gray-400 font-bold mb-4 font-heading uppercase tracking-widest">
                     Brand history
@@ -671,10 +671,10 @@ export default function Writing() {
                     Tagline
                   </p>
                   <p className="text-gray-600 max-w-md mb-1">
-                    A landmark of the city, a symbol of quality
+                    A Landmark Of The City, A Symbol Of Quality
                   </p>
                   <p className="text-gray-600 max-w-md mb-8">
-                    Serving Mid-Michigan’s farming and feed needs since 1945
+                    Serving Mid-Michigan’s Farming And Feed Needs Since 1945
                   </p>
                   <p className="gray-accent text-gray-400 font-bold mb-4 font-heading uppercase tracking-widest">
                     Brand history
@@ -766,7 +766,7 @@ export default function Writing() {
                     Tagline
                   </p>
                   <p className="text-gray-600 max-w-md mb-8">
-                    Your go-to place for feed, seed, and clothing needsf
+                    Your Go-to Place For Feed, Seed, And Clothing Needs
                   </p>
                   <p className="gray-accent text-gray-400 font-bold mb-4 font-heading uppercase tracking-widest">
                     Brand history

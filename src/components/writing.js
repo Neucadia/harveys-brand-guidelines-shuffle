@@ -334,7 +334,7 @@ export default function Writing() {
                 </p>
                 <p className="text-gray-500 max-w-md mb-6">
                   We are simple and direct. Not
-                  <span className="font-bold">overly wordy</span> . We let the
+                  <span className="font-bold"> overly wordy</span> . We let the
                   products and images speak for themselves.
                 </p>
               </div>

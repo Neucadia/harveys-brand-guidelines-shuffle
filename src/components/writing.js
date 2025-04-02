@@ -722,10 +722,7 @@ export default function Writing() {
                   <p className="gray-accent text-gray-400 font-bold mb-4 font-heading uppercase tracking-widest">
                     Brand history
                   </p>
-                  <p className="text-gray-600 max-w-md mb-8">
-                    I don't have a clue about the history of the GC, to be
-                    honest.
-                  </p>
+                  <p className="text-gray-600 max-w-md mb-8"></p>
                   <p className="gray-accent text-gray-400 font-bold mb-4 font-heading uppercase tracking-widest">
                     1-sentence description
                   </p>

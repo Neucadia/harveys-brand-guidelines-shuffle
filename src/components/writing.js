@@ -433,7 +433,7 @@ export default function Writing() {
                   When promoting new products, showing actual customers enjoying
                   their Harvey's gear always does the best on socials. Make sure
                   to get permission from parents or guardians before posting
-                  publically.
+                  publicly.
                 </p>
               </div>
               <div className="w-full md:w-1/2 p-4">

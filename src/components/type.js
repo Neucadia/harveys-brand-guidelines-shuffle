@@ -187,7 +187,7 @@ export default function Type() {
                   </h2>
                   <p className="text-gray-500 mb-6 max-w-md">
                     An extremely readable, extendable geometric sans serif from
-                    the TypeType Foundary. At large sizes we'll use the medium
+                    the TypeType Foundry. At large sizes we'll use the medium
                     weight which translates well to print or screen.
                   </p>
                   <div className="flex flex-wrap -m-2">

@@ -154,8 +154,8 @@ const HorizontalLockup = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-wrap flex-row items-center -m-4 justify-center">
-        <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center">
+      <div className="flex flex-wrap flex-row items-center -m-1 md:-m-4 justify-center">
+        <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
           <div className="scale-50 md:scale-100 inline-block mx-auto mb-6 relative">
             <div className="absolute inset-0 flex justify-center items-center bg-black rounded-full m-1" />
             <span className="relative">
@@ -192,7 +192,7 @@ const HorizontalLockup = () => {
             </a>
           </div>
         </div>
-        <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center">
+        <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
           <div className="scale-50 md:scale-100 inline-block mx-auto mb-6 relative">
             <div className="absolute inset-0 flex justify-center items-center bg-green-700 rounded-full m-1" />
             <span className="relative">
@@ -229,7 +229,7 @@ const HorizontalLockup = () => {
             </a>
           </div>
         </div>
-        <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center">
+        <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
           <div className="scale-50 md:scale-100 inline-block mx-auto mb-6 relative">
             <div className="absolute inset-0 flex justify-center items-center bg-orange-500 rounded-full m-1" />
             <span className="relative">
@@ -266,7 +266,7 @@ const HorizontalLockup = () => {
             </a>
           </div>
         </div>
-        <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center">
+        <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
           <div className="scale-50 md:scale-100 inline-block mx-auto mb-6 relative">
             <div className="absolute inset-0 flex justify-center items-center bg-yellow-50 rounded-full m-1" />
             <span className="relative">
@@ -303,7 +303,7 @@ const HorizontalLockup = () => {
             </a>
           </div>
         </div>
-        <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center">
+        <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
           <div className="scale-50 md:scale-100 inline-block mx-auto mb-6 relative">
             <div className="absolute inset-0 flex justify-center items-center bg-white rounded-full m-1" />
             <span className="relative">

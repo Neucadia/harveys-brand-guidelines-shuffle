@@ -153,9 +153,9 @@ const NegativeMonogram = () => {
             </span>
             <a
               onClick={() => {
-                setFill("#10181f");
-                setBg("bg-orange-500");
-                setText("text-black ");
+                setFill("#C05017");
+                setBg("bg-black");
+                setText("text-orange-500 ");
               }}
               className="ml-2 absolute inset-0"
             >

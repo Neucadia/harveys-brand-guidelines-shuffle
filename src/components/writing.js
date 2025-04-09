@@ -444,7 +444,7 @@ export default function Writing() {
                   Press bio
                 </h2>
                 <p className="text-gray-600 mb-4 max-w-xs">
-                  Founded in 1955 and headquartered in Carson City, Michigan,
+                  Founded in 1945 and headquartered in Carson City, Michigan,
                   Harvey's is a diversified agricultural leader specializing in
                   premium seed solutions, customized livestock nutrition, agile
                   commodities logistics, quality retail products, and seasonal

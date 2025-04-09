@@ -49,7 +49,7 @@ export default function Name() {
                     <h2 className="text-xl font-bold mb-3">We are Harvey's</h2>
                     <p className="text-gray-500 max-w-sm">
                       Named after a former owner, the Harvey's moniker has been
-                      around since 1967.
+                      around since 1945.
                     </p>
                   </div>
                 </div>

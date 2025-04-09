@@ -111,7 +111,7 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">letterhead</p>
+            <p className="text-gray-500">Letterhead</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -138,7 +138,7 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">email campaigns</p>
+            <p className="text-gray-500">Email campaigns</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -165,7 +165,7 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">billboards</p>
+            <p className="text-gray-500">Billboards</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -192,7 +192,7 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">tradeshow displays</p>
+            <p className="text-gray-500">Tradeshow displays</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -219,7 +219,7 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">brochures/flyers</p>
+            <p className="text-gray-500">Brochures/flyers</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -246,7 +246,7 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">socials</p>
+            <p className="text-gray-500">Socials</p>
           </li>
         </ul>
         <div className="flex flex-wrap justify-center gap-4">

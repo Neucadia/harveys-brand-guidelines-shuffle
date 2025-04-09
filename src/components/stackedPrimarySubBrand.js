@@ -150,7 +150,7 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">billing</p>
+            <p className="text-gray-500">Billing</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -177,7 +177,7 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">brochures/flyers</p>
+            <p className="text-gray-500">Brochures/flyers</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -204,7 +204,7 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">tech sheets</p>
+            <p className="text-gray-500">Tech sheets</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -231,7 +231,7 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">packaging</p>
+            <p className="text-gray-500">Packaging</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -258,7 +258,7 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">signage</p>
+            <p className="text-gray-500">Signage</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -285,7 +285,7 @@ const StackedPrimarySubBrand = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">promotional events</p>
+            <p className="text-gray-500">Promotional events</p>
           </li>
         </ul>
         <div className="mb-6 w-40 self-center">

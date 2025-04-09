@@ -49,7 +49,7 @@ export default function Origins() {
             </div>
             <div className="mb-12 relative">
               <img
-                className="w-full object-cover font-bold mb-4 font-heading font-heading text-4xl text-center lg:text-5xl max-w-2xl lg:max-w-5xl mx-auto uppercase tracking-widest"
+                className="w-full object-cover mx-auto"
                 src="https://static.shuffle.dev/uploads/files/61/61d552f6a2f836b26c9c27fbebc5b63130cdd6f2/history-2-1.jpg"
                 alt
               />

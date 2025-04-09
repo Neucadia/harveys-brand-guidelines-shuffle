@@ -256,7 +256,15 @@ export default function Architecture() {
               <p className="gray-accent text-gray-500 font-bold mb-4 font-heading uppercase tracking-widest">
                 Brand history
               </p>
-              <p className="text-gray-600 max-w-md mb-8"></p>
+              <p className="text-gray-600 max-w-md mb-8">
+                In (year TBD), Harvey’s grew its offerings with the launch of
+                the Garden Center—featuring a curated selection of trees,
+                shrubs, perennials, garden décor, and unique gifts. Since its
+                opening, the Garden Center has continued to flourish, expanding
+                its inventory and introducing seasonal events, hands-on
+                gardening classes, and the much-loved annual Mother’s Day basket
+                sale.
+              </p>
               <p className="gray-accent text-gray-500 font-bold mb-4 font-heading uppercase tracking-widest">
                 1-sentence description
               </p>

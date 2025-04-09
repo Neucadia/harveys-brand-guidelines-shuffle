@@ -110,7 +110,7 @@ const Monogram = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">promotional items</p>
+            <p className="text-gray-500">Promotional items</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -137,7 +137,7 @@ const Monogram = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">packaging</p>
+            <p className="text-gray-500">Packaging</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -164,7 +164,7 @@ const Monogram = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">letterheads</p>
+            <p className="text-gray-500">Letterheads</p>
           </li>
           <li className="flex gap-2 items-center mb-1">
             <span>
@@ -191,7 +191,7 @@ const Monogram = () => {
                 />
               </svg>
             </span>
-            <p className="text-gray-500">presentations</p>
+            <p className="text-gray-500">Presentations</p>
           </li>
         </ul>
         <div className="flex flex-wrap justify-center gap-4">

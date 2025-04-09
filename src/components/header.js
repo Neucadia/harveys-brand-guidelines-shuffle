@@ -30,13 +30,13 @@ export default function Header() {
                           <a href="#story">Story</a>
                         </li>
                         <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#visuals">Visuals</a>
+                          <a href="#logos">Logos</a>
                         </li>
                         <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#writing">Writing</a>
+                          <a href="#architecture">Architecture</a>
                         </li>
                         <li className="text-sm hover:text-gray-700">
-                          <a href="#architecture">Architecture</a>
+                          <a href="#writing">Writing</a>
                         </li>
                       </ul>
                     </div>
@@ -124,25 +124,25 @@ export default function Header() {
                           <li className="mb-6">
                             <a
                               className="text-sm hover:text-gray-700"
-                              href="#visuals"
+                              href="#logos"
                             >
-                              Visuals
+                              Logos
                             </a>
                           </li>
                           <li className="mb-6">
                             <a
                               className="text-sm hover:text-gray-700"
-                              href="#writing"
-                            >
-                              Writing
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="text-sm hover:text-gray-700"
                               href="#architecture"
                             >
                               Architecture
+                            </a>
+                          </li>
+                          <li className="">
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#writing"
+                            >
+                              Writing
                             </a>
                           </li>
                         </ul>

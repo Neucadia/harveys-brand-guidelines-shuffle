@@ -16,6 +16,7 @@ import Assets from "../components/assets";
 import DataVisualization from "../components/dataVisualization";
 import UIElements from "../components/uiElements";
 import Writing from "../components/writing";
+import Architecture from "../components/architecture";
 
 const meta = {
   title: "",
@@ -49,6 +50,7 @@ export default function Index() {
       <Logos />
       <Colors />
       <Type />
+      <Architecture />
       <Photography />
       <Icons />
       <Illustrations />

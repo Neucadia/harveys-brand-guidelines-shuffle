@@ -17,7 +17,7 @@ export default function Logos() {
   return (
     <React.Fragment>
       <>
-        <section id="visuals" className="py-20 bg-green-700 ">
+        <section id="logos" className="py-20 bg-green-700 ">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
               <div className="bg-green-400 py-1 px-2 text-white font-bold inline-block">

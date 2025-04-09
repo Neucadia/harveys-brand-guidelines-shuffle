@@ -356,7 +356,7 @@ export default function IndexSection__structures29() {
         <section className="py-32 bg-yellow-50">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-center text-3xl lg:text-4xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-8 uppercase tracking-widest">
-              BRAND PHOTOGRPAHY ASSETS
+              BRAND PHOTOGRAPHY ASSETS
             </h2>
             <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">
               We have access to a library of high-quality brand photography

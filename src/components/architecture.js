@@ -50,7 +50,7 @@ export default function Architecture() {
                 modern conception of the brand. Harvey's expanded from
                 traditional retail and feed mill with a seasonal farm and garden
                 center as well as a state-of-the-art chemical, fertilizer, and
-                seed business east of town that was sold in 2011.
+                seed business east of town that was sold in 2014.
               </p>
               <p className="gray-accent text-gray-500 font-bold mb-4 font-heading uppercase tracking-widest">
                 1-sentence description

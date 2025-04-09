@@ -315,7 +315,7 @@ export default function Type() {
                       weight - demibold (500)
                     </p>
                     <p className="text-center text-xl font-bold mb-8">
-                      line height - 1.25
+                      line height - 1.75
                     </p>
                     <a
                       className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
@@ -465,7 +465,7 @@ export default function Type() {
                       weight - regular (400)
                     </p>
                     <p className="text-center text-xl font-bold mb-8">
-                      line height - 1.33
+                      line height - 1.5
                     </p>
                     <a
                       className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"

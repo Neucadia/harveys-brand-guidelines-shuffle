@@ -23,7 +23,7 @@ const NegativePrimaryOnWheat = () => {
         <h2 className="text-xl text-center mb-4 text-red-50">
           Negative Wheat Primary on Green
         </h2>
-        <p className="max-w-xs mx-auto mb-5 text-white text-red-50">
+        <p className="max-w-xs mx-auto mb-5 text-red-50 text-center">
           When using the primary logo on dark backgrounds, a negative version
           with a lighter shadow should be used to ensure visibility and
           contrast. For green backgrounds, use the negative wheat primary.

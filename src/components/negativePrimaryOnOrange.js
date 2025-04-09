@@ -20,7 +20,7 @@ const NegativePrimaryOnOrange = () => {
           </svg>
         </span>
         <h2 className="text-xl text-center mb-4">Primary on Orange</h2>
-        <p className="max-w-xs mx-auto mb-5">
+        <p className="max-w-xs mx-auto mb-5 text-center">
           This logo is used as the primary for an orange background. The black
           font ensures a strong visibility and contrast.
         </p>

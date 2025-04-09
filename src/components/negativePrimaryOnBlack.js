@@ -23,7 +23,7 @@ const NegativePrimaryOnBlack = () => {
         <h2 className="text-xl text-center mb-4 text-red-50">
           Negative White Primary on Black
         </h2>
-        <p className="max-w-xs mx-auto mb-5 text-white text-red-50">
+        <p className="max-w-xs mx-auto mb-5 text-white text-center">
           When using the primary logo on dark backgrounds, a negative version
           with a lighter shadow should be used to ensure visibility and
           contrast. The lighter shadow enhances the logo’s presence, helping it

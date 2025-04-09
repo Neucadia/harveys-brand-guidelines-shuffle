@@ -185,7 +185,7 @@ export default function UIElements() {
                   <div className="w-auto">
                     <div className="flex flex-wrap items-center">
                       <div className="w-auto mr-14">
-                        <a href="#">
+                        <a href="">
                           <img
                             src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/H-Harveys-Green.svg"
                             alt
@@ -746,12 +746,7 @@ export default function UIElements() {
                               </div>
                             </td>
                             <td className="p-0">
-                              <div className="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl">
-                                <img
-                                  src="uinel-assets/elements/dashboard-tables/checkmark.svg"
-                                  alt
-                                />
-                              </div>
+                              <div className="flex items-center justify-center p-5 h-20 text-center bg-white rounded-tr-5xl rounded-br-5xl"></div>
                             </td>
                           </tr>
                           <tr>
@@ -782,12 +777,7 @@ export default function UIElements() {
                               <div className="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-gray-100"></div>
                             </td>
                             <td className="p-0">
-                              <div className="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-r border-gray-100 rounded-tr-5xl rounded-br-5xl">
-                                <img
-                                  src="uinel-assets/elements/dashboard-tables/checkmark.svg"
-                                  alt
-                                />
-                              </div>
+                              <div className="flex items-center justify-center p-5 h-20 text-center bg-blueGray-50 border-t border-b border-r border-gray-100 rounded-tr-5xl rounded-br-5xl"></div>
                             </td>
                           </tr>
                         </tbody>

@@ -1052,5 +1052,6 @@ module.exports = {
     "./src/pages/*.js",
     "./src/components/*.js",
   ],
+  safelist: ["overflow-visible"],
   plugins: [],
 };

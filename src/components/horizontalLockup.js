@@ -1,7 +1,7 @@
 import React from "react";
 
 const HorizontalLockup = () => {
-  const [fill, setFill] = React.useState("#1A4121");
+  const [fill, setFill] = React.useState("#2b3c1d");
   return (
     <div className="w-full shadow-lg bg-white flex flex-col mb-10">
       <div className="py-20 px-8 flex-col justify-center flex-grow flex">
@@ -211,7 +211,7 @@ const HorizontalLockup = () => {
               </svg>
             </span>
             <a
-              onClick={() => setFill("#1A4121")}
+              onClick={() => setFill("#2b3c1d")}
               className="ml-2 absolute inset-0"
             >
               <svg

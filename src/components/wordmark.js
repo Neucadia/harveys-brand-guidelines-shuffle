@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Wordmark = () => {
-  const [fill, setFill] = useState("#1A4121");
+  const [fill, setFill] = useState("#2b3c1d");
   return (
     <div className="w-full bg-white shadow-lg flex flex-col justify-center flex-grow mb-10">
       <div className="py-20 px-8">
@@ -136,7 +136,7 @@ const Wordmark = () => {
               </svg>
             </span>
             <a
-              onClick={() => setFill("#1A4121")}
+              onClick={() => setFill("#2b3c1d")}
               className="ml-2 absolute inset-0"
             >
               <svg

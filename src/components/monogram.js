@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Monogram = () => {
-  const [fill, setFill] = useState("#1A4121");
+  const [fill, setFill] = useState("#2b3c1d");
   return (
     <div className="w-full bg-white shadow-lg">
       <div className="py-20 px-8 flex flex-col justify-center flex-grow">
@@ -266,7 +266,7 @@ const Monogram = () => {
               </svg>
             </span>
             <a
-              onClick={() => setFill("#1A4121")}
+              onClick={() => setFill("#2b3c1d")}
               className="ml-2 absolute inset-0"
             >
               <svg

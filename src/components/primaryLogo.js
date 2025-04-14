@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const PrimaryLogo = () => {
-  const [fill, setFill] = useState("#1A4121");
+  const [fill, setFill] = useState("#2b3c1d");
   return (
     <div className="w-full shadow-lg bg-white flex flex-col mb-10">
       <div className="py-20 px-8 flex-col justify-center flex-grow flex">
@@ -321,7 +321,7 @@ const PrimaryLogo = () => {
               </svg>
             </span>
             <a
-              onClick={() => setFill("#1A4121")}
+              onClick={() => setFill("#2b3c1d")}
               className="ml-2 absolute inset-0"
             >
               <svg

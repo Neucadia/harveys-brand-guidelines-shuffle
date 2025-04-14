@@ -91,7 +91,7 @@ export default function Colors() {
                     RGB: <span className="font-bold">26, 65, 33</span>
                   </p>
                   <p className="text-gray-500">
-                    HEX: <span className="font-bold">#1A4121</span>
+                    HEX: <span className="font-bold">#2B3C1D</span>
                   </p>
                 </div>
               </div>

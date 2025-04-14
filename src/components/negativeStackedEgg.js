@@ -115,7 +115,7 @@ const NegativeStackedEgg = () => {
             </span>
             <a
               onClick={() => {
-                setFill("#1A4121");
+                setFill("#2b3c1d");
                 setBg("bg-wheat-700");
                 setText("text-gray-600");
               }}

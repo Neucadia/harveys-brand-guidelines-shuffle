@@ -308,14 +308,14 @@ const StackedPrimarySubBrand = () => {
         </div>
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            className="px-6 py-3 hidden text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200"
-            href="#"
+            className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200"
+            href="/logos/primary-stacked-subbrand-PNGs.zip"
           >
             Download PNG
           </a>
           <a
-            className="px-6 py-3 hidden text-center w-full sm:w-auto bg-orange-900 text-white text-sm font-bold hover:bg-orange-800 focus:ring focus:ring-orange-700 transition duration-200"
-            href="#"
+            className="px-6 py-3 block text-center w-full sm:w-auto bg-orange-900 text-white text-sm font-bold hover:bg-orange-800 focus:ring focus:ring-orange-700 transition duration-200"
+            href="/logos/primary-stacked-subbrand-SVGs.zip"
           >
             Download SVG
           </a>

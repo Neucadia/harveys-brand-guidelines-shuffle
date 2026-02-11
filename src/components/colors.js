@@ -126,7 +126,7 @@ export default function Colors() {
                     Wheat
                   </h2>
                   <p className="text-gray-500">
-                    Pantone: <span className="font-bold">501 C</span>
+                    Pantone: <span className="font-bold">7501 C</span>
                   </p>
                   <p className="text-gray-500">
                     CMYK: <span className="font-bold">0, 6, 22, 14</span>

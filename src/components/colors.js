@@ -4,7 +4,7 @@ export default function Colors() {
   return (
     <React.Fragment>
       <>
-        <section
+        <section id="colors"
           className="py-20 bg-yellow-500 bg-no-repeat bg-cover bg-center"
           style={{
             backgroundImage: 'url("cronos-assets/elements/lines2.svg")',

@@ -38,7 +38,7 @@ export default function Colors() {
                     Black
                   </h2>
                   <p className="text-gray-500">
-                    Pantone: <span className="font-bold">Black 6 C</span>
+                    PMS: <span className="font-bold">Black 6</span>
                   </p>
                   <p className="text-gray-500">
                     CMYK: <span className="font-bold">48, 23, 0, 88</span>
@@ -60,7 +60,7 @@ export default function Colors() {
                     Gray
                   </h2>
                   <p className="text-gray-500">
-                    Pantone: <span className="font-bold">Col Grey 1 C</span>
+                    PMS: <span className="font-bold">Cool Grey 4</span>
                   </p>
                   <p className="text-gray-500">
                     CMYK: <span className="font-bold">10,8,10,0</span>
@@ -104,7 +104,7 @@ export default function Colors() {
                     orange
                   </h2>
                   <p className="text-gray-500">
-                    Pantone: <span className="font-bold">167 C</span>
+                    PMS: <span className="font-bold">167</span>
                   </p>
                   <p className="text-gray-500">
                     CMYK: <span className="font-bold">0, 58, 88, 25</span>
@@ -126,7 +126,7 @@ export default function Colors() {
                     Wheat
                   </h2>
                   <p className="text-gray-500">
-                    Pantone: <span className="font-bold">7501 C</span>
+                    PMS: <span className="font-bold">453</span>
                   </p>
                   <p className="text-gray-500">
                     CMYK: <span className="font-bold">0, 6, 22, 14</span>
@@ -148,7 +148,7 @@ export default function Colors() {
                     Cream
                   </h2>
                   <p className="text-gray-500">
-                    Pantone:
+                    PMS:
                     <span className="font-bold">*use white for print*</span>
                   </p>
                   <p className="text-gray-500">

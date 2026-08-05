@@ -15,6 +15,9 @@ import Illustrations from "../components/illustrations";
 import Assets from "../components/assets";
 import DataVisualization from "../components/dataVisualization";
 import UIElements from "../components/uiElements";
+import CatalogueActions from "../components/catalogueActions";
+import CatalogueForms from "../components/catalogueForms";
+import CatalogueData from "../components/catalogueData";
 import Writing from "../components/writing";
 import Architecture from "../components/architecture";
 
@@ -57,6 +60,9 @@ export default function Index() {
       <Assets />
       <DataVisualization />
       <UIElements />
+      <CatalogueActions />
+      <CatalogueForms />
+      <CatalogueData />
       <Writing />
     </React.Fragment>
   );

@@ -38,6 +38,9 @@ export default function Header() {
                         <li className="mr-9 text-sm hover:text-gray-700">
                           <a href="#writing">Writing</a>
                         </li>
+                        <li className="mr-9 text-sm hover:text-gray-700">
+                          <a href="#components">Components</a>
+                        </li>
                         <li className="text-sm hover:text-gray-700">
                           <a href="#colors">Colors</a>
                         </li>
@@ -140,12 +143,20 @@ export default function Header() {
                               Architecture
                             </a>
                           </li>
-                          <li className="">
+                          <li className="mb-6">
                             <a
                               className="text-sm hover:text-gray-700"
                               href="#writing"
                             >
                               Writing
+                            </a>
+                          </li>
+                          <li className="">
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#components"
+                            >
+                              Components
                             </a>
                           </li>
                         </ul>

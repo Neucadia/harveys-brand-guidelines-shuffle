@@ -15,6 +15,12 @@ import Illustrations from "../components/illustrations";
 import Assets from "../components/assets";
 import DataVisualization from "../components/dataVisualization";
 import UIElements from "../components/uiElements";
+import CatalogueActions from "../components/catalogueActions";
+import CatalogueForms from "../components/catalogueForms";
+import CatalogueLayout from "../components/catalogueLayout";
+import CatalogueNavigation from "../components/catalogueNavigation";
+import CatalogueOverlays from "../components/catalogueOverlays";
+import CatalogueData from "../components/catalogueData";
 import Writing from "../components/writing";
 import Architecture from "../components/architecture";
 
@@ -32,7 +38,7 @@ export default function Index() {
     let classes = document.body.classList;
     document.body.classList.remove(...classes);
     document.body.classList.add(
-      ..."antialiased font-body bg-body text-body .body".split(" ")
+      ..."antialiased font-body bg-body text-body .body".split(" "),
     );
   });
 
@@ -55,8 +61,12 @@ export default function Index() {
       <Icons />
       <Illustrations />
       <Assets />
-      <DataVisualization />
-      <UIElements />
+      <CatalogueActions />
+      <CatalogueForms />
+      <CatalogueLayout />
+      <CatalogueNavigation />
+      <CatalogueOverlays />
+      <CatalogueData />
       <Writing />
     </React.Fragment>
   );

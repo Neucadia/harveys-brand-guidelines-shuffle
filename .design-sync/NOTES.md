@@ -26,6 +26,15 @@ Repo-specific gotchas for future syncs. Config: `.design-sync/config.json`; proj
 ## Known render warns
 - `Icons` on the floor card (see above — deliberately unauthored; `display:none` in source).
 
+## Component catalogue / UI kit (feature/componentCatalogue)
+- **`uiSrcDir` + `uiExports` in config.json** drive a build-lib extension: every `src/components/ui/*.js` is transformed into `.cache/lib/components/ui/` (preserving the subdir so the six `Catalogue*` sections' verbatim `./ui/x` imports resolve from the flat components/ output), and `uiExports` (module → export names) emits NAMED barrel re-exports. build-lib throws on any name collision with `componentSrcMap` keys. `use-mobile` is internal-only (not exported).
+- **Catalogue sections must stay top-level** in `src/components/` — the `./ui/*` relative-import trick only works one level up from `components/ui/`.
+- Tailwind content globs are now `./src/components/**/*.js` + `./.design-sync/previews/*.tsx` — preview-only utility classes survive the purge.
+- **Version pins that bite if bumped:** react-day-picker **8** + date-fns **3** (rdp9 changed the classNames API), tailwind-merge **2** (v3 targets Tailwind 4), zod **3** + @hookform/resolvers **3**, recharts **2** (chart.js wrapper is the TW3-era shape), sonner **1**.
+- **Sonner only** — the legacy shadcn Toast/Toaster pair was deliberately dropped (user decision); `ui/sonner.js` exports `Toaster`, and inline `toastOptions.style` kills sonner's default radius/shadow (its runtime-injected stylesheet beats utility classes).
+- The legacy preset config **rejects arbitrary transition durations** (`duration-[250ms]` won't compile); use the `duration-250` token added to the override.
+- UI-kit theming is literal brand utilities in cva maps (no HSL var layer, no dark mode); never `rounded-*`/`shadow-*`.
+
 ## Re-sync risks
 - `.design-sync/.cache/lib/` is generated state — **always re-run `buildCmd` before the converter** on a re-sync; a stale lib silently ships old component code.
 - The remote fonts (Google/Typekit) are network dependencies at render time — if Typekit's kit `ooa7szh` is ever retired, body copy silently falls back to Open Sans and only a visual check will catch it.

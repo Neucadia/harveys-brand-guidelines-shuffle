@@ -6,7 +6,7 @@
 // symlink -> ../.ds-sync/node_modules (recreate on a fresh clone:
 //   ln -sfn ../.ds-sync/node_modules .design-sync/node_modules).
 // Run from the repo root: node .design-sync/build-lib.mjs
-import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync } from 'node:fs';
 import { dirname, resolve, basename, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { transformSync } from 'esbuild';
@@ -61,6 +61,30 @@ for (const [name, relPath] of Object.entries(srcMap)) {
   const outFile = basename(relPath);
   writeFileSync(join(OUT, 'components', outFile), code);
   barrel.push(`export { default as ${name} } from ${JSON.stringify('./components/' + outFile)};`);
+}
+
+// UI kit: mirror cfg.uiSrcDir into components/ui/ so the catalogue sections'
+// verbatim `./ui/x` relative imports resolve from the flat components/ output,
+// and add NAMED re-exports (cfg.uiExports: module -> export names) so the
+// primitives themselves are usable from claude.ai/design builds.
+if (cfg.uiSrcDir) {
+  const uiRoot = join(ROOT, cfg.uiSrcDir);
+  mkdirSync(join(OUT, 'components', 'ui'), { recursive: true });
+  for (const f of readdirSync(uiRoot).filter((f) => f.endsWith('.js'))) {
+    const { code } = transformSync(readFileSync(join(uiRoot, f), 'utf8'), {
+      loader: 'jsx',
+      jsx: 'transform',
+    });
+    writeFileSync(join(OUT, 'components', 'ui', f), code);
+  }
+  const seen = new Set(Object.keys(srcMap));
+  for (const [mod, names] of Object.entries(cfg.uiExports ?? {})) {
+    for (const n of names) {
+      if (seen.has(n)) throw new Error(`design-sync barrel collision: ${n} (ui/${mod})`);
+      seen.add(n);
+    }
+    barrel.push(`export { ${names.join(', ')} } from ${JSON.stringify('./components/ui/' + mod + '.js')};`);
+  }
 }
 
 writeFileSync(join(OUT, 'ds-entry.mjs'), barrel.join('\n') + '\n');

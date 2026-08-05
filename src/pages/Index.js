@@ -18,6 +18,7 @@ import UIElements from "../components/uiElements";
 import CatalogueActions from "../components/catalogueActions";
 import CatalogueForms from "../components/catalogueForms";
 import CatalogueLayout from "../components/catalogueLayout";
+import CatalogueNavigation from "../components/catalogueNavigation";
 import CatalogueOverlays from "../components/catalogueOverlays";
 import CatalogueData from "../components/catalogueData";
 import Writing from "../components/writing";
@@ -65,6 +66,7 @@ export default function Index() {
       <CatalogueActions />
       <CatalogueForms />
       <CatalogueLayout />
+      <CatalogueNavigation />
       <CatalogueOverlays />
       <CatalogueData />
       <Writing />

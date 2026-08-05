@@ -24,6 +24,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip";
+import { toast } from "sonner";
+import { Toaster } from "./ui/sonner";
 
 export default function CatalogueOverlays() {
   return (
@@ -127,6 +129,27 @@ export default function CatalogueOverlays() {
                 </TooltipProvider>
               </div>
             </div>
+          </div>
+          <div id="c-sonner" className="bg-white p-12 mt-8">
+            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+              Toast (Sonner)
+            </div>
+            <p className="text-gray-500 mb-6 max-w-md">
+              Flat white toasts with hairline borders. Mount one Toaster at the
+              app root.
+            </p>
+            <Button
+              variant="secondary"
+              onClick={() =>
+                toast("Added to cart", {
+                  description: "Forage Oats 50lb — ready for pickup Friday.",
+                  action: { label: "View cart", onClick: () => {} },
+                })
+              }
+            >
+              Add to cart
+            </Button>
+            <Toaster />
           </div>
         </div>
       </section>

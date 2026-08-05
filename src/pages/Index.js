@@ -22,6 +22,7 @@ import CatalogueNavigation from "../components/catalogueNavigation";
 import CatalogueOverlays from "../components/catalogueOverlays";
 import CatalogueData from "../components/catalogueData";
 import Writing from "../components/writing";
+import AgentHelp from "../components/agentHelp";
 import Architecture from "../components/architecture";
 
 const meta = {
@@ -68,6 +69,7 @@ export default function Index() {
       <CatalogueOverlays />
       <CatalogueData />
       <Writing />
+      <AgentHelp />
     </React.Fragment>
   );
 }

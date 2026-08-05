@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
 const FETCH_SPEC = [
-  "mkdir -p docs",
-  'gh api "repos/Neucadia/harveys-brand-guidelines-shuffle/contents/DESIGN.md?ref=main" \\',
-  '  -H "Accept: application/vnd.github.raw+json" > docs/HARVEYS-DESIGN.md',
+  "rm -rf /tmp/harveys-brand && git clone --depth 1 \\",
+  "  https://github.com/Neucadia/harveys-brand-guidelines-shuffle /tmp/harveys-brand",
+  "mkdir -p docs && cp /tmp/harveys-brand/DESIGN.md docs/HARVEYS-DESIGN.md",
+  "rm -rf /tmp/harveys-brand",
 ].join("\n");
 
 const CLAUDE_COMMANDS = [
@@ -119,9 +120,9 @@ export default function AgentHelp() {
                   Access
                 </h3>
                 <p className="text-green-100">
-                  You need the Neucadia GitHub org and an authenticated gh CLI
-                  (<code className="font-mono">gh auth login</code>). Claude
-                  Code reads the same credentials for the private marketplace.
+                  If you can clone this repo, every command here works — plain
+                  git credentials, no extra tooling. Claude Code uses the same
+                  access for the private marketplace.
                 </p>
               </div>
               <div className="w-full md:w-1/2 p-4">

@@ -38,7 +38,7 @@ export default function Index() {
     let classes = document.body.classList;
     document.body.classList.remove(...classes);
     document.body.classList.add(
-      ..."antialiased font-body bg-body text-body .body".split(" ")
+      ..."antialiased font-body bg-body text-body .body".split(" "),
     );
   });
 
@@ -61,8 +61,6 @@ export default function Index() {
       <Icons />
       <Illustrations />
       <Assets />
-      <DataVisualization />
-      <UIElements />
       <CatalogueActions />
       <CatalogueForms />
       <CatalogueLayout />

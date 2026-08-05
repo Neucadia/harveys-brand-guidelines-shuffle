@@ -24,6 +24,11 @@ import {
   CollapsibleTrigger,
 } from "./ui/collapsible";
 import { ScrollArea } from "./ui/scroll-area";
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "./ui/resizable";
 
 const divisions = [
   "Seed",
@@ -200,6 +205,31 @@ export default function CatalogueLayout() {
                 </div>
               </div>
             </div>
+          </div>
+          <div id="c-resizable" className="bg-white p-12 mt-8">
+            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+              Resizable
+            </div>
+            <ResizablePanelGroup
+              direction="horizontal"
+              className="max-w-md border border-gray-200"
+            >
+              <ResizablePanel defaultSize={60}>
+                <div className="flex h-32 items-center justify-center bg-yellow-50 p-6">
+                  <span className="font-heading text-xs font-bold uppercase tracking-widest">
+                    Map
+                  </span>
+                </div>
+              </ResizablePanel>
+              <ResizableHandle withHandle />
+              <ResizablePanel defaultSize={40}>
+                <div className="flex h-32 items-center justify-center p-6">
+                  <span className="font-heading text-xs font-bold uppercase tracking-widest">
+                    Soil facts
+                  </span>
+                </div>
+              </ResizablePanel>
+            </ResizablePanelGroup>
           </div>
         </div>
       </section>

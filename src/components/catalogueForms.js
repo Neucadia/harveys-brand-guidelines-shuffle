@@ -1,4 +1,7 @@
 import React from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
@@ -12,6 +15,69 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
+import { Button } from "./ui/button";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "./ui/form";
+
+const quoteSchema = z.object({
+  farmName: z.string().min(2, "Tell us the farm name"),
+  acres: z.coerce.number().min(1, "Enter a number greater than 0"),
+});
+
+function QuoteForm() {
+  const form = useForm({
+    resolver: zodResolver(quoteSchema),
+    defaultValues: { farmName: "", acres: "" },
+  });
+  const [submitted, setSubmitted] = React.useState(false);
+
+  return (
+    <Form {...form}>
+      <form
+        onSubmit={form.handleSubmit(() => setSubmitted(true))}
+        className="max-w-md space-y-6"
+      >
+        <FormField
+          control={form.control}
+          name="farmName"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Farm name</FormLabel>
+              <FormControl>
+                <Input placeholder="Waldron Family Farm" {...field} />
+              </FormControl>
+              <FormDescription>As it appears on your account.</FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="acres"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Acres to plant</FormLabel>
+              <FormControl>
+                <Input type="number" placeholder="40" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button type="submit">
+          {submitted ? "Request sent ✓" : "Request a quote"}
+        </Button>
+      </form>
+    </Form>
+  );
+}
 
 export default function CatalogueForms() {
   return (
@@ -108,7 +174,7 @@ export default function CatalogueForms() {
               </div>
             </div>
           </div>
-          <div id="c-slider" className="bg-gray-50 p-12">
+          <div id="c-slider" className="bg-gray-50 p-12 mb-8">
             <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
               Slider
             </div>
@@ -116,6 +182,16 @@ export default function CatalogueForms() {
               <Label className="mb-4">Acreage</Label>
               <Slider defaultValue={[40]} max={200} step={5} />
             </div>
+          </div>
+          <div id="c-form" className="bg-gray-50 p-12">
+            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+              Form
+            </div>
+            <p className="text-gray-500 mb-6 max-w-md">
+              react-hook-form + zod validation. Error messages are bold ember —
+              plain and direct, never red.
+            </p>
+            <QuoteForm />
           </div>
         </div>
       </section>

@@ -1001,6 +1001,7 @@ module.exports = {
           50: "#f2b595",
           800: "#C05017",
           900: "#C05017",
+          950: "#a84413",
         },
         green: {
           900: "#13391A",
@@ -1037,6 +1038,8 @@ module.exports = {
         red: {
           50: "#F6ECEB",
         },
+        sand: "#ece5d3",
+        hairline: "rgba(16,24,31,0.12)",
       },
       fontSize: {
         base: "1rem",
@@ -1044,14 +1047,39 @@ module.exports = {
       backgroundColor: {
         body: "#FFFFFF",
       },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "collapsible-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-collapsible-content-height)" },
+        },
+        "collapsible-up": {
+          from: { height: "var(--radix-collapsible-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        "collapsible-down": "collapsible-down 0.2s ease-out",
+        "collapsible-up": "collapsible-up 0.2s ease-out",
+      },
     },
   },
   content: [
     "./src/pug/*.pug",
     "./src/html/*.html",
     "./src/pages/*.js",
-    "./src/components/*.js",
+    "./src/components/**/*.js",
+    "./.design-sync/previews/*.tsx",
   ],
   safelist: ["overflow-visible"],
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };

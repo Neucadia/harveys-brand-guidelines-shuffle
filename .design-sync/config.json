@@ -25,6 +25,7 @@
     "Values": "src/components/values.js",
     "Architecture": "src/components/architecture.js",
     "Writing": "src/components/writing.js",
+    "AgentHelp": "src/components/agentHelp.js",
     "Logos": "src/components/logos.js",
     "PrimaryLogo": "src/components/primaryLogo.js",
     "Wordmark": "src/components/wordmark.js",

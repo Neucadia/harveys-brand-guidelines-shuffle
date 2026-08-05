@@ -1,0 +1,13 @@
+{
+  "name": "harveys",
+  "description": "Harvey's brand for AI agents — install the design spec into any project.",
+  "owner": { "name": "Neucadia" },
+  "plugins": [
+    {
+      "name": "harveys-brand",
+      "source": "./",
+      "description": "Skill that themes projects with the Harvey's design spec (DESIGN.md).",
+      "version": "1.0.0"
+    }
+  ]
+}

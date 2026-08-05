@@ -16,6 +16,15 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, '.design-sync', '.cache', 'lib');
 const cfg = JSON.parse(readFileSync(join(ROOT, '.design-sync', 'config.json'), 'utf8'));
 const srcMap = cfg.componentSrcMap;
+// UI-kit sidecar (see the ui block below). Read early: srcMap entries under
+// ui.srcDir are discovery pins for the converter — their exports come from the
+// named ui barrel, so the default-export loop must skip them.
+let ui = null;
+try {
+  ui = JSON.parse(readFileSync(join(ROOT, '.design-sync', 'ui-exports.json'), 'utf8'));
+} catch {}
+const uiPrefix = ui?.srcDir ? ui.srcDir.replace(/\/+$/, '') + '/' : null;
+const uiExportedNames = new Set(Object.values(ui?.exports ?? {}).flat());
 
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(join(OUT, 'components'), { recursive: true });
@@ -44,6 +53,14 @@ async function svgModuleFor(absSvgPath) {
 
 const barrel = [];
 for (const [name, relPath] of Object.entries(srcMap)) {
+  if (uiPrefix && relPath.startsWith(uiPrefix)) {
+    // Converter discovery pin only — the name is (and must be) a named export
+    // of the ui barrel emitted below; no default export exists to re-export.
+    if (!uiExportedNames.has(name)) {
+      throw new Error(`componentSrcMap pins "${name}" to ${relPath} but ui-exports.json does not export that name`);
+    }
+    continue;
+  }
   const srcPath = join(ROOT, relPath);
   let src = readFileSync(srcPath, 'utf8');
   const rewrites = [];
@@ -63,12 +80,14 @@ for (const [name, relPath] of Object.entries(srcMap)) {
   barrel.push(`export { default as ${name} } from ${JSON.stringify('./components/' + outFile)};`);
 }
 
-// UI kit: mirror cfg.uiSrcDir into components/ui/ so the catalogue sections'
+// UI kit: mirror ui.srcDir into components/ui/ so the catalogue sections'
 // verbatim `./ui/x` relative imports resolve from the flat components/ output,
-// and add NAMED re-exports (cfg.uiExports: module -> export names) so the
-// primitives themselves are usable from claude.ai/design builds.
-if (cfg.uiSrcDir) {
-  const uiRoot = join(ROOT, cfg.uiSrcDir);
+// and add NAMED re-exports (ui.exports: module -> export names) so the
+// primitives themselves are usable from claude.ai/design builds. Lives in
+// .design-sync/ui-exports.json (NOT config.json — the converter's config
+// validator is a strict allowlist and this mechanism is build-lib's own).
+if (ui?.srcDir) {
+  const uiRoot = join(ROOT, ui.srcDir);
   mkdirSync(join(OUT, 'components', 'ui'), { recursive: true });
   for (const f of readdirSync(uiRoot).filter((f) => f.endsWith('.js'))) {
     const { code } = transformSync(readFileSync(join(uiRoot, f), 'utf8'), {
@@ -77,8 +96,14 @@ if (cfg.uiSrcDir) {
     });
     writeFileSync(join(OUT, 'components', 'ui', f), code);
   }
-  const seen = new Set(Object.keys(srcMap));
-  for (const [mod, names] of Object.entries(cfg.uiExports ?? {})) {
+  // Collisions: only against names the default-export loop actually emitted —
+  // srcMap pins under uiPrefix are *satisfied by* these named exports.
+  const seen = new Set(
+    Object.entries(srcMap)
+      .filter(([, p]) => !(uiPrefix && p.startsWith(uiPrefix)))
+      .map(([k]) => k)
+  );
+  for (const [mod, names] of Object.entries(ui.exports ?? {})) {
     for (const n of names) {
       if (seen.has(n)) throw new Error(`design-sync barrel collision: ${n} (ui/${mod})`);
       seen.add(n);

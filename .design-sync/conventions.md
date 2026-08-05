@@ -15,7 +15,9 @@ Verified core vocabulary:
 | Headings | `font-heading font-bold uppercase tracking-widest` + `text-2xl`/`text-3xl`/`text-4xl`/`text-5xl` (`lg:text-5xl`) |
 | Body text | `font-body`, `text-sm`, `text-center`, `max-w-xl max-w-2xl max-w-3xl mx-auto` |
 | Layout | `container mx-auto px-4`, `py-20`, `flex flex-wrap items-center justify-center`, `gap-4`, `-m-4` + `p-4` gutters, `w-full md:w-1/2 lg:w-1/3` |
-| Buttons | `px-6 py-3 text-sm font-bold` on `bg-yellow-500 hover:bg-yellow-400` (wheat) or `bg-orange-900 text-white hover:bg-orange-800` (rust) — square corners, no border-radius |
+| Buttons (CTA) | `px-6 py-3 text-sm font-bold text-white transition duration-200` — primary `bg-green-500 hover:bg-green-600 focus:ring focus:ring-green-300`, secondary `bg-orange-500 hover:bg-orange-600 focus:ring focus:ring-orange-300` — square corners, no border-radius (this is the brand's form/CTA button, per the UIElements section) |
+| Buttons (downloads) | logo-card download pair only: `bg-yellow-500 hover:bg-yellow-400 focus:ring-yellow-200` (wheat) / `bg-orange-900 text-white hover:bg-orange-800 focus:ring-orange-700` (rust) — same padding, don't use for generic CTAs |
+| Links | `text-green-500 hover:underline` or `text-green-500 hover:text-green-600` |
 
 **Palette (hex, for custom glue when a utility is missing).** Green `#296533` (primary; dark `#1A4121`), orange `#e56625` (accent; dark `#C05017`), wheat `#e7ddc6` (light `#f5f1e7`, dark `#D8C7A2`), black `#10181F`, background white. Headlines: Chakra Petch, always bold + uppercase + wide tracking. Body/UI copy: TT Commons Pro (falls back to Open Sans) — regular weight.
 

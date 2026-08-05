@@ -21,7 +21,7 @@ Repo-specific gotchas for future syncs. Config: `.design-sync/config.json`; proj
 - **NegativePrimaryOnWheat ships no background of its own** (unlike its OnBlack/OnOrange siblings) and uses near-white text — it's the wheat logo variant *for green backgrounds*. Its authored preview composes it on `bg-green-500`; any design using it must place it on brand green.
 - Sub-brand pickers (HorizontalSubBrand etc.) and the Header mobile menu are `useState`-driven; static capture shows the default selection — correct. The Header cell captures at a width where the desktop nav collapses to the hamburger toggle; capture-width artifact, not a defect.
 - **NegativeStackedEgg** defaults its `bg` state to `""` (transparent) with white copy and a wheat logo — illegible standalone; its authored preview composes it on `bg-green-700` (the Logos section's real background). NegativeMonogram is fine bare (`bg` defaults to `bg-black`).
-- **NegativePrimaryOnOrange** ships both download buttons with the `hidden` class — no buttons on that card is faithful to source.
+- **NegativePrimaryOnOrange and NegativePrimaryOnWheat** ship both download buttons with the `hidden` class — no buttons on those cards is faithful to source.
 
 ## Known render warns
 - `Icons` on the floor card (see above — deliberately unauthored; `display:none` in source).

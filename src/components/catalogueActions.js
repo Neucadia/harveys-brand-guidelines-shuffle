@@ -1,6 +1,9 @@
 import React from "react";
+import { Bold, Italic, Underline } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
+import { Toggle } from "./ui/toggle";
+import { ToggleGroup, ToggleGroupItem } from "./ui/toggle-group";
 
 export default function CatalogueActions() {
   return (
@@ -45,7 +48,7 @@ export default function CatalogueActions() {
               <Button disabled>Disabled</Button>
             </div>
           </div>
-          <div id="c-badge" className="bg-white p-12">
+          <div id="c-badge" className="bg-white p-12 mb-8">
             <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
               Badge
             </div>
@@ -58,6 +61,29 @@ export default function CatalogueActions() {
               <Badge variant="secondary">Seasonal</Badge>
               <Badge variant="destructive">Winterkill</Badge>
               <Badge variant="outline">Overwinters</Badge>
+            </div>
+          </div>
+          <div id="c-toggle" className="bg-white p-12">
+            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+              Toggle &amp; Toggle Group
+            </div>
+            <p className="text-gray-500 mb-6 max-w-md">
+              Pressed state is the house "selected" recipe — cream fill with an
+              inset green ring.
+            </p>
+            <div className="flex flex-wrap items-center gap-8">
+              <Toggle aria-label="Toggle bulk view">Bulk view</Toggle>
+              <ToggleGroup type="multiple" variant="outline">
+                <ToggleGroupItem value="bold" aria-label="Toggle bold">
+                  <Bold className="h-4 w-4" />
+                </ToggleGroupItem>
+                <ToggleGroupItem value="italic" aria-label="Toggle italic">
+                  <Italic className="h-4 w-4" />
+                </ToggleGroupItem>
+                <ToggleGroupItem value="underline" aria-label="Toggle underline">
+                  <Underline className="h-4 w-4" />
+                </ToggleGroupItem>
+              </ToggleGroup>
             </div>
           </div>
         </div>

@@ -2,6 +2,16 @@ import React from "react";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
+import { Checkbox } from "./ui/checkbox";
+import { Switch } from "./ui/switch";
+import { Slider } from "./ui/slider";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./ui/select";
 
 export default function CatalogueForms() {
   return (
@@ -40,7 +50,7 @@ export default function CatalogueForms() {
               <Input id="catalogue-disabled" disabled placeholder="Disabled" />
             </div>
           </div>
-          <div id="c-textarea" className="bg-gray-50 p-12">
+          <div id="c-textarea" className="bg-gray-50 p-12 mb-8">
             <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
               Textarea
             </div>
@@ -53,6 +63,58 @@ export default function CatalogueForms() {
                 rows={3}
                 placeholder="Gate code, drop location…"
               />
+            </div>
+          </div>
+          <div className="flex flex-wrap -m-4 mb-8">
+            <div id="c-checkbox" className="w-full lg:w-1/2 p-4">
+              <div className="bg-gray-50 p-12 h-full">
+                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  Checkbox &amp; Switch
+                </div>
+                <div className="flex items-center gap-3 mb-6">
+                  <Checkbox id="catalogue-terms" defaultChecked />
+                  <Label htmlFor="catalogue-terms" className="font-normal">
+                    Email me when it's back in stock
+                  </Label>
+                </div>
+                <div id="c-switch" className="flex items-center gap-3">
+                  <Switch id="catalogue-bulk" />
+                  <Label htmlFor="catalogue-bulk" className="font-normal">
+                    Bulk pricing
+                  </Label>
+                </div>
+              </div>
+            </div>
+            <div id="c-select" className="w-full lg:w-1/2 p-4">
+              <div className="bg-gray-50 p-12 h-full">
+                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  Select
+                </div>
+                <div className="max-w-md">
+                  <Label className="mb-2">Division</Label>
+                  <Select>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Choose a division" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="seed">Seed</SelectItem>
+                      <SelectItem value="feed">Feed</SelectItem>
+                      <SelectItem value="commodities">Commodities</SelectItem>
+                      <SelectItem value="retail">Retail</SelectItem>
+                      <SelectItem value="garden">Garden Center</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="c-slider" className="bg-gray-50 p-12">
+            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+              Slider
+            </div>
+            <div className="max-w-md">
+              <Label className="mb-4">Acreage</Label>
+              <Slider defaultValue={[40]} max={200} step={5} />
             </div>
           </div>
         </div>

@@ -17,6 +17,8 @@ import DataVisualization from "../components/dataVisualization";
 import UIElements from "../components/uiElements";
 import CatalogueActions from "../components/catalogueActions";
 import CatalogueForms from "../components/catalogueForms";
+import CatalogueLayout from "../components/catalogueLayout";
+import CatalogueOverlays from "../components/catalogueOverlays";
 import CatalogueData from "../components/catalogueData";
 import Writing from "../components/writing";
 import Architecture from "../components/architecture";
@@ -62,6 +64,8 @@ export default function Index() {
       <UIElements />
       <CatalogueActions />
       <CatalogueForms />
+      <CatalogueLayout />
+      <CatalogueOverlays />
       <CatalogueData />
       <Writing />
     </React.Fragment>

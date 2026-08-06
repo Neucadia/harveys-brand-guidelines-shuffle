@@ -2274,6 +2274,11 @@ video {
   color: rgb(226 225 221 / var(--tw-placeholder-opacity, 1));
 }
 
+.placeholder-gray-500::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(87 83 78 / var(--tw-placeholder-opacity, 1));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -2465,6 +2470,11 @@ video {
   color: rgb(226 225 221 / var(--tw-text-opacity, 1));
 }
 
+.placeholder\:text-gray-500::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(87 83 78 / var(--tw-text-opacity, 1));
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -2522,16 +2532,6 @@ video {
 .hover\:bg-orange-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(232 118 60 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-orange-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(215 89 26 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-orange-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(192 80 23 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-orange-950:hover {
@@ -2670,9 +2670,9 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus-visible\:ring-green-500:focus-visible {
+.focus-visible\:ring-green-300:focus-visible {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(41 101 51 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(82 186 100 / var(--tw-ring-opacity, 1));
 }
 
 .focus-visible\:ring-offset-2:focus-visible {

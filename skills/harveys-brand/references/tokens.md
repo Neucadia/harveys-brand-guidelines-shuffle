@@ -23,7 +23,7 @@ surface.
 | `on-primary-muted` | `#A6DBAF` | Soft Sage | `green-100` |
 | `secondary` | `#C05017` | Ember (dark / print) | `orange-700` = `800` = `900` (duplicates) |
 | `secondary-interactive` | `#E56625` | Ember Orange | `orange-500` |
-| `ember-hover` | `#E8763C` | ember hover (of `#E56625`) | no utility — use the hex (`orange-600 #D7591A` is retired) |
+| `ember-hover` | `#E8763C` | ember hover (of `#E56625`) | `orange-400` (`orange-600 #D7591A` is retired/unused) |
 | `ember-text` | `#A84413` | AA ember text on tints; pressed state of `#C05017` | `orange-950` |
 | `on-secondary` | `#FFFFFF` | white on orange | `white` |
 | `wheat` | `#D8C7A2` | Wheat (Harvest Wheat) — the family's bare name | `yellow-100`; also `yellow-700` = `800` = `900` |
@@ -79,8 +79,8 @@ Extras defined only in this repo's config (no frontmatter name):
 - **Non-monotonic grays/greens:** `gray-400` is lighter than `gray-300`;
   `green-600` is darker than `green-500` (it's Field Green's hover, an
   olive-dark, not a scale step).
-- **`orange-600` (`#D7591A`) is retired** — the ember hover step is
-  `ember-hover #E8763C`, not the scale's own dark step.
+- **`orange-600` (`#D7591A`) is retired/unused** — the ember hover step is
+  `ember-hover #E8763C` = `orange-400`, not the scale's own dark step.
 
 ## Rules for target repos (MUST)
 

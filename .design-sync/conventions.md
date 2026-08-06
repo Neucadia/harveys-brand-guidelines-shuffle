@@ -27,7 +27,7 @@ Verified core vocabulary:
 | Body text | `font-body`, `text-sm`, `text-center`, `max-w-xl max-w-2xl max-w-3xl mx-auto` |
 | Layout | `container mx-auto px-4`, `py-20`, `flex flex-wrap items-center justify-center`, `gap-4`, `-m-4` + `p-4` gutters, `w-full md:w-1/2 lg:w-1/3` |
 | Buttons (CTA) | prefer the `Button` component; raw recipe: `px-6 py-3 text-sm font-bold text-white transition duration-200` + `bg-green-500 hover:bg-green-600 focus:ring focus:ring-green-300` (primary) or `bg-orange-500 hover:bg-orange-600 focus:ring focus:ring-orange-300` (secondary) — square corners, no border-radius |
-| Buttons (downloads) | logo-card download pair only: `bg-yellow-500 hover:bg-yellow-400 focus:ring-yellow-200` (wheat) / `bg-orange-900 text-white hover:bg-orange-800 focus:ring-orange-700` (rust) — same padding, don't use for generic CTAs |
+| Buttons (downloads) | logo-card download pair only: `bg-yellow-500 hover:bg-yellow-400 focus:ring-yellow-200` (wheat) / `bg-orange-900 text-white hover:bg-orange-950 focus:ring-orange-700` (rust) — same padding, don't use for generic CTAs |
 | Links | `text-green-500 hover:underline` or `text-green-500 hover:text-green-600` |
 | State variants | `focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2`, `data-[state=checked]:*`, `data-[state=open]:animate-in` + `fade-in-0 zoom-in-95 slide-in-from-*` (tailwindcss-animate), `animate-accordion-down/up`, `duration-250` |
 

@@ -3,7 +3,11 @@ import React, { useState } from "react";
 const FETCH_SPEC = [
   "rm -rf /tmp/harveys-brand && git clone --depth 1 \\",
   "  https://github.com/Neucadia/harveys-brand-guidelines-shuffle /tmp/harveys-brand",
-  "mkdir -p docs && cp /tmp/harveys-brand/DESIGN.md docs/HARVEYS-DESIGN.md",
+  "mkdir -p docs/harveys && cp /tmp/harveys-brand/DESIGN.md \\",
+  "  /tmp/harveys-brand/skills/harveys-brand/references/retheming.md \\",
+  "  /tmp/harveys-brand/skills/harveys-brand/references/tokens.md \\",
+  "  /tmp/harveys-brand/skills/harveys-brand/references/decisions.md \\",
+  "  /tmp/harveys-brand/.design-sync/conventions.md docs/harveys/",
   "rm -rf /tmp/harveys-brand",
 ].join("\n");
 
@@ -13,12 +17,22 @@ const CLAUDE_COMMANDS = [
 ].join("\n");
 
 const GEMINI_COMMANDS =
-  FETCH_SPEC + "\n" + 'echo "@./docs/HARVEYS-DESIGN.md" >> GEMINI.md';
+  FETCH_SPEC +
+  "\n" +
+  'echo "@./docs/harveys/DESIGN.md" >> GEMINI.md\n' +
+  'echo "Harvey\'s brand: for any retheme follow docs/harveys/retheming.md end to end — tokens.md maps names to hex, decisions.md pre-resolves brand-vs-domain conflicts, conventions.md has the usage recipes." >> GEMINI.md';
 
 const AGENTS_COMMANDS =
   FETCH_SPEC +
   "\n" +
-  'echo "Harvey\'s brand: read docs/HARVEYS-DESIGN.md before styling UI" >> AGENTS.md';
+  'echo "Harvey\'s brand: read docs/harveys/DESIGN.md before styling UI. For a retheme, follow docs/harveys/retheming.md end to end (tokens.md = name-to-hex map, decisions.md = pre-resolved conflicts, conventions.md = usage recipes)." >> AGENTS.md';
+
+const RETHEME_PROMPT = [
+  "Retheme this app to the Harvey's brand. Follow the Harvey's retheming",
+  "procedure end to end: settle semantics and the token layer first, make the",
+  "mechanical pass total and idempotent, then verify every page with",
+  "screenshots before calling it done.",
+].join("\n");
 
 function CommandBlock({ vendor, tag, note, command }) {
   const [copied, setCopied] = useState(false);
@@ -79,12 +93,12 @@ export default function AgentHelp() {
             <CommandBlock
               vendor="Claude Code"
               tag="Recommended"
-              note="Install the brand as a project-scoped plugin. The harveys-brand skill loads whenever styling comes up and reads the spec straight from this repo."
+              note="Install the brand as a project-scoped plugin. The harveys-brand skill loads whenever styling comes up, reads the spec straight from this repo, and walks the agent through the full retheme procedure."
               command={CLAUDE_COMMANDS}
             />
             <CommandBlock
               vendor="Gemini CLI"
-              note="Fetch the spec into your repo, then let GEMINI.md import it."
+              note="Fetch the spec and retheme kit into your repo, then let GEMINI.md import the spec and point at the rest."
               command={GEMINI_COMMANDS}
             />
             <CommandBlock
@@ -92,15 +106,21 @@ export default function AgentHelp() {
               note="Same fetch, plus a pointer in AGENTS.md — Cursor and GitHub Copilot read the same file."
               command={AGENTS_COMMANDS}
             />
+            <CommandBlock
+              vendor="The prompt"
+              note="After installing, ask for the retheme in these words — naming the procedure is what keeps results consistent. Works with every agent above."
+              command={RETHEME_PROMPT}
+            />
             <div className="flex flex-wrap -m-4 mt-0">
               <div className="w-full md:w-1/2 p-4">
                 <h3 className="font-heading text-base font-bold uppercase tracking-widest text-white mb-2">
                   What your agent gets
                 </h3>
                 <p className="text-green-100">
-                  DESIGN.md, the canonical design spec: the palette with print
-                  equivalents, typography rules, component stylings, layout
-                  principles, and our voice.
+                  DESIGN.md, the canonical design spec, plus the retheme kit:
+                  the step-by-step retheming procedure, the token crosswalk
+                  (every name-to-hex mapping), pre-resolved brand decisions
+                  like Data Red, and the component usage conventions.
                 </p>
               </div>
               <div className="w-full md:w-1/2 p-4">

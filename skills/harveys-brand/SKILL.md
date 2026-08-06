@@ -1,16 +1,47 @@
 ---
 name: harveys-brand
-description: Apply the Harvey's brand when building or styling UI. Use when asked to Harvey's-theme a project, apply Harvey's brand colors, typography, or voice, restyle screens to match Harvey's, or keep new UI brand-consistent.
+description: Apply the Harvey's brand when building or styling UI. Use when asked to Harvey's-theme or retheme a project or an existing app, apply Harvey's brand colors, typography, or voice, restyle screens to match Harvey's, or keep new UI brand-consistent.
 ---
 
 # Harvey's brand
 
 Read `${CLAUDE_PLUGIN_ROOT}/DESIGN.md` in full before styling anything — it is
 the canonical Design Spec: palette (with print equivalents), typography,
-component stylings, layout principles, and voice. Everything below is only the
-digest of its non-negotiables.
+component stylings, layout principles, and voice.
 
-## Non-negotiables
+## Pick your path
+
+**Quick styling touch** — one component or screen, in an app already on the
+brand: DESIGN.md + the non-negotiables below, exact hexes from
+`${CLAUDE_PLUGIN_ROOT}/skills/harveys-brand/references/tokens.md`, and the
+recipes in `${CLAUDE_PLUGIN_ROOT}/.design-sync/conventions.md`.
+
+**Full retheme** — or *any* change touching colors across multiple files: you
+MUST follow
+`${CLAUDE_PLUGIN_ROOT}/skills/harveys-brand/references/retheming.md` end to
+end. Do not write styling code before its Phase 0 (semantics) is settled and
+committed. A spec-only retheme produces re-skinned slop; the procedure is what
+makes the result look designed.
+
+## Retheme non-negotiables (the digest, if you read nothing else)
+
+1. **Semantics before code.** Check `references/decisions.md` for pre-resolved
+   brand-vs-domain conflicts; new conflicts get an ADR + glossary in the
+   target repo before any recoloring.
+2. **Census before replacement.** Inventory every color/radius/font literal
+   and what consumes it (style objects vs SVG attributes vs canvas/chart
+   paint vs color math) before changing one.
+3. **Token layer first**, as its own commit, named by job using DESIGN.md's
+   semantic tokens — never this repo's Tailwind scale names.
+4. **The mechanical pass must be provably total and idempotent** — dry run
+   reports 0 unknowns; a second run reports 0 replacements.
+5. **Map meaning to meaning, never color to color.** The same old hex can be
+   a loss, an error, and a focus ring — those map to different tokens.
+6. **Done means verified:** build/lint green, legacy-hex grep returns
+   nothing, and a screenshot pass of every route confirms the semantic
+   invariants (losses in Data Red only, warnings ember, no unpainted SVG).
+
+## Brand non-negotiables
 
 - **Square everywhere.** Zero border radius on buttons, cards, chips, inputs.
   The single exception: 16px checkboxes at 2px radius. If something looks
@@ -20,8 +51,10 @@ digest of its non-negotiables.
   `#E56625` as a rationed accent — small bold doses, never a routine fill;
   wheat neutrals `#F5F1E7` / `#E7DDC6` / `#D8C7A2` for section backgrounds and
   signature chips; Ink Black `#10181F` (not pure black) for all text.
-- **No red.** Errors and warnings are ember orange. Brick red `#C02617`
-  appears only as the ⊘ glyph in do/don't lists.
+- **No red in UI.** Errors and warnings are ember orange. Brick red `#C02617`
+  has exactly two sanctioned uses: the ⊘ glyph in do/don't lists, and Data
+  Red — negative *numeric* data (losses, down-moves) in red-down/green-up
+  domains (see `references/decisions.md`, DR-1). Never for UI states.
 - **Type.** Chakra Petch Bold, always UPPERCASE with ~0.1em tracking, for
   display/headlines. TT Commons Pro for body and UI copy. Fallbacks when
   licensed fonts can't load: Catamaran ExtraBold (display) and Open Sans
@@ -34,8 +67,26 @@ digest of its non-negotiables.
   aggressive, pretentious, or rigidly corporate. In prose the name is
   "Harvey's"; all-caps belongs to logos and headlines only.
 
+## What ships where (all under `${CLAUDE_PLUGIN_ROOT}`)
+
+- `DESIGN.md` — the canonical spec; read first, always.
+- `skills/harveys-brand/references/retheming.md` — the retheme procedure
+  (phases, provable-codemod rules, gates, review).
+- `skills/harveys-brand/references/tokens.md` — the only sanctioned
+  name → hex → Tailwind-class crosswalk, including this repo's naming traps.
+- `skills/harveys-brand/references/decisions.md` — pre-resolved
+  brand-vs-domain conflicts (Data Red), shared glossary, and the framework
+  for new conflicts.
+- `.design-sync/conventions.md` — usage rules and recipes: button intents,
+  flat-and-square, focus/selected/disabled/error states, seed-tag header.
+- `.design-sync/docs/*.md` — one-paragraph usage notes per component.
+- `src/components/ui/` — the hand-themed shadcn-style kit; a reference
+  implementation of the brand in code.
+
 ## Fonts
 
 Chakra Petch, Open Sans, and Catamaran load from Google Fonts; TT Commons Pro
 from Adobe Typekit (`https://use.typekit.net/ooa7szh.css`). Prefer loading
-these over bundling `@font-face` yourself.
+these over bundling `@font-face` yourself. The Typekit kit is domain-scoped —
+on a new app's domain TT Commons Pro won't load, so ship Open Sans as the body
+face behind a font token and upgrade later by adding the domain to the kit.

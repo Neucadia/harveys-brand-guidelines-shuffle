@@ -1040,6 +1040,14 @@ module.exports = {
         },
         sand: "#ece5d3",
         hairline: "rgba(16,24,31,0.12)",
+        // Status tint triads (DR-3). Tint fills/borders for table-scale
+        // chips; text colors reuse green-500 / orange-950 / info-strong.
+        "success-tint-border": "#abcfae",
+        "warning-tint": "#fbede4",
+        "warning-tint-border": "#eec4a9",
+        "info-tint": "#e7eef5",
+        "info-tint-border": "#aec7e0",
+        "info-strong": "#2a5b88",
       },
       fontSize: {
         base: "1rem",
@@ -1064,12 +1072,25 @@ module.exports = {
           from: { height: "var(--radix-collapsible-content-height)" },
           to: { height: "0" },
         },
+        "monogram-spin": {
+          to: { transform: "rotate(360deg)" },
+        },
+        "monogram-breathe": {
+          "0%, 100%": { transform: "scale(0.96)", opacity: "0.72" },
+          "50%": { transform: "scale(1)", opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "collapsible-down": "collapsible-down 0.2s ease-out",
         "collapsible-up": "collapsible-up 0.2s ease-out",
+        "monogram-spin": "monogram-spin 1.05s cubic-bezier(0.65,0,0.35,1) infinite",
+        "monogram-breathe": "monogram-breathe 1.8s ease-in-out infinite",
+      },
+      letterSpacing: {
+        // 0.1em over-opens small caps at and below 12px (tokens-24).
+        smallcaps: "0.08em",
       },
       transitionDuration: {
         250: "250ms",

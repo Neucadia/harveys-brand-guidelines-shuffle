@@ -10,7 +10,7 @@ const { Button, Card, CardHeader, CardTitle, CardContent, Badge } = window.Harve
 ```
 - **Button intents:** `default` = green system action (`bg-green-500`), `secondary` = wheat commerce action (ink text — this is the "Add to cart" button), `destructive` = ember (rationed — ember is never a routine accent), plus `outline` / `ghost` / `link`. Sizes `sm | default | lg | icon`.
 - **Flat and square, always.** Never add `rounded-*` or `shadow-*` to kit components or your glue. Depth = cream `bg-yellow-50` fills + hairline borders (`border-gray-200`, or `border-hairline` on tinted fills).
-- **House recipes:** focus = `focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2`; selected = cream fill + inset green ring (see Toggle) or 2px green border with compensated padding; disabled = `disabled:opacity-50 disabled:cursor-not-allowed`; errors/warnings are **ember, never red** (there is no red in this brand).
+- **House recipes:** focus = `focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2`; selected = cream fill + inset green ring (see Toggle) or 2px green border with compensated padding; disabled = `disabled:opacity-50 disabled:cursor-not-allowed`; errors/warnings are **ember, never red** (single data-only exception: Data Red `#C02617` for negative numeric values — see `decisions.md`, shipped with the design spec; there is no red in UI chrome).
 - **Providers:** wrap tooltip-bearing subtrees in `TooltipProvider`; mount exactly one `<Toaster />` (sonner) at the app root and fire with sonner's `toast()`. The legacy shadcn Toast/Toaster pair is deliberately absent. `Sidebar` needs `SidebarProvider` (use `collapsible="none"` inside framed demos).
 - **Seed-tag signature:** table headers, group labels, and badges use `font-heading text-xs font-bold uppercase tracking-widest text-gray-500` on `bg-yellow-50`.
 
@@ -39,7 +39,7 @@ Verified core vocabulary:
 - Sections with pickers (`HorizontalSubBrand`, `StackedPrimarySubBrand`, `HorizontalStackedSubBrand`) and the `Header` menu manage their own state — mount as-is.
 - `Calendar` is react-day-picker **v8** API; `ChartContainer` is recharts **2**; both pinned — don't assume newer APIs.
 
-**Where the truth lives.** Styling: `styles.css` → `_ds_bundle.css` (grep it before inventing a class). Per-component usage + example JSX: `components/<group>/<Name>/<Name>.prompt.md`.
+**Where the truth lives.** Styling: `styles.css` → `_ds_bundle.css` (grep it before inventing a class). Per-component usage + example JSX: `components/<group>/<Name>/<Name>.prompt.md`. Semantic token names → hex → Tailwind class: `tokens.md`, shipped with the design spec (the only sanctioned crosswalk).
 
 **Idiomatic page glue:**
 ```jsx

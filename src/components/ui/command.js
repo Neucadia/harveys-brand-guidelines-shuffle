@@ -4,16 +4,46 @@ import { Search } from "lucide-react";
 import { cn } from "./utils";
 import { Dialog, DialogContent } from "./dialog";
 
-const Command = React.forwardRef(({ className, ...props }, ref) => (
-  <CommandPrimitive
-    ref={ref}
-    className={cn(
-      "flex h-full w-full flex-col overflow-hidden bg-white text-black",
-      className
-    )}
-    {...props}
-  />
-));
+const Command = React.forwardRef(({ className, ...props }, ref) => {
+  const innerRef = React.useRef(null);
+
+  // cmdk scrollIntoViews its auto-selected first item on mount — fine inside
+  // a dialog, but an inline menu drags the whole page down to it on load.
+  // No-op item scrolls until after first paint; keyboard/pointer scrolling
+  // later uses fresh calls on the prototype and is unaffected.
+  React.useLayoutEffect(() => {
+    const root = innerRef.current;
+    if (!root) return undefined;
+    const targets = root.querySelectorAll("[cmdk-item], [cmdk-group-heading]");
+    targets.forEach((el) => {
+      el.scrollIntoView = () => {};
+    });
+    const restore = () =>
+      targets.forEach((el) => {
+        delete el.scrollIntoView;
+      });
+    const timer = setTimeout(restore, 0);
+    return () => {
+      clearTimeout(timer);
+      restore();
+    };
+  }, []);
+
+  return (
+    <CommandPrimitive
+      ref={(node) => {
+        innerRef.current = node;
+        if (typeof ref === "function") ref(node);
+        else if (ref) ref.current = node;
+      }}
+      className={cn(
+        "flex h-full w-full flex-col overflow-hidden bg-white text-black",
+        className
+      )}
+      {...props}
+    />
+  );
+});
 Command.displayName = CommandPrimitive.displayName;
 
 const CommandDialog = ({ children, ...props }) => {

@@ -20,7 +20,7 @@ export default function Logos() {
         <section id="logos" className="py-20 bg-green-700 ">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
-              <div className="bg-green-400 py-1 px-2 text-white font-bold inline-block">
+              <div className="bg-green-400 py-1 px-2 text-white font-semibold inline-block">
                 Visuals
               </div>
             </div>
@@ -33,13 +33,13 @@ export default function Logos() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-20">
               <a
-                className="block px-6 py-3 text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200"
+                className="block px-6 py-3 text-center w-full sm:w-auto bg-yellow-500 text-sm font-semibold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200"
                 href="/logos/PNGs.zip"
               >
                 Download PNGs
               </a>
               <a
-                className="px-6 py-3 block text-center w-full sm:w-auto bg-orange-900 text-white text-sm font-bold hover:bg-orange-950 focus:ring focus:ring-orange-700 transition duration-200"
+                className="px-6 py-3 block text-center w-full sm:w-auto bg-orange-900 text-white text-sm font-semibold hover:bg-orange-950 focus:ring focus:ring-orange-700 transition duration-200"
                 href="/logos/SVGs.zip"
               >
                 Download SVGs
@@ -58,7 +58,7 @@ export default function Logos() {
             </div>
             {/* Secondary Logos */}
             <div className="flex justify-center mt-60 mb-6">
-              <div className="bg-green-400 py-1 px-2 text-white font-bold inline-block">
+              <div className="bg-green-400 py-1 px-2 text-white font-semibold inline-block">
                 Visuals
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function Logos() {
             </div>
             {/* Sub-brand logos */}
             <div className="flex justify-center mt-60 mb-6">
-              <div className="bg-green-400 py-1 px-2 text-white font-bold inline-block">
+              <div className="bg-green-400 py-1 px-2 text-white font-semibold inline-block">
                 Visuals
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function Logos() {
             </div>
             {/* Sizing and spacing */}
             <div className="flex justify-center mt-60 mb-6">
-              <div className="bg-green-400 py-1 px-2 text-white font-bold inline-block">
+              <div className="bg-green-400 py-1 px-2 text-white font-semibold inline-block">
                 Visuals
               </div>
             </div>

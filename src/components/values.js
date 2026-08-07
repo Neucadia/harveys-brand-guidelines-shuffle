@@ -6,7 +6,7 @@ export default function Values() {
       <>
         <div className="bg-orange-500 mx-auto w-full flex flex-col items-center relative">
           <div className="px-8 lg:px-0 py-20 lg:py-40 text-center">
-            <div className="mx-auto py-1 font-bold inline-block bg-white text-orange-500 absolute top-0 lg:mt-20 mt-10 px-2 w-32 -ml-16">
+            <div className="mx-auto py-1 font-semibold inline-block bg-white text-orange-500 absolute top-0 lg:mt-20 mt-10 px-2 w-32 -ml-16">
               Our values
             </div>
             <div className>

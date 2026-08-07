@@ -7,7 +7,7 @@ export default function Origins() {
         <section className="pt-20 bg-yellow-50">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
-              <div className="bg-yellow-100 py-1 px-2 font-bold inline-block">
+              <div className="bg-yellow-100 py-1 px-2 font-semibold inline-block">
                 Our origins
               </div>
             </div>

@@ -49,7 +49,7 @@ export default function CatalogueLayout() {
       <section className="py-20 bg-yellow-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-6">
-            <div className="bg-yellow-100 py-1 px-2 font-bold inline-block">
+            <div className="bg-yellow-100 py-1 px-2 font-semibold inline-block">
               Component Catalogue
             </div>
           </div>
@@ -63,7 +63,7 @@ export default function CatalogueLayout() {
           <div className="flex flex-wrap -m-4 mb-8">
             <div id="c-card" className="w-full lg:w-1/2 p-4">
               <div className="bg-white p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Card
                 </div>
                 <Card className="max-w-sm">
@@ -91,7 +91,7 @@ export default function CatalogueLayout() {
             <div className="w-full lg:w-1/2 p-4">
               <div className="bg-white p-12 h-full">
                 <div id="c-separator" className="mb-10">
-                  <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                     Separator
                   </div>
                   <p className="text-sm mb-4">Feed &amp; supplement lines</p>
@@ -105,7 +105,7 @@ export default function CatalogueLayout() {
                   </div>
                 </div>
                 <div id="c-skeleton">
-                  <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                     Skeleton
                   </div>
                   <div className="flex items-center gap-4">
@@ -120,7 +120,7 @@ export default function CatalogueLayout() {
             </div>
           </div>
           <div id="c-tabs" className="bg-white p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Tabs
             </div>
             <Tabs defaultValue="retail" className="max-w-md">
@@ -143,7 +143,7 @@ export default function CatalogueLayout() {
           <div className="flex flex-wrap -m-4">
             <div id="c-accordion" className="w-full lg:w-1/2 p-4">
               <div className="bg-white p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Accordion
                 </div>
                 <Accordion type="single" collapsible className="max-w-md">
@@ -173,7 +173,7 @@ export default function CatalogueLayout() {
             <div className="w-full lg:w-1/2 p-4">
               <div className="bg-white p-12 h-full">
                 <div id="c-collapsible" className="mb-10">
-                  <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                     Collapsible
                   </div>
                   <Collapsible className="max-w-md">
@@ -190,7 +190,7 @@ export default function CatalogueLayout() {
                   </Collapsible>
                 </div>
                 <div id="c-scroll-area">
-                  <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                     Scroll Area
                   </div>
                   <ScrollArea className="h-32 max-w-md border border-gray-200 p-4">
@@ -207,7 +207,7 @@ export default function CatalogueLayout() {
             </div>
           </div>
           <div id="c-resizable" className="bg-white p-12 mt-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Resizable
             </div>
             <ResizablePanelGroup

@@ -46,7 +46,7 @@ export default function Name() {
                     </svg>
                   </span>
                   <div>
-                    <h2 className="text-xl font-bold mb-3">We are Harvey's</h2>
+                    <h2 className="text-xl font-semibold mb-3">We are Harvey's</h2>
                     <p className="text-gray-500 max-w-sm">
                       Named after a former owner, the Harvey's moniker has been
                       around since 1945.
@@ -79,7 +79,7 @@ export default function Name() {
                     </svg>
                   </span>
                   <div>
-                    <h2 className="text-xl font-bold mb-3">
+                    <h2 className="text-xl font-semibold mb-3">
                       Always a capital ‘H’ and apostrophe ‘s’
                     </h2>
                     <p className="text-gray-500 max-w-sm">
@@ -110,7 +110,7 @@ export default function Name() {
                     </svg>
                   </span>
                   <div>
-                    <h2 className="text-xl font-bold mb-3">
+                    <h2 className="text-xl font-semibold mb-3">
                       No Harvey Milling
                     </h2>
                     <p className="text-gray-500 max-w-sm">

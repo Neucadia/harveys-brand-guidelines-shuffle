@@ -36,7 +36,7 @@ export default function UIElements() {
             <div className="max-w-xl mx-auto">
               <div className="p-12">
                 <div className="flex justify-center mb-6">
-                  <div className="bg-yellow-100 px-2 py-1 font-bold">
+                  <div className="bg-yellow-100 px-2 py-1 font-semibold">
                     UI Elements
                   </div>
                 </div>
@@ -82,12 +82,12 @@ export default function UIElements() {
                     </label>
                   </div>
                   <button
-                    className="mb-6 px-6 py-3 block text-center w-full bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
+                    className="mb-6 px-6 py-3 block text-center w-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
                     type="submit"
                   >
                     Button
                   </button>
-                  <button className="mb-6 px-6 py-3 block text-center w-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-400 focus:ring focus:ring-orange-300 transition duration-200">
+                  <button className="mb-6 px-6 py-3 block text-center w-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-400 focus:ring focus:ring-orange-300 transition duration-200">
                     Button
                   </button>
                   <div className="mb-6">
@@ -231,7 +231,7 @@ export default function UIElements() {
                             placeholder="Search"
                           />
                           <button
-                            className="px-6 py-3 bg-orange-500 hover:bg-orange-400 focus:ring focus:ring-orange-200 text-white text-sm font-bold transition duration-200"
+                            className="px-6 py-3 bg-orange-500 hover:bg-orange-400 focus:ring focus:ring-orange-200 text-white text-sm font-semibold transition duration-200"
                             type="submit"
                           >
                             <svg
@@ -347,7 +347,7 @@ export default function UIElements() {
                           <div className="w-full">
                             <div className="block">
                               <a
-                                className="px-6 py-3 block text-center bg-green-500 text-white text-sm font-bold w-full mb-6 hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
+                                className="px-6 py-3 block text-center bg-green-500 text-white text-sm font-semibold w-full mb-6 hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
                                 href="#"
                               >
                                 Try 14 Days Free Trial

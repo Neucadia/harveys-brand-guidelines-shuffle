@@ -54,7 +54,7 @@ const trialColumns = [
       <DataTableColumnHeader column={column} title="Variety" />
     ),
     cell: ({ row }) => (
-      <span className="font-bold">{row.getValue("variety")}</span>
+      <span className="font-semibold">{row.getValue("variety")}</span>
     ),
   },
   {
@@ -166,7 +166,7 @@ export default function CatalogueData() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-6">
-            <div className="bg-yellow-100 py-1 px-2 font-bold inline-block">
+            <div className="bg-yellow-100 py-1 px-2 font-semibold inline-block">
               Component Catalogue
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function CatalogueData() {
             light green for the competition.
           </p>
           <div id="c-table" className="bg-gray-50 p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Table
             </div>
             <div className="bg-white">
@@ -196,7 +196,7 @@ export default function CatalogueData() {
                 <TableBody>
                   {orders.map((order) => (
                     <TableRow key={order.id}>
-                      <TableCell className="font-bold">{order.id}</TableCell>
+                      <TableCell className="font-semibold">{order.id}</TableCell>
                       <TableCell>{order.product}</TableCell>
                       <TableCell>
                         <Badge
@@ -217,7 +217,7 @@ export default function CatalogueData() {
             </div>
           </div>
           <div id="c-data-table" className="bg-gray-50 p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Data Table
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -227,7 +227,7 @@ export default function CatalogueData() {
             <TrialsDataTable />
           </div>
           <div id="c-chart" className="bg-gray-50 p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Chart
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -255,7 +255,7 @@ export default function CatalogueData() {
           <div className="flex flex-wrap -m-4 mb-8">
             <div id="c-calendar" className="w-full lg:w-1/2 p-4">
               <div className="bg-gray-50 p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Calendar
                 </div>
                 <p className="text-gray-500 mb-6 max-w-md">
@@ -266,7 +266,7 @@ export default function CatalogueData() {
             </div>
             <div id="c-progress" className="w-full lg:w-1/2 p-4">
               <div className="bg-gray-50 p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Progress
                 </div>
                 <p className="text-gray-500 mb-6 max-w-md">
@@ -282,7 +282,7 @@ export default function CatalogueData() {
             </div>
           </div>
           <div id="c-alert" className="bg-gray-50 p-12">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Alert
             </div>
             <div className="max-w-xl">

@@ -7,7 +7,7 @@ export default function Illustrations() {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
-              <div className="bg-yellow-100 px-2 py-1 font-bold inline-block">
+              <div className="bg-yellow-100 px-2 py-1 font-semibold inline-block">
                 Illustrations
               </div>
             </div>
@@ -29,14 +29,14 @@ export default function Illustrations() {
                     src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/HMC01.svg"
                     alt
                   />
-                  <h3 className="text-green-500 text-xl font-bold text-center mb-2">
+                  <h3 className="text-green-500 text-xl font-semibold text-center mb-2">
                     Harvey primary
                   </h3>
                   <p className="text-gray-500 text-center mb-6">
                     Use for in-house retail and Garden Center materials.
                   </p>
                   <a
-                    className="px-6 py-3 text-center w-full sm:w-auto bg-orange-900 text-white text-sm font-bold hover:bg-orange-950 focus:ring focus:ring-orange-700 transition duration-200 hidden"
+                    className="px-6 py-3 text-center w-full sm:w-auto bg-orange-900 text-white text-sm font-semibold hover:bg-orange-950 focus:ring focus:ring-orange-700 transition duration-200 hidden"
                     href="#"
                   >
                     Download

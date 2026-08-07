@@ -5,7 +5,7 @@ export default function Architecture() {
     <section id="architecture" className="py-20 bg-yellow-500 ">
       <div className="container mx-auto px-4">
         <div className="flex justify-center mb-6">
-          <div className="bg-green-400 inline-block px-2 py-1 text-white font-bold">
+          <div className="bg-green-400 inline-block px-2 py-1 text-white font-semibold">
             Architecture
           </div>
         </div>

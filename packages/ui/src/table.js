@@ -29,7 +29,7 @@ TableBody.displayName = "TableBody";
 const TableFooter = React.forwardRef(({ className, ...props }, ref) => (
   <tfoot
     ref={ref}
-    className={cn("border-t border-hb-neutral-gray bg-hb-wheat-pale font-bold", className)}
+    className={cn("border-t border-hb-neutral-gray bg-hb-wheat-pale font-semibold", className)}
     {...props}
   />
 ));

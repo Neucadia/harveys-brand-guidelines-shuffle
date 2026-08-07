@@ -24,7 +24,7 @@ export default function CataloguePatterns() {
       <section id="patterns" className="py-20 bg-yellow-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-6">
-            <div className="bg-yellow-100 py-1 px-2 font-bold inline-block">
+            <div className="bg-yellow-100 py-1 px-2 font-semibold inline-block">
               Component Catalogue
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function CataloguePatterns() {
           </p>
 
           <div id="c-section-header" className="bg-white p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               SectionHeader + Band
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -66,7 +66,7 @@ export default function CataloguePatterns() {
           </div>
 
           <div id="c-status-chip" className="bg-white p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               StatusChip
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -108,7 +108,7 @@ export default function CataloguePatterns() {
           </div>
 
           <div id="c-kpi-tile" className="bg-white p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               KpiTile
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -129,7 +129,7 @@ export default function CataloguePatterns() {
           </div>
 
           <div id="c-monogram-loader" className="bg-white p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               MonogramLoader
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -145,7 +145,7 @@ export default function CataloguePatterns() {
           </div>
 
           <div id="c-wizard-progress" className="bg-white p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               WizardProgress
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -158,7 +158,7 @@ export default function CataloguePatterns() {
           </div>
 
           <div id="c-empty-state" className="bg-white p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               EmptyState
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -183,7 +183,7 @@ export default function CataloguePatterns() {
           </div>
 
           <div id="c-not-found" className="bg-white p-12">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               NotFound
             </div>
             <p className="text-gray-500 mb-6 max-w-md">

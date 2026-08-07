@@ -67,7 +67,7 @@ export default function CatalogueNavigation() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-6">
-            <div className="bg-yellow-100 py-1 px-2 font-bold inline-block">
+            <div className="bg-yellow-100 py-1 px-2 font-semibold inline-block">
               Component Catalogue
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function CatalogueNavigation() {
           <div className="flex flex-wrap -m-4 mb-8">
             <div id="c-breadcrumb" className="w-full lg:w-1/2 p-4">
               <div className="bg-gray-50 p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Breadcrumb
                 </div>
                 <Breadcrumb>
@@ -103,7 +103,7 @@ export default function CatalogueNavigation() {
             </div>
             <div id="c-pagination" className="w-full lg:w-1/2 p-4">
               <div className="bg-gray-50 p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Pagination
                 </div>
                 <Pagination>
@@ -136,7 +136,7 @@ export default function CatalogueNavigation() {
           <div className="flex flex-wrap -m-4 mb-8">
             <div id="c-dropdown-menu" className="w-full lg:w-1/2 p-4">
               <div className="bg-gray-50 p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Dropdown Menu
                 </div>
                 <DropdownMenu>
@@ -170,7 +170,7 @@ export default function CatalogueNavigation() {
             </div>
             <div id="c-command" className="w-full lg:w-1/2 p-4">
               <div className="bg-gray-50 p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Command
                 </div>
                 <Command className="max-w-md border border-gray-200">
@@ -209,7 +209,7 @@ export default function CatalogueNavigation() {
             </div>
           </div>
           <div id="c-sidebar" className="bg-gray-50 p-12">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Sidebar
             </div>
             <p className="text-gray-500 mb-6 max-w-md">

@@ -21,7 +21,12 @@ const GEMINI_COMMANDS =
   FETCH_SPEC +
   "\n" +
   'echo "@./docs/harveys/DESIGN.md" >> GEMINI.md\n' +
-  'echo "Harvey\'s brand: for any retheme follow docs/harveys/retheming.md end to end — tokens.md maps names to hex, decisions.md pre-resolves brand-vs-domain conflicts (Data Red, wheat naming, chip tiers, focus ring), dataviz.md carries the validated chart palettes, conventions.md has the usage recipes." >> GEMINI.md';
+  'echo "@./docs/harveys/retheming.md" >> GEMINI.md\n' +
+  'echo "@./docs/harveys/tokens.md" >> GEMINI.md\n' +
+  'echo "@./docs/harveys/decisions.md" >> GEMINI.md\n' +
+  'echo "@./docs/harveys/dataviz.md" >> GEMINI.md\n' +
+  'echo "@./docs/harveys/conventions.md" >> GEMINI.md\n' +
+  'echo "Harvey\'s brand: for any retheme follow docs/harveys/retheming.md end to end — docs/harveys/tokens.md maps names to hex, docs/harveys/decisions.md pre-resolves brand-vs-domain conflicts (Data Red, wheat naming, chip tiers, focus ring), docs/harveys/dataviz.md carries the validated chart palettes, docs/harveys/conventions.md has the usage recipes." >> GEMINI.md';
 
 const CODEX_COMMANDS = [
   "(",

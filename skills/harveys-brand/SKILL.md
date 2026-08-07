@@ -5,23 +5,25 @@ description: Apply the Harvey's brand when building or styling UI. Use when aske
 
 # Harvey's brand
 
-Read `${CLAUDE_PLUGIN_ROOT}/DESIGN.md` in full before styling anything — it is
-the canonical Design Spec: palette (with print equivalents), typography,
-component stylings, layout principles, and voice.
+Read the canonical Design Spec in full before styling anything: use
+`references/DESIGN.md` in a repo-scoped Codex install, or
+`${CLAUDE_PLUGIN_ROOT}/DESIGN.md` when this skill is loaded as a plugin. It
+covers the palette (with print equivalents), typography, component stylings,
+layout principles, and voice. Resolve all relative paths below from this
+`SKILL.md`.
 
 ## Pick your path
 
 **Quick styling touch** — one component or screen, in an app already on the
 brand: DESIGN.md + the non-negotiables below, exact hexes from
-`${CLAUDE_PLUGIN_ROOT}/skills/harveys-brand/references/tokens.md`, and the
-recipes in `${CLAUDE_PLUGIN_ROOT}/.design-sync/conventions.md`.
+`references/tokens.md`, and the recipes in `references/conventions.md` for a
+repo-scoped Codex install or `${CLAUDE_PLUGIN_ROOT}/.design-sync/conventions.md`
+when loaded as a plugin.
 
 **Full retheme** — or *any* change touching colors across multiple files: you
-MUST follow
-`${CLAUDE_PLUGIN_ROOT}/skills/harveys-brand/references/retheming.md` end to
-end. Do not write styling code before its Phase 0 (semantics) is settled and
-committed. A spec-only retheme produces re-skinned slop; the procedure is what
-makes the result look designed.
+MUST follow `references/retheming.md` end to end. Do not write styling code
+before its Phase 0 (semantics) is settled and committed. A spec-only retheme
+produces re-skinned slop; the procedure is what makes the result look designed.
 
 ## Retheme non-negotiables (the digest, if you read nothing else)
 
@@ -67,24 +69,27 @@ makes the result look designed.
   aggressive, pretentious, or rigidly corporate. In prose the name is
   "Harvey's"; all-caps belongs to logos and headlines only.
 
-## What ships where (all under `${CLAUDE_PLUGIN_ROOT}`)
+## What ships where
 
-- `DESIGN.md` — the canonical spec; read first, always.
-- `skills/harveys-brand/references/retheming.md` — the retheme procedure
+- `references/DESIGN.md` in a repo-scoped Codex install, or
+  `${CLAUDE_PLUGIN_ROOT}/DESIGN.md` in the plugin — the canonical spec; read
+  first, always.
+- `references/retheming.md` — the retheme procedure
   (phases, provable-codemod rules, gates, review).
-- `skills/harveys-brand/references/tokens.md` — the only sanctioned
+- `references/tokens.md` — the only sanctioned
   name → hex → Tailwind-class crosswalk, including this repo's naming traps.
-- `skills/harveys-brand/references/decisions.md` — pre-resolved
+- `references/decisions.md` — pre-resolved
   brand-vs-domain conflicts (Data Red, wheat naming, chip tiers, focus ring),
   shared glossary, and the framework for new conflicts.
-- `skills/harveys-brand/references/dataviz.md` — the validated chart
+- `references/dataviz.md` — the validated chart
   palettes (categorical/sequential/diverging), status-tint triads, and their
   usage rules; values mirrored in `DESIGN.md`'s `dataviz:` frontmatter.
-- `.design-sync/conventions.md` — usage rules and recipes: button intents,
-  flat-and-square, focus/selected/disabled/error states, seed-tag header.
-- `.design-sync/docs/*.md` — one-paragraph usage notes per component.
-- `src/components/ui/` — the hand-themed shadcn-style kit; a reference
-  implementation of the brand in code.
+- `references/conventions.md` in a repo-scoped Codex install, or
+  `${CLAUDE_PLUGIN_ROOT}/.design-sync/conventions.md` in the plugin — usage
+  rules and recipes: button intents, flat-and-square,
+  focus/selected/disabled/error states, seed-tag header.
+- Plugin installs also include `.design-sync/docs/*.md` and
+  `src/components/ui/` as component notes and reference implementations.
 
 ## Fonts
 

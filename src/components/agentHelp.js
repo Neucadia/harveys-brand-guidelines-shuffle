@@ -23,10 +23,30 @@ const GEMINI_COMMANDS =
   'echo "@./docs/harveys/DESIGN.md" >> GEMINI.md\n' +
   'echo "Harvey\'s brand: for any retheme follow docs/harveys/retheming.md end to end — tokens.md maps names to hex, decisions.md pre-resolves brand-vs-domain conflicts (Data Red, wheat naming, chip tiers, focus ring), dataviz.md carries the validated chart palettes, conventions.md has the usage recipes." >> GEMINI.md';
 
-const AGENTS_COMMANDS =
-  FETCH_SPEC +
-  "\n" +
-  'echo "Harvey\'s brand: read docs/harveys/DESIGN.md before styling UI. For a retheme, follow docs/harveys/retheming.md end to end (tokens.md = name-to-hex map, decisions.md = pre-resolved conflicts incl. Data Red and the wheat naming, dataviz.md = validated chart palettes, conventions.md = usage recipes)." >> AGENTS.md';
+const CODEX_COMMANDS = [
+  "(",
+  "set -e",
+  'HARVEYS_BRAND_TMP="$(mktemp -d)"',
+  'trap \'rm -r -- "$HARVEYS_BRAND_TMP"\' EXIT',
+  "git clone --depth 1 \\",
+  "  https://github.com/Neucadia/harveys-brand-guidelines-shuffle \\",
+  '  "$HARVEYS_BRAND_TMP/repo"',
+  "mkdir -p .agents/skills/harveys-brand/references",
+  "cp \"$HARVEYS_BRAND_TMP/repo/skills/harveys-brand/SKILL.md\" \\",
+  "  .agents/skills/harveys-brand/SKILL.md",
+  "cp \"$HARVEYS_BRAND_TMP/repo/DESIGN.md\" \\",
+  "  .agents/skills/harveys-brand/references/DESIGN.md",
+  "cp \"$HARVEYS_BRAND_TMP/repo\"/skills/harveys-brand/references/*.md \\",
+  "  .agents/skills/harveys-brand/references/",
+  "cp \"$HARVEYS_BRAND_TMP/repo/.design-sync/conventions.md\" \\",
+  "  .agents/skills/harveys-brand/references/conventions.md",
+  "touch AGENTS.md",
+  "grep -Fq 'Use `$harveys-brand`' AGENTS.md || \\",
+  "  printf '\\n## Harvey’s brand\\n\\n- Use `$harveys-brand` for any UI styling or retheme. Follow its full retheme workflow for multi-file color changes.\\n' >> AGENTS.md",
+  'rm -r -- "$HARVEYS_BRAND_TMP"',
+  "trap - EXIT",
+  ")",
+].join("\n");
 
 const RETHEME_PROMPT = [
   "Retheme this app to the Harvey's brand. Follow the Harvey's retheming",
@@ -104,8 +124,9 @@ export default function AgentHelp() {
             />
             <CommandBlock
               vendor="OpenAI Codex"
-              note="Same fetch, plus a pointer in AGENTS.md — Cursor and GitHub Copilot read the same file."
-              command={AGENTS_COMMANDS}
+              tag="Recommended for Codex"
+              note="Install the full workflow as a repo-scoped Codex skill and add a durable root rule in AGENTS.md. Commit both paths, start a fresh Codex session, then use $harveys-brand with the prompt below."
+              command={CODEX_COMMANDS}
             />
             <CommandBlock
               vendor="The prompt"
@@ -115,19 +136,23 @@ export default function AgentHelp() {
             <div className="flex flex-wrap -m-4 mt-0">
               <div className="w-full p-4">
                 <h3 className="font-heading text-base font-bold uppercase tracking-widest text-white mb-2">
-                  Using the plugin
+                  Using the brand workflow
                 </h3>
                 <p className="text-green-100">
-                  Nothing to invoke by hand: once installed, the
-                  harveys-brand skill loads whenever styling comes up — "make
-                  this on-brand", "build a page", or the retheme prompt above.
-                  Quick touches read DESIGN.md and the token crosswalk;
-                  anything that recolors across files follows the full
-                  retheming procedure, gates included. The install is
-                  project-scoped — it writes{" "}
+                  Once installed, the harveys-brand skill loads whenever
+                  styling comes up — "make this on-brand", "build a page", or
+                  the retheme prompt above. Quick touches read DESIGN.md and
+                  the token crosswalk; anything that recolors across files
+                  follows the full retheming procedure, gates included. For
+                  Codex, commit <code className="font-mono">AGENTS.md</code>{" "}
+                  and{" "}
+                  <code className="font-mono">
+                    .agents/skills/harveys-brand/
+                  </code>
+                  . The Claude install writes{" "}
                   <code className="font-mono">.claude/settings.json</code>, so
-                  commit that file and every teammate gets the same binding
-                  instead of a machine-local one.
+                  commit that file too; every teammate then gets the same
+                  project-scoped workflow instead of a machine-local one.
                 </p>
               </div>
               <div className="w-full md:w-1/2 p-4">

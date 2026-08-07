@@ -25,7 +25,7 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
         table: "w-full border-collapse space-y-1",
         head_row: "flex",
         head_cell:
-          "w-9 font-heading text-xs font-bold uppercase tracking-widest text-gray-500",
+          "w-9 font-heading text-xs font-bold uppercase tracking-smallcaps text-gray-500",
         row: "flex w-full mt-2",
         cell: "h-9 w-9 text-center text-sm p-0 relative focus-within:relative focus-within:z-20",
         day: cn(

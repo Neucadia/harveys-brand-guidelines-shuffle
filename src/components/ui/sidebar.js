@@ -359,7 +359,7 @@ const SidebarGroupLabel = React.forwardRef(
         ref={ref}
         data-sidebar="group-label"
         className={cn(
-          "flex h-8 shrink-0 items-center px-2 font-heading text-xs font-bold uppercase tracking-widest text-gray-500 outline-none transition-[margin,opacity] duration-200 ease-linear focus-visible:ring-2 focus-visible:ring-green-300 group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0",
+          "flex h-8 shrink-0 items-center px-2 font-heading text-xs font-bold uppercase tracking-smallcaps text-gray-500 outline-none transition-[margin,opacity] duration-200 ease-linear focus-visible:ring-2 focus-visible:ring-green-300 group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0",
           className
         )}
         {...props}
@@ -520,7 +520,7 @@ const SidebarMenuBadge = React.forwardRef(({ className, ...props }, ref) => (
     ref={ref}
     data-sidebar="menu-badge"
     className={cn(
-      "pointer-events-none absolute right-1 flex h-5 min-w-5 select-none items-center justify-center px-1 font-heading text-xs font-bold uppercase tracking-widest text-green-500",
+      "pointer-events-none absolute right-1 flex h-5 min-w-5 select-none items-center justify-center px-1 font-heading text-xs font-bold uppercase tracking-smallcaps text-green-500",
       "peer-hover/menu-button:text-green-500 peer-data-[active=true]/menu-button:text-green-500",
       "peer-data-[size=sm]/menu-button:top-1",
       "peer-data-[size=default]/menu-button:top-1.5",

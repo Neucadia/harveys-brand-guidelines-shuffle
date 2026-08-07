@@ -3866,8 +3866,8 @@ video {
   text-transform: uppercase;
 }
 
-.\[\&_\[cmdk-group-heading\]\]\:tracking-widest [cmdk-group-heading] {
-  letter-spacing: 0.1em;
+.\[\&_\[cmdk-group-heading\]\]\:tracking-smallcaps [cmdk-group-heading] {
+  letter-spacing: 0.08em;
 }
 
 .\[\&_\[cmdk-group-heading\]\]\:text-gray-500 [cmdk-group-heading] {

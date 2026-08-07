@@ -22,7 +22,7 @@ function DataTableColumnHeader({ column, title, className }) {
           <Button
             variant="ghost"
             size="sm"
-            className="-ml-3 h-8 text-xs font-heading font-bold uppercase tracking-widest text-gray-500 hover:text-green-500 data-[state=open]:bg-yellow-50"
+            className="-ml-3 h-8 text-xs font-heading font-bold uppercase tracking-smallcaps text-gray-500 hover:text-green-500 data-[state=open]:bg-yellow-50"
           >
             <span>{title}</span>
             {column.getIsSorted() === "desc" ? (

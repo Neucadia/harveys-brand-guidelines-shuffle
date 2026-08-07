@@ -157,6 +157,8 @@ export default function AgentHelp() {
                   Codex snapshots refresh by re-running the fetch; vendored
                   components refresh with{" "}
                   <code className="font-mono">brand-sync.mjs --sync</code>.
+                  Full lifecycle docs — install, use, update, publish —
+                  live at <code className="font-mono">docs/plugin.md</code>.
                 </p>
               </div>
               <div className="w-full md:w-1/2 p-4">

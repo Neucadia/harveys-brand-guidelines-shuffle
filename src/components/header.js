@@ -22,7 +22,7 @@ export default function Header() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2">
+                <div className="ml-auto mr-8 2xl:ml-0 2xl:mr-0 2xl:absolute 2xl:left-1/2 2xl:transform 2xl:-translate-x-1/2">
                   <div className="flex flex-wrap items-center">
                     <div className="w-auto hidden xl:block">
                       <ul className="flex items-center">

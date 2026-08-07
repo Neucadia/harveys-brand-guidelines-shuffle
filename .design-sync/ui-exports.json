@@ -261,13 +261,17 @@
     ],
     "monogram-loader": [
       "MonogramLoader",
-      "MonogramLoaderMark"
+      "MonogramLoaderMark",
+      "MonogramNegativeMark"
     ],
     "wizard-progress": [
       "WizardProgress"
     ],
     "empty-state": [
       "EmptyState"
+    ],
+    "not-found": [
+      "NotFound"
     ]
   }
 }

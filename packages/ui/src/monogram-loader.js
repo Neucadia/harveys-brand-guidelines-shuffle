@@ -5,7 +5,10 @@ import { cn } from "./utils";
 // ring. Self-contained — keyframes live in the Tailwind config
 // (monogram-spin / monogram-breathe), not in a global stylesheet.
 // rounded-full is sanctioned here: the ring is a genuinely circular
-// primitive.
+// primitive. MonogramNegativeMark is the static negative lockup — the
+// solid egg with the H knocked out (the shared path from the
+// negative-monogram assets; the H shows whatever sits behind). Fill via
+// currentColor: text-hb-primary gives the green negative monogram.
 const sizeClasses = {
   button: "h-4 w-4",
   sm: "h-7 w-7",
@@ -13,11 +16,11 @@ const sizeClasses = {
   lg: "h-20 w-20",
 };
 
-function HarveysMonogram({ className }) {
+function MonogramNegativeMark({ className }) {
   return (
     <svg
       aria-hidden="true"
-      className={cn("relative block h-[68%] w-auto fill-current", className)}
+      className={cn("block fill-current", className)}
       focusable="false"
       viewBox="0 0 170.8 208.29"
       xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +44,7 @@ const MonogramLoaderMark = React.forwardRef(
     >
       <span className="absolute inset-0 rounded-full border-2 border-current opacity-20" />
       <span className="absolute inset-0 rounded-full border-2 border-transparent border-r-current border-t-current animate-monogram-spin motion-reduce:animate-none" />
-      <HarveysMonogram className="animate-monogram-breathe motion-reduce:animate-none" />
+      <MonogramNegativeMark className="relative h-[68%] w-auto animate-monogram-breathe motion-reduce:animate-none" />
     </span>
   )
 );
@@ -77,4 +80,4 @@ const MonogramLoader = React.forwardRef(
 );
 MonogramLoader.displayName = "MonogramLoader";
 
-export { MonogramLoader, MonogramLoaderMark };
+export { MonogramLoader, MonogramLoaderMark, MonogramNegativeMark };

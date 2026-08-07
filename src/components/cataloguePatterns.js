@@ -8,6 +8,7 @@ import { KpiTile } from "./ui/kpi-tile";
 import { MonogramLoader } from "./ui/monogram-loader";
 import { WizardProgress } from "./ui/wizard-progress";
 import { EmptyState } from "./ui/empty-state";
+import { NotFound } from "./ui/not-found";
 import {
   Table,
   TableBody,
@@ -156,7 +157,7 @@ export default function CataloguePatterns() {
             </div>
           </div>
 
-          <div id="c-empty-state" className="bg-white p-12">
+          <div id="c-empty-state" className="bg-white p-12 mb-8">
             <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
               EmptyState
             </div>
@@ -177,6 +178,25 @@ export default function CataloguePatterns() {
                 title="Data source offline"
                 description="We couldn't reach the price feed. Your last synced numbers are shown elsewhere."
                 action={<Button variant="destructive">Retry connection</Button>}
+              />
+            </div>
+          </div>
+
+          <div id="c-not-found" className="bg-white p-12">
+            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+              NotFound
+            </div>
+            <p className="text-gray-500 mb-6 max-w-md">
+              One 404 for every product: the green negative monogram
+              (solid deep forest, H knocked out), code chip, display headline,
+              and a green way home. A missing page is wayfinding, not a
+              failure — no ember, no red. Copy is per product; the shape is
+              shared.
+            </p>
+            <div className="border border-gray-200">
+              <NotFound
+                className="min-h-0 py-16"
+                actions={<Button variant="outline">Browse products</Button>}
               />
             </div>
           </div>

@@ -117,6 +117,7 @@
     "ChartContainer": "src/components/ui/chart.js",
     "Form": "src/components/ui/form.js",
     "DataTableColumnHeader": "src/components/ui/data-table-column-header.js",
-    "DataTablePagination": "src/components/ui/data-table-pagination.js"
+    "DataTablePagination": "src/components/ui/data-table-pagination.js",
+    "NotFound": "src/components/ui/not-found.js"
   }
 }

@@ -87,7 +87,7 @@ export default function UIElements() {
                   >
                     Button
                   </button>
-                  <button className="mb-6 px-6 py-3 block text-center w-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-600 focus:ring focus:ring-orange-300 transition duration-200">
+                  <button className="mb-6 px-6 py-3 block text-center w-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-400 focus:ring focus:ring-orange-300 transition duration-200">
                     Button
                   </button>
                   <div className="mb-6">

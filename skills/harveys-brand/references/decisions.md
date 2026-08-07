@@ -24,6 +24,42 @@ error, a failed state, a destructive button is ember, never red.
   costs the reader legibility.
 - *Neutral ink for negatives* — loses the signed-value signal entirely.
 
+## DR-2 — Wheat naming: bare "wheat" is #D8C7A2
+
+**Status: accepted (2026-08-06).**
+
+Consumers had four names for the wheat family, including one repo calling
+`#F5F1E7` "cream". **Decision:** bare **`wheat` = `#D8C7A2`**; lighter shades
+take modifiers — `wheat-light` = `#E7DDC6`, `wheat-pale` = `#F5F1E7`.
+`#F5F1E7` always carries a wheat name, never "cream". **`cream` = `#F6ECEB`**
+only, a primarily-print surface. `sand` = `#ECE5D3` completes the surface
+family.
+
+## DR-3 — Status runs on two chip tiers
+
+**Status: accepted (2026-08-06).**
+
+Solid brand chips (`#60BF71` + deep green, `#E8773E` + white) fail small-text
+contrast. **Decision:** solids are reserved for ≥18px badge text; table-scale
+statuses use the validated tint triads (success `#ECF7EE`/`#296533`/`#ABCFAE`,
+warning `#FBEDE4`/`#A84413`/`#EEC4A9`, info `#E7EEF5`/`#2A5B88`/`#AEC7E0`).
+In the kit these are two components: `Badge` (solid) and `StatusChip` (tint) —
+tints never become Badge variants. The `info` slate `#3D76A9` is sanctioned
+for chips and dataviz slot 6 only, never as a UI accent.
+
+## DR-4 — Focus ring: solid Sage #52BA64
+
+**Status: accepted (2026-08-06).**
+
+Canon's docs said `#52BA64` while the kit and two consumers shipped
+`#296533`. **Decision:** the documented value wins — every interactive
+control focuses with a **2px solid `#52BA64` ring at 2px offset**; shipped
+`#296533` rings migrate. Ember-family controls may instead use the rationed
+soft ember ring `rgba(232,118,60,.35)`.
+
+*(The full 120-decision record behind DR-2..4 lives in
+`docs/consistency/DECISIONS.md` in the brand-guidelines repo.)*
+
 ## Shared glossary
 
 Use these names in ADRs, commit messages, and reviews.
@@ -33,8 +69,10 @@ Use these names in ADRs, commit messages, and reviews.
 - **Ember** — the brand orange family (`#E56625`, dark `#C05017`); carries all
   UI warnings, errors, and destructive intents, plus rationed secondary
   emphasis. There is no red in UI chrome. *Avoid:* "amber", "warning-yellow".
-- **Wheat** — the cream/neutral surface family (`#F5F1E7` / `#E7DDC6` /
-  `#D8C7A2`) for tinted panels and header bands. *Avoid:* "beige", "tan".
+- **Wheat** — bare "wheat" is `#D8C7A2` (DR-2); the surface family is
+  `wheat-pale #F5F1E7` / `wheat-light #E7DDC6` / `wheat #D8C7A2` (+ `sand
+  #ECE5D3`) for tinted panels and header bands. *Avoid:* "beige", "tan", and
+  "cream" for anything but `#F6ECEB`.
 - **Seed-tag header** — the signature table-header treatment: a wheat band
   with small, bold, uppercase, widely-tracked column labels.
 - **Display face** — Chakra Petch bold, always uppercase and widely tracked.

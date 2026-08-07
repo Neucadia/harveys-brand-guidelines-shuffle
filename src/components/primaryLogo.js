@@ -257,7 +257,7 @@ const PrimaryLogo = () => {
             Download PNG
           </a>
           <a
-            className="px-6 py-3 block text-center w-full sm:w-auto bg-orange-900 text-white text-sm font-bold hover:bg-orange-800 focus:ring focus:ring-orange-700 transition duration-200"
+            className="px-6 py-3 block text-center w-full sm:w-auto bg-orange-900 text-white text-sm font-bold hover:bg-orange-950 focus:ring focus:ring-orange-700 transition duration-200"
             href="/logos/primary-SVGs.zip"
           >
             Download SVG

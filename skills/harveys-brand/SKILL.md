@@ -75,8 +75,11 @@ makes the result look designed.
 - `skills/harveys-brand/references/tokens.md` — the only sanctioned
   name → hex → Tailwind-class crosswalk, including this repo's naming traps.
 - `skills/harveys-brand/references/decisions.md` — pre-resolved
-  brand-vs-domain conflicts (Data Red), shared glossary, and the framework
-  for new conflicts.
+  brand-vs-domain conflicts (Data Red, wheat naming, chip tiers, focus ring),
+  shared glossary, and the framework for new conflicts.
+- `skills/harveys-brand/references/dataviz.md` — the validated chart
+  palettes (categorical/sequential/diverging), status-tint triads, and their
+  usage rules; values mirrored in `DESIGN.md`'s `dataviz:` frontmatter.
 - `.design-sync/conventions.md` — usage rules and recipes: button intents,
   flat-and-square, focus/selected/disabled/error states, seed-tag header.
 - `.design-sync/docs/*.md` — one-paragraph usage notes per component.

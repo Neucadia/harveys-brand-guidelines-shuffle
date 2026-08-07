@@ -150,9 +150,11 @@ export default function AgentHelp() {
                   Want the components too?
                 </h3>
                 <p className="text-green-100">
-                  The React UI kit ships separately through design-sync — find
-                  Harvey's in Claude Design, or start from
-                  .design-sync/conventions.md in this repo.
+                  The React UI kit lives in packages/ui, styled by the
+                  semantic tokens in packages/tokens — vendor both with
+                  packages/sync/brand-sync.mjs (recorded provenance, drift
+                  checks). Previews stay in Claude Design via design-sync;
+                  usage rules in .design-sync/conventions.md.
                 </p>
               </div>
             </div>

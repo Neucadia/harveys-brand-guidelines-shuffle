@@ -2655,8 +2655,8 @@ video {
   line-height: 1.25rem;
 }
 
-.file\:font-bold::file-selector-button {
-  font-weight: 700;
+.file\:font-semibold::file-selector-button {
+  font-weight: 600;
 }
 
 .placeholder\:text-hb-neutral-gray::placeholder {
@@ -2927,8 +2927,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.group.toast .group-\[\.toast\]\:font-bold {
-  font-weight: 700;
+.group.toast .group-\[\.toast\]\:font-semibold {
+  font-weight: 600;
 }
 
 .group.toast .group-\[\.toast\]\:text-hb-text-secondary {
@@ -3134,8 +3134,8 @@ video {
   background-color: var(--hb-sand, #ece5d3);
 }
 
-.data-\[active\=true\]\:font-bold[data-active="true"] {
-  font-weight: 700;
+.data-\[active\=true\]\:font-semibold[data-active="true"] {
+  font-weight: 600;
 }
 
 .data-\[active\=true\]\:text-hb-primary-interactive[data-active="true"] {

@@ -79,7 +79,9 @@ Use these names in ADRs, commit messages, and reviews.
   Appears only as page titles, card titles, table headers, status chips, and
   KPI numerals. *Avoid:* body copy or dense table figures.
 - **Body face** — TT Commons Pro (sanctioned fallback: Open Sans). Everything
-  the display face doesn't own, including in-table figures.
+  the display face doesn't own, including in-table figures. **The family tops
+  out at DemiBold (600)** — body-face bold is always 600 (`font-semibold`),
+  never 700; 700 is Chakra-only.
 - **KPI numeral** — a large headline metric set in the display face.
 - **Harvey's** — in prose, always capital H + apostrophe-s. ALL-CAPS belongs
   to logos and headlines only. *Avoid:* HARVEY'S in prose, "Harvey Milling"

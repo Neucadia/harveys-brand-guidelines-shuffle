@@ -7,7 +7,7 @@ export default function Writing() {
         <section id="writing" className="py-20 mb-48 bg-yellow-500">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
-              <div className="bg-yellow-100 py-1 px-2 font-bold inline-block">
+              <div className="bg-yellow-100 py-1 px-2 font-semibold inline-block">
                 Writing
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function Writing() {
         </section>
         <section className="pb-20">
           <div className="container mx-auto px-4">
-            <div className="bg-yellow-100 px-2 py-1 font-bold inline-block mb-6">
+            <div className="bg-yellow-100 px-2 py-1 font-semibold inline-block mb-6">
               Tone
             </div>
             <div className="flex flex-wrap items-center -m-4 mb-12">
@@ -320,7 +320,7 @@ export default function Writing() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center -m-4">
               <div className="w-full lg:w-1/2 p-4">
-                <div className="bg-yellow-500 px-2 py-1 mb-6 text-xs font-bold inline-block">
+                <div className="bg-yellow-500 px-2 py-1 mb-6 text-xs font-semibold inline-block">
                   Email campaigns
                 </div>
                 <h1 className="font-heading text-4xl font-bold mb-6 max-w-md uppercase tracking-widest">
@@ -334,7 +334,7 @@ export default function Writing() {
                 </p>
                 <p className="text-gray-500 max-w-md mb-6">
                   We are simple and direct. Not
-                  <span className="font-bold"> overly wordy</span> . We let the
+                  <span className="font-semibold"> overly wordy</span> . We let the
                   products and images speak for themselves.
                 </p>
               </div>
@@ -342,7 +342,7 @@ export default function Writing() {
                 <div className="bg-gray-50 p-12">
                   <div className="flex gap-6 mb-8">
                     <div>
-                      <h2 className="text-xl font-bold mb-3">
+                      <h2 className="text-xl font-semibold mb-3">
                         Product Highlights
                       </h2>
                       <p className="text-gray-500">
@@ -377,7 +377,7 @@ export default function Writing() {
                   </div>
                   <div className="flex gap-6 mb-8">
                     <div>
-                      <h2 className="text-xl font-bold mb-3">
+                      <h2 className="text-xl font-semibold mb-3">
                         Sales &amp; Events
                       </h2>
                       <p className="text-gray-500">
@@ -453,7 +453,7 @@ export default function Writing() {
                   the Garden Center.
                 </p>
                 <a
-                  className="inline-block text-green-500 hover:text-green-600 transition duration-200 font-bold"
+                  className="inline-block text-green-500 hover:text-green-600 transition duration-200 font-semibold"
                   href="#"
                 >
                   copy

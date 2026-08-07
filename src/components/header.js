@@ -199,7 +199,7 @@ export default function Header() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -m-4">
               <div className="w-full lg:w-1/2 p-4">
-                <div className="inline-block px-2 py-1 font-bold mb-6 bg-orange-500 text-white">
+                <div className="inline-block px-2 py-1 font-semibold mb-6 bg-orange-500 text-white">
                   Harvey's Rebrand
                 </div>
                 <h1 className="font-heading text-4xl font-bold mb-6 max-w-sm tracking-widest uppercase">

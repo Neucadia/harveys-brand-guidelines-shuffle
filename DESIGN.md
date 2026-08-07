@@ -114,7 +114,7 @@ typography:
   label:
     fontFamily: TT Commons Pro
     fontSize: 14px
-    fontWeight: "700"
+    fontWeight: "600" # TT Commons Pro has no Bold (700) — DemiBold 600 is the ceiling
     lineHeight: "1.25"
     letterSpacing: "0"
   body-fallback:
@@ -242,9 +242,12 @@ Two brand typefaces, each with a licensed-font-unavailable fallback:
   tracking (140/1000 em ≈ `0.1em` on the web) and tight 1.2727 line-height.
   Its squared, semi-technical letterforms are the single most recognizable
   brand gesture.
-- **TT Commons Pro** (Adobe Typekit) — the workhorse. **DemiBold (500)** at
+- **TT Commons Pro** (Adobe Typekit) — the workhorse. **Medium (500)** at
   1.75 line-height for subheads, long headlines, and lead copy 18pt and up;
   **Regular (400)** at 1.5 line-height for body, long text, and UI below 18pt.
+  **The family tops out at DemiBold (600)** — there is no Bold (700), so
+  body-face emphasis is always 600 (`font-semibold`), never 700; 700 belongs
+  to Chakra Petch alone.
   "A versatile sans serif that bestows a dusting of elegance and authority."
 - **Fallbacks** (email, Google products, anywhere fonts can't embed):
   **Catamaran Bold (800)**, tracking 160/1000 em, for headlines;
@@ -274,7 +277,7 @@ and headlines only. "Harvey Milling" is retired from public branding.
 ### Buttons
 
 Perfectly square — **no border radius**. Padding `24px × 12px`, small bold
-label (0.875rem, TT Commons Pro Bold). Primary: Field Green `#296533` fill,
+label (0.875rem, TT Commons Pro DemiBold 600). Primary: Field Green `#296533` fill,
 white text, darker green hover. Secondary: Ember Orange `#E56625` fill, white
 text, `#E8763C` hover. All buttons: the 2px Sage `#52BA64` focus ring with 2px
 offset (ember controls may use the soft ember ring), 200ms ease transitions on

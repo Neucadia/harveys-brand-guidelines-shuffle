@@ -420,7 +420,7 @@ const SidebarMenuItem = React.forwardRef(({ className, ...props }, ref) => (
 SidebarMenuItem.displayName = "SidebarMenuItem";
 
 const sidebarMenuButtonVariants = cva(
-  "peer/menu-button flex w-full items-center gap-2 overflow-hidden p-2 text-left text-sm outline-none transition duration-200 hover:bg-hb-wheat hover:text-hb-primary-interactive focus-visible:ring-2 focus-visible:ring-hb-focus-ring active:bg-hb-wheat disabled:pointer-events-none disabled:opacity-50 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-white data-[active=true]:font-bold data-[active=true]:text-hb-primary-interactive data-[state=open]:hover:bg-hb-wheat data-[state=open]:hover:text-hb-primary-interactive group-data-[collapsible=icon]:!size-8 group-data-[collapsible=icon]:!p-2 [&>span:last-child]:truncate [&>svg]:h-4 [&>svg]:w-4 [&>svg]:shrink-0",
+  "peer/menu-button flex w-full items-center gap-2 overflow-hidden p-2 text-left text-sm outline-none transition duration-200 hover:bg-hb-wheat hover:text-hb-primary-interactive focus-visible:ring-2 focus-visible:ring-hb-focus-ring active:bg-hb-wheat disabled:pointer-events-none disabled:opacity-50 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-white data-[active=true]:font-semibold data-[active=true]:text-hb-primary-interactive data-[state=open]:hover:bg-hb-wheat data-[state=open]:hover:text-hb-primary-interactive group-data-[collapsible=icon]:!size-8 group-data-[collapsible=icon]:!p-2 [&>span:last-child]:truncate [&>svg]:h-4 [&>svg]:w-4 [&>svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -588,7 +588,7 @@ const SidebarMenuSubButton = React.forwardRef(
         data-active={isActive}
         className={cn(
           "flex h-7 min-w-0 -translate-x-px items-center gap-2 overflow-hidden px-2 text-hb-text-tertiary outline-none transition duration-200 hover:bg-hb-wheat hover:text-hb-primary-interactive focus-visible:ring-2 focus-visible:ring-hb-focus-ring active:bg-hb-wheat disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&>span:last-child]:truncate [&>svg]:h-4 [&>svg]:w-4 [&>svg]:shrink-0 [&>svg]:text-hb-primary-interactive",
-          "data-[active=true]:bg-white data-[active=true]:font-bold data-[active=true]:text-hb-primary-interactive",
+          "data-[active=true]:bg-white data-[active=true]:font-semibold data-[active=true]:text-hb-primary-interactive",
           size === "sm" && "text-xs",
           size === "md" && "text-sm",
           "group-data-[collapsible=icon]:hidden",

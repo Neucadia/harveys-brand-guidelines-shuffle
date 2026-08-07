@@ -75,7 +75,7 @@ function CommandBlock({ vendor, tag, note, command }) {
           {vendor}
         </h2>
         {tag && (
-          <div className="bg-yellow-100 py-1 px-2 text-xs font-bold inline-block">
+          <div className="bg-yellow-100 py-1 px-2 text-xs font-semibold inline-block">
             {tag}
           </div>
         )}
@@ -103,7 +103,7 @@ export default function AgentHelp() {
       <section id="agent-help" className="py-20 bg-green-700">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-6">
-            <div className="bg-green-400 py-1 px-2 text-white font-bold inline-block">
+            <div className="bg-green-400 py-1 px-2 text-white font-semibold inline-block">
               Agent help
             </div>
           </div>

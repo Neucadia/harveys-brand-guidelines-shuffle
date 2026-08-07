@@ -85,7 +85,7 @@ export default function CatalogueForms() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-6">
-            <div className="bg-yellow-100 py-1 px-2 font-bold inline-block">
+            <div className="bg-yellow-100 py-1 px-2 font-semibold inline-block">
               Component Catalogue
             </div>
           </div>
@@ -97,7 +97,7 @@ export default function CatalogueForms() {
             green ring; validation messages are ember, never red.
           </p>
           <div id="c-input" className="bg-gray-50 p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Input &amp; Label
             </div>
             <div className="max-w-md">
@@ -117,7 +117,7 @@ export default function CatalogueForms() {
             </div>
           </div>
           <div id="c-textarea" className="bg-gray-50 p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Textarea
             </div>
             <div className="max-w-md">
@@ -134,7 +134,7 @@ export default function CatalogueForms() {
           <div className="flex flex-wrap -m-4 mb-8">
             <div id="c-checkbox" className="w-full lg:w-1/2 p-4">
               <div className="bg-gray-50 p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Checkbox &amp; Switch
                 </div>
                 <div className="flex items-center gap-3 mb-6">
@@ -153,7 +153,7 @@ export default function CatalogueForms() {
             </div>
             <div id="c-select" className="w-full lg:w-1/2 p-4">
               <div className="bg-gray-50 p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Select
                 </div>
                 <div className="max-w-md">
@@ -175,7 +175,7 @@ export default function CatalogueForms() {
             </div>
           </div>
           <div id="c-slider" className="bg-gray-50 p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Slider
             </div>
             <div className="max-w-md">
@@ -184,7 +184,7 @@ export default function CatalogueForms() {
             </div>
           </div>
           <div id="c-form" className="bg-gray-50 p-12">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Form
             </div>
             <p className="text-gray-500 mb-6 max-w-md">

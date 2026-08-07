@@ -1,6 +1,8 @@
 {
   "name": "harveys-brand",
   "description": "Harvey's brand design spec + retheme procedure for AI agents — palette, typography, component stylings, layout, voice, and a provable retheming method.",
-  "version": "1.2.0",
-  "author": { "name": "Neucadia" }
-}
+  "version": "1.2.1",
+  "author": {
+    "name": "Neucadia"
+  }
+}\n

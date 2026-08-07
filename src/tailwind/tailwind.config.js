@@ -975,6 +975,10 @@ module.exports = {
         },
       },
     },
+    // Semantic hb-* utilities (var + baked hex fallback) — generated from
+    // DESIGN.md by packages/tokens/build.mjs. The kit compiles against
+    // these; the private scale above stays for the brand sections.
+    require("../../packages/tokens/dist/tailwind-preset.cjs"),
   ],
   theme: {
     extend: {

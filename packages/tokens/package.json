@@ -1,0 +1,17 @@
+{
+  "name": "@harveys/tokens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Harvey's semantic design tokens, generated from DESIGN.md's frontmatter. Consumers vendor from dist/ via brand-sync — this package is not published.",
+  "type": "module",
+  "exports": {
+    ".": "./dist/tokens.mjs",
+    "./tokens.css": "./dist/tokens.css",
+    "./tokens.json": "./dist/tokens.json",
+    "./tailwind-preset": "./dist/tailwind-preset.cjs"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tokens.test.mjs"
+  }
+}

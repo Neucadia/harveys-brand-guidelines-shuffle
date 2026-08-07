@@ -3,7 +3,7 @@
   "shape": "package",
   "pkg": "app",
   "globalName": "HarveysBrand",
-  "buildCmd": "npm run css && node .design-sync/build-lib.mjs",
+  "buildCmd": "node scripts/sync-ui.mjs && npm run css && node .design-sync/build-lib.mjs",
   "entry": ".design-sync/.cache/lib/ds-entry.mjs",
   "cssEntry": ".design-sync/.cache/lib/harveys.css",
   "docsDir": ".design-sync/docs",

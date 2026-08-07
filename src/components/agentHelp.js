@@ -7,6 +7,7 @@ const FETCH_SPEC = [
   "  /tmp/harveys-brand/skills/harveys-brand/references/retheming.md \\",
   "  /tmp/harveys-brand/skills/harveys-brand/references/tokens.md \\",
   "  /tmp/harveys-brand/skills/harveys-brand/references/decisions.md \\",
+  "  /tmp/harveys-brand/skills/harveys-brand/references/dataviz.md \\",
   "  /tmp/harveys-brand/.design-sync/conventions.md docs/harveys/",
   "rm -rf /tmp/harveys-brand",
 ].join("\n");
@@ -20,12 +21,12 @@ const GEMINI_COMMANDS =
   FETCH_SPEC +
   "\n" +
   'echo "@./docs/harveys/DESIGN.md" >> GEMINI.md\n' +
-  'echo "Harvey\'s brand: for any retheme follow docs/harveys/retheming.md end to end — tokens.md maps names to hex, decisions.md pre-resolves brand-vs-domain conflicts, conventions.md has the usage recipes." >> GEMINI.md';
+  'echo "Harvey\'s brand: for any retheme follow docs/harveys/retheming.md end to end — tokens.md maps names to hex, decisions.md pre-resolves brand-vs-domain conflicts (Data Red, wheat naming, chip tiers, focus ring), dataviz.md carries the validated chart palettes, conventions.md has the usage recipes." >> GEMINI.md';
 
 const AGENTS_COMMANDS =
   FETCH_SPEC +
   "\n" +
-  'echo "Harvey\'s brand: read docs/harveys/DESIGN.md before styling UI. For a retheme, follow docs/harveys/retheming.md end to end (tokens.md = name-to-hex map, decisions.md = pre-resolved conflicts, conventions.md = usage recipes)." >> AGENTS.md';
+  'echo "Harvey\'s brand: read docs/harveys/DESIGN.md before styling UI. For a retheme, follow docs/harveys/retheming.md end to end (tokens.md = name-to-hex map, decisions.md = pre-resolved conflicts incl. Data Red and the wheat naming, dataviz.md = validated chart palettes, conventions.md = usage recipes)." >> AGENTS.md';
 
 const RETHEME_PROMPT = [
   "Retheme this app to the Harvey's brand. Follow the Harvey's retheming",
@@ -112,6 +113,23 @@ export default function AgentHelp() {
               command={RETHEME_PROMPT}
             />
             <div className="flex flex-wrap -m-4 mt-0">
+              <div className="w-full p-4">
+                <h3 className="font-heading text-base font-bold uppercase tracking-widest text-white mb-2">
+                  Using the plugin
+                </h3>
+                <p className="text-green-100">
+                  Nothing to invoke by hand: once installed, the
+                  harveys-brand skill loads whenever styling comes up — "make
+                  this on-brand", "build a page", or the retheme prompt above.
+                  Quick touches read DESIGN.md and the token crosswalk;
+                  anything that recolors across files follows the full
+                  retheming procedure, gates included. The install is
+                  project-scoped — it writes{" "}
+                  <code className="font-mono">.claude/settings.json</code>, so
+                  commit that file and every teammate gets the same binding
+                  instead of a machine-local one.
+                </p>
+              </div>
               <div className="w-full md:w-1/2 p-4">
                 <h3 className="font-heading text-base font-bold uppercase tracking-widest text-white mb-2">
                   What your agent gets
@@ -120,19 +138,25 @@ export default function AgentHelp() {
                   DESIGN.md, the canonical design spec, plus the retheme kit:
                   the step-by-step retheming procedure, the token crosswalk
                   (every name-to-hex mapping), pre-resolved brand decisions
-                  like Data Red, and the component usage conventions.
+                  (Data Red, the wheat naming, the two chip tiers, the Sage
+                  focus ring), the validated chart palettes, and the
+                  component usage conventions.
                 </p>
               </div>
               <div className="w-full md:w-1/2 p-4">
                 <h3 className="font-heading text-base font-bold uppercase tracking-widest text-white mb-2">
-                  Staying current
+                  Updating the plugin
                 </h3>
                 <p className="text-green-100">
-                  Claude installs track this repo — run{" "}
+                  Run{" "}
                   <code className="font-mono">
                     claude plugin marketplace update harveys
                   </code>{" "}
-                  to refresh. Snapshots refresh by re-running the fetch.
+                  — it pulls this repo's master branch, so spec changes ship
+                  only once merged there (current plugin: v1.2.0). Gemini and
+                  Codex snapshots refresh by re-running the fetch; vendored
+                  components refresh with{" "}
+                  <code className="font-mono">brand-sync.mjs --sync</code>.
                 </p>
               </div>
               <div className="w-full md:w-1/2 p-4">

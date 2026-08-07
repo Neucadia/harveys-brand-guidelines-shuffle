@@ -24,7 +24,7 @@ export default function Header() {
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2">
                   <div className="flex flex-wrap items-center">
-                    <div className="w-auto hidden lg:block">
+                    <div className="w-auto hidden xl:block">
                       <ul className="flex items-center">
                         <li className="mr-9 text-sm hover:text-gray-700">
                           <a href="#story">Story</a>
@@ -41,18 +41,21 @@ export default function Header() {
                         <li className="mr-9 text-sm hover:text-gray-700">
                           <a href="#components">Components</a>
                         </li>
-                        <li className="text-sm hover:text-gray-700">
+                        <li className="mr-9 text-sm hover:text-gray-700">
                           <a href="#colors">Colors</a>
+                        </li>
+                        <li className="text-sm hover:text-gray-700">
+                          <a href="#agent-help">Agents</a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div className="w-auto">
-                  <div className="hidden lg:block">
+                  <div className="hidden xl:block">
                     <div className="inline-block" />
                   </div>
-                  <div className="lg:hidden flex items-center">
+                  <div className="xl:hidden flex items-center">
                     <button
                       onClick={() => {
                         setOpenMenu(true);
@@ -151,12 +154,28 @@ export default function Header() {
                               Writing
                             </a>
                           </li>
-                          <li className="">
+                          <li className="mb-6">
                             <a
                               className="text-sm hover:text-gray-700"
                               href="#components"
                             >
                               Components
+                            </a>
+                          </li>
+                          <li className="mb-6">
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#colors"
+                            >
+                              Colors
+                            </a>
+                          </li>
+                          <li className="">
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#agent-help"
+                            >
+                              Agents
                             </a>
                           </li>
                         </ul>

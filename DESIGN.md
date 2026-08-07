@@ -294,7 +294,7 @@ in gray with bold values.
 
 Green "H" monogram at left; centered horizontal link list (0.875rem,
 sentence case, hover shifts to
-warm gray `#44403C`); hamburger only below `lg`. Mobile nav is a white
+warm gray `#44403C`); hamburger only below `xl` (1216px — the full link row needs the room or it collides with the logo). Mobile nav is a white
 left-drawer over an 80% dark scrim, links stacked at 1.5rem intervals.
 Below the bar, the masthead headline sets "Brand" in near-black green
 (`#13391A`) and "Guidelines" in Field Green — a two-tone display treatment

@@ -3739,6 +3739,16 @@ video {
   }
 }
 
+@media (min-width: 1216px) {
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+}
+
 .\[\&\>button\]\:hidden>button {
   display: none;
 }

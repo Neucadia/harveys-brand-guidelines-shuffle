@@ -31,7 +31,7 @@ const NotFound = React.forwardRef(
       )}
       {...props}
     >
-      <MonogramNegativeMark className="h-16 text-hb-primary" />
+      <MonogramNegativeMark className="h-16 w-auto text-hb-primary" />
       <span className="inline-block bg-hb-wheat px-2 py-1 font-heading text-xs font-bold uppercase tracking-smallcaps text-hb-ink">
         {code}
       </span>

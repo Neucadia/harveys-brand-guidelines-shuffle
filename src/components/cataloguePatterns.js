@@ -188,7 +188,7 @@ export default function CataloguePatterns() {
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
               One 404 for every product: the green negative monogram
-              (deep-forest disc, cream mark), code chip, display headline,
+              (solid deep forest, H knocked out), code chip, display headline,
               and a green way home. A missing page is wayfinding, not a
               failure — no ember, no red. Copy is per product; the shape is
               shared.

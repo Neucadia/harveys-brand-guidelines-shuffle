@@ -1,9 +1,9 @@
 import React from "react";
 import { cn } from "./utils";
 import { Button } from "./button";
-import { MonogramMark } from "./monogram-loader";
+import { MonogramNegativeMark } from "./monogram-loader";
 
-// The shared 404 page: wheat monogram watermark, wheat code chip, display
+// The shared 404 page: green negative monogram, wheat code chip, display
 // headline, and a green way home. A missing page is wayfinding, not a
 // failure — no ember, no Data Red. Products keep the shape and swap the
 // copy; pass `actions` for framework links (e.g. a Button asChild wrapping
@@ -31,7 +31,7 @@ const NotFound = React.forwardRef(
       )}
       {...props}
     >
-      <MonogramMark className="h-16 w-auto text-hb-wheat" />
+      <MonogramNegativeMark className="h-16 text-hb-primary" />
       <span className="inline-block bg-hb-wheat px-2 py-1 font-heading text-xs font-bold uppercase tracking-smallcaps text-hb-ink">
         {code}
       </span>

@@ -5,8 +5,11 @@ import { cn } from "./utils";
 // ring. Self-contained — keyframes live in the Tailwind config
 // (monogram-spin / monogram-breathe), not in a global stylesheet.
 // rounded-full is sanctioned here: the ring is a genuinely circular
-// primitive. MonogramMark is the static H — the one shared monogram path
-// (also used by NotFound as a brand watermark); size it via className.
+// primitive. MonogramMark is the static H — the one shared monogram path;
+// size it via className. MonogramNegativeMark is the composed negative
+// lockup: a solid disc in currentColor behind the mark in cream #F6ECEB
+// (the logo family's light fill) — set the disc color with a text-* class,
+// e.g. text-hb-primary for the green negative monogram.
 const sizeClasses = {
   button: "h-4 w-4",
   sm: "h-7 w-7",
@@ -48,6 +51,21 @@ const MonogramLoaderMark = React.forwardRef(
 );
 MonogramLoaderMark.displayName = "MonogramLoaderMark";
 
+const MonogramNegativeMark = React.forwardRef(
+  ({ className, ...props }, ref) => (
+    <span
+      ref={ref}
+      aria-hidden="true"
+      className={cn("relative inline-flex shrink-0", className)}
+      {...props}
+    >
+      <span className="absolute inset-0 m-[2%] rounded-full bg-current" />
+      <MonogramMark className="relative h-full w-auto text-hb-cream" />
+    </span>
+  )
+);
+MonogramNegativeMark.displayName = "MonogramNegativeMark";
+
 const MonogramLoader = React.forwardRef(
   (
     { className, label = "Loading", showLabel = false, inline = false, size = "md", ...props },
@@ -78,4 +96,4 @@ const MonogramLoader = React.forwardRef(
 );
 MonogramLoader.displayName = "MonogramLoader";
 
-export { MonogramLoader, MonogramLoaderMark, MonogramMark };
+export { MonogramLoader, MonogramLoaderMark, MonogramMark, MonogramNegativeMark };

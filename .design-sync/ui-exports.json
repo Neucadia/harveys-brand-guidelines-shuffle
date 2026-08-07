@@ -262,7 +262,8 @@
     "monogram-loader": [
       "MonogramLoader",
       "MonogramLoaderMark",
-      "MonogramMark"
+      "MonogramMark",
+      "MonogramNegativeMark"
     ],
     "wizard-progress": [
       "WizardProgress"

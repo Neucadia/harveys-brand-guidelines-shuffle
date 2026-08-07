@@ -245,6 +245,29 @@
       "TooltipTrigger",
       "TooltipContent",
       "TooltipProvider"
+    ],
+    "section-header": [
+      "SectionHeader"
+    ],
+    "band": [
+      "Band"
+    ],
+    "status-chip": [
+      "StatusChip",
+      "statusChipVariants"
+    ],
+    "kpi-tile": [
+      "KpiTile"
+    ],
+    "monogram-loader": [
+      "MonogramLoader",
+      "MonogramLoaderMark"
+    ],
+    "wizard-progress": [
+      "WizardProgress"
+    ],
+    "empty-state": [
+      "EmptyState"
     ]
   }
 }

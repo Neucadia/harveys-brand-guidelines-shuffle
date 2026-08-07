@@ -3,18 +3,37 @@
   "shape": "package",
   "pkg": "app",
   "globalName": "HarveysBrand",
-  "buildCmd": "npm run css && node .design-sync/build-lib.mjs",
+  "buildCmd": "node scripts/sync-ui.mjs && npm run css && node .design-sync/build-lib.mjs",
   "entry": ".design-sync/.cache/lib/ds-entry.mjs",
   "cssEntry": ".design-sync/.cache/lib/harveys.css",
   "docsDir": ".design-sync/docs",
   "readmeHeader": ".design-sync/conventions.md",
   "overrides": {
-    "CatalogueData": { "cardMode": "column" },
-    "CatalogueNavigation": { "cardMode": "column" },
-    "Dialog": { "cardMode": "single", "primaryStory": "ConfirmDialog" },
-    "Popover": { "cardMode": "single", "primaryStory": "InfoPopover" },
-    "Sheet": { "cardMode": "single", "primaryStory": "FilterTray" },
-    "Tooltip": { "cardMode": "single", "primaryStory": "InkTip" }
+    "CatalogueData": {
+      "cardMode": "column"
+    },
+    "CatalogueNavigation": {
+      "cardMode": "column"
+    },
+    "Dialog": {
+      "cardMode": "single",
+      "primaryStory": "ConfirmDialog"
+    },
+    "Popover": {
+      "cardMode": "single",
+      "primaryStory": "InfoPopover"
+    },
+    "Sheet": {
+      "cardMode": "single",
+      "primaryStory": "FilterTray"
+    },
+    "Tooltip": {
+      "cardMode": "single",
+      "primaryStory": "InkTip"
+    },
+    "CataloguePatterns": {
+      "cardMode": "column"
+    }
   },
   "componentSrcMap": {
     "Hero": "src/components/hero.js",
@@ -86,6 +105,18 @@
     "Calendar": "src/components/ui/calendar.js",
     "Toaster": "src/components/ui/sonner.js",
     "ResizablePanelGroup": "src/components/ui/resizable.js",
-    "Sidebar": "src/components/ui/sidebar.js"
+    "Sidebar": "src/components/ui/sidebar.js",
+    "CataloguePatterns": "src/components/cataloguePatterns.js",
+    "SectionHeader": "src/components/ui/section-header.js",
+    "Band": "src/components/ui/band.js",
+    "StatusChip": "src/components/ui/status-chip.js",
+    "KpiTile": "src/components/ui/kpi-tile.js",
+    "MonogramLoader": "src/components/ui/monogram-loader.js",
+    "WizardProgress": "src/components/ui/wizard-progress.js",
+    "EmptyState": "src/components/ui/empty-state.js",
+    "ChartContainer": "src/components/ui/chart.js",
+    "Form": "src/components/ui/form.js",
+    "DataTableColumnHeader": "src/components/ui/data-table-column-header.js",
+    "DataTablePagination": "src/components/ui/data-table-pagination.js"
   }
 }

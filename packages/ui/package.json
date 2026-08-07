@@ -1,0 +1,19 @@
+{
+  "name": "@harveys/ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Harvey's branded shadcn-style kit, styled with @harveys/tokens' semantic hb-* utilities. Source of truth for src/components/ui (kept in sync by scripts/sync-ui.mjs). Consumers vendor components via brand-sync — this package is not published.",
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-day-picker": { "note": "pin major 8 with date-fns 3 — rdp 9 changed the classNames API" },
+    "recharts": { "note": "pin major 2" },
+    "tailwind-merge": { "note": "pin major 2 — v3 targets Tailwind 4" },
+    "sonner": { "note": "pin major 1; kill radius/shadow via inline toastOptions.style" },
+    "zod": { "note": "pin major 3 with @hookform/resolvers 3" },
+    "@tanstack/react-table": { "note": "major 8" },
+    "tailwindcss": { "note": "3.x — the preset is a Tailwind 3 preset" }
+  }
+}

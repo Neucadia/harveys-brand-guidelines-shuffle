@@ -41,3 +41,18 @@ Repo-specific gotchas for future syncs. Config: `.design-sync/config.json`; proj
 - Remote imagery (static.shuffle.dev, images.unsplash.com) is baked into component JSX — if those uploads move, sections show broken images; nothing in the build pipeline will flag it.
 - build-lib.mjs's SVGR import regex expects the exact `import { ReactComponent as X } from "….svg";` shape Shuffle generates — a hand-edited variant spelling would silently skip rewriting (esbuild would then fail loudly at bundle time, so it won't ship wrong, but the error will point here).
 - Shuffle re-exports may rename component function names or add new sections — `componentSrcMap` (and thus the barrel) is the single source of truth; add new components there + a doc stub in `.design-sync/docs/`.
+
+- New-component checklist (added with the CataloguePatterns wave): file in
+  `src/components/ui/` → `ui-exports.json` module entry → `componentSrcMap`
+  pin → 5-line doc in `.design-sync/docs/` → demo in a Catalogue* section →
+  `npm run css && node .design-sync/build-lib.mjs` → converter resync.
+  ChartContainer / Form / DataTableColumnHeader / DataTablePagination are now
+  pinned in componentSrcMap too, so the bundle grows their preview cards on
+  the next converter resync (they were barrel-only before, which is why the
+  Claude Design project had no cards for them).
+- Small-caps tracking is `tracking-smallcaps` (0.08em) at `text-xs` and
+  below (tokens-24); `tracking-widest` (0.1em) is for display sizes only.
+- The ds-bundle build predating the 2026-08-06 consolidation is stale: focus
+  rings moved to green-300 #52BA64 (DR-4) and seven new primitives exist
+  (StatusChip, SectionHeader, Band, KpiTile, MonogramLoader, WizardProgress,
+  EmptyState). Re-run the full converter resync before trusting previews.

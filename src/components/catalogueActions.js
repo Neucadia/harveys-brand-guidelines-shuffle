@@ -11,7 +11,7 @@ export default function CatalogueActions() {
       <section id="components" className="py-20 bg-yellow-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-6">
-            <div className="bg-yellow-100 py-1 px-2 font-bold inline-block">
+            <div className="bg-yellow-100 py-1 px-2 font-semibold inline-block">
               Component Catalogue
             </div>
           </div>
@@ -25,7 +25,7 @@ export default function CatalogueActions() {
             doses.
           </p>
           <div id="c-button" className="bg-white p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Button
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -49,7 +49,7 @@ export default function CatalogueActions() {
             </div>
           </div>
           <div id="c-badge" className="bg-white p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Badge
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -64,7 +64,7 @@ export default function CatalogueActions() {
             </div>
           </div>
           <div id="c-toggle" className="bg-white p-12">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Toggle &amp; Toggle Group
             </div>
             <p className="text-gray-500 mb-6 max-w-md">

@@ -7,7 +7,7 @@ export default function Assets() {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
-              <div className="bg-yellow-100 px-2 py-1 font-bold inline-block">
+              <div className="bg-yellow-100 px-2 py-1 font-semibold inline-block">
                 Assets
               </div>
             </div>
@@ -30,12 +30,12 @@ export default function Assets() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold">
+                      <h3 className="text-green-500 text-xl font-semibold">
                         Black
                       </h3>
-                      <p className="font-bold mb-3">Slide background</p>
+                      <p className="font-semibold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
+                        className="px-6 py-3 text-center w-full sm:w-auto bg-yellow-500 text-sm font-semibold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download
@@ -56,12 +56,12 @@ export default function Assets() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold">
+                      <h3 className="text-green-500 text-xl font-semibold">
                         Green
                       </h3>
-                      <p className="font-bold mb-3">Slide background</p>
+                      <p className="font-semibold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
+                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-semibold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download
@@ -82,12 +82,12 @@ export default function Assets() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold">
+                      <h3 className="text-green-500 text-xl font-semibold">
                         Orange
                       </h3>
-                      <p className="font-bold mb-3">Slide background</p>
+                      <p className="font-semibold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
+                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-semibold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download
@@ -108,12 +108,12 @@ export default function Assets() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold">
+                      <h3 className="text-green-500 text-xl font-semibold">
                         Wheat
                       </h3>
-                      <p className="font-bold mb-3">Slide background</p>
+                      <p className="font-semibold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
+                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-semibold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download
@@ -134,12 +134,12 @@ export default function Assets() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold">
+                      <h3 className="text-green-500 text-xl font-semibold">
                         White
                       </h3>
-                      <p className="font-bold mb-3">Slide background</p>
+                      <p className="font-semibold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
+                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-semibold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download
@@ -160,12 +160,12 @@ export default function Assets() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold">
+                      <h3 className="text-green-500 text-xl font-semibold">
                         Cream
                       </h3>
-                      <p className="font-bold mb-3">Slide background</p>
+                      <p className="font-semibold mb-3">Slide background</p>
                       <a
-                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-bold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
+                        className="px-6 py-3 block text-center w-full sm:w-auto bg-yellow-500 text-sm font-semibold hover:bg-yellow-400 focus:ring focus:ring-yellow-200 transition duration-200 hidden"
                         href="#"
                       >
                         Download

@@ -21,6 +21,7 @@ import CatalogueLayout from "../components/catalogueLayout";
 import CatalogueNavigation from "../components/catalogueNavigation";
 import CatalogueOverlays from "../components/catalogueOverlays";
 import CatalogueData from "../components/catalogueData";
+import CataloguePatterns from "../components/cataloguePatterns";
 import Writing from "../components/writing";
 import AgentHelp from "../components/agentHelp";
 import Architecture from "../components/architecture";
@@ -68,6 +69,7 @@ export default function Index() {
       <CatalogueNavigation />
       <CatalogueOverlays />
       <CatalogueData />
+      <CataloguePatterns />
       <Writing />
       <AgentHelp />
     </React.Fragment>

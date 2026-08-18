@@ -22,7 +22,7 @@ function DataTableColumnHeader({ column, title, className }) {
           <Button
             variant="ghost"
             size="sm"
-            className="-ml-3 h-8 text-xs font-heading font-bold uppercase tracking-widest text-gray-500 hover:text-green-500 data-[state=open]:bg-yellow-50"
+            className="-ml-3 h-8 text-xs font-heading font-bold uppercase tracking-smallcaps text-hb-text-secondary hover:text-hb-primary-interactive data-[state=open]:bg-hb-wheat-pale"
           >
             <span>{title}</span>
             {column.getIsSorted() === "desc" ? (
@@ -36,16 +36,16 @@ function DataTableColumnHeader({ column, title, className }) {
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start">
           <DropdownMenuItem onClick={() => column.toggleSorting(false)}>
-            <ArrowUp className="h-3.5 w-3.5 text-gray-500" />
+            <ArrowUp className="h-3.5 w-3.5 text-hb-text-secondary" />
             Asc
           </DropdownMenuItem>
           <DropdownMenuItem onClick={() => column.toggleSorting(true)}>
-            <ArrowDown className="h-3.5 w-3.5 text-gray-500" />
+            <ArrowDown className="h-3.5 w-3.5 text-hb-text-secondary" />
             Desc
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem onClick={() => column.toggleVisibility(false)}>
-            <EyeOff className="h-3.5 w-3.5 text-gray-500" />
+            <EyeOff className="h-3.5 w-3.5 text-hb-text-secondary" />
             Hide
           </DropdownMenuItem>
         </DropdownMenuContent>

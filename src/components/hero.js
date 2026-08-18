@@ -12,7 +12,7 @@ export default function Hero() {
         >
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
-              <div className="bg-green-400 py-1 px-2 text-white font-bold inline-block">
+              <div className="bg-green-400 py-1 px-2 text-white font-semibold inline-block">
                 Our Story
               </div>
             </div>

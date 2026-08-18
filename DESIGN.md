@@ -1,84 +1,128 @@
 ---
 name: Harvey's
 colors:
-  background: '#ffffff'
-  surface: '#ffffff'
-  surface-wheat-pale: '#f5f1e7'
-  surface-wheat: '#e7ddc6'
-  surface-panel: '#fafaf9'
-  surface-cream: '#f6eceb'
-  primary: '#1a4121'
-  primary-interactive: '#296533'
-  primary-hover: '#2b3c1d'
-  on-primary: '#ffffff'
-  on-primary-muted: '#a6dbaf'
-  secondary: '#c05017'
-  secondary-interactive: '#e56625'
-  on-secondary: '#ffffff'
-  accent-wheat: '#d8c7a2'
-  neutral-gray: '#e2e1dd'
-  text: '#10181f'
-  text-secondary: '#57534e'
-  text-tertiary: '#474440'
-  success-bg: '#60bf71'
-  success-text: '#1a4121'
-  warning-bg: '#e8773e'
-  danger: '#c02617'
-  black: '#10181f'
-  white: '#ffffff'
+  background: "#ffffff"
+  surface: "#ffffff"
+  # Wheat family (DR-2): bare "wheat" is #d8c7a2; lighter shades take modifiers.
+  wheat: "#d8c7a2"
+  wheat-light: "#e7ddc6"
+  wheat-pale: "#f5f1e7"
+  sand: "#ece5d3"
+  surface-panel: "#fafaf9"
+  cream: "#f6eceb" # blush surface, primarily print — never a name for #f5f1e7
+  primary: "#1a4121"
+  primary-interactive: "#296533"
+  primary-hover: "#2b3c1d"
+  on-primary: "#ffffff"
+  on-primary-muted: "#a6dbaf"
+  secondary: "#c05017"
+  secondary-interactive: "#e56625"
+  ember-hover: "#e8763c"
+  ember-text: "#a84413" # AA ember text on tints; also the pressed/hover of secondary #c05017
+  on-secondary: "#ffffff"
+  neutral-gray: "#e2e1dd"
+  text: "#10181f"
+  text-secondary: "#57534e"
+  text-tertiary: "#474440"
+  success-bg: "#60bf71"
+  success-text: "#1a4121"
+  success-tint: "#ecf7ee"
+  success-tint-border: "#abcfae"
+  warning-bg: "#e8773e"
+  warning-tint: "#fbede4"
+  warning-tint-border: "#eec4a9"
+  info: "#3d76a9" # chips + dataviz slot 6 only — never a UI accent
+  info-strong: "#2a5b88"
+  info-tint: "#e7eef5"
+  info-tint-border: "#aec7e0"
+  data-negative: "#c02617" # DR-1: negative numeric semantics only
+  data-negative-strong: "#a21c10"
+  data-negative-deep: "#791b11"
+  data-negative-tint: "#fcece9"
+  data-negative-border: "#e9b6ad"
+  focus-ring: "#52ba64" # 2px solid + 2px offset, all interactive controls
+  focus-ring-ember: "rgba(232,118,60,0.35)" # ember-family controls only, rationed
+  border-soft: "rgba(16,24,31,0.10)"
+  border: "rgba(16,24,31,0.12)"
+  border-strong: "rgba(16,24,31,0.20)"
+  scrim: "rgba(16,24,31,0.4)"
+  black: "#10181f"
+  white: "#ffffff"
+dataviz:
+  # Validated palettes (see skills/harveys-brand/references/dataviz.md).
+  # Categorical slots are fixed-order, never re-ranked; >8 series cycle i % 8.
+  categorical:
+    - "#296533"
+    - "#e8763c"
+    - "#0d9488"
+    - "#ef9f27"
+    - "#30783d"
+    - "#3d76a9"
+    - "#c05017"
+    - "#52ba64"
+  sequential:
+    - "#76b97d"
+    - "#5aa363"
+    - "#408d4c"
+    - "#2f763b"
+    - "#235f2e"
+    - "#1e4725"
+  diverging:
+    - "#c02617"
+    - "#d36e5f"
+    - "#e0a79c"
+    - "#e2e1dd"
+    - "#90bd94"
+    - "#51935a"
+    - "#296533"
+effects:
+  shadow-float: "0 12px 32px rgba(16,24,31,0.14)" # ONLY floating layers that overlap their own trigger; everything else is flat
 typography:
   display:
     fontFamily: Chakra Petch
     fontSize: 48px
-    fontWeight: '700'
-    lineHeight: '1.2727'
+    fontWeight: "700"
+    lineHeight: "1.2727"
     letterSpacing: 0.1em
     textTransform: uppercase
   headline:
     fontFamily: Chakra Petch
     fontSize: 36px
-    fontWeight: '700'
-    lineHeight: '1.2727'
+    fontWeight: "700"
+    lineHeight: "1.2727"
     letterSpacing: 0.1em
     textTransform: uppercase
   title:
     fontFamily: Chakra Petch
     fontSize: 24px
-    fontWeight: '700'
-    lineHeight: '1.2727'
+    fontWeight: "700"
+    lineHeight: "1.2727"
     letterSpacing: 0.1em
     textTransform: uppercase
   subhead:
     fontFamily: TT Commons Pro
     fontSize: 20px
-    fontWeight: '500'
-    lineHeight: '1.75'
-    letterSpacing: '0'
+    fontWeight: "500"
+    lineHeight: "1.75"
+    letterSpacing: "0"
   body:
     fontFamily: TT Commons Pro
     fontSize: 16px
-    fontWeight: '400'
-    lineHeight: '1.5'
-    letterSpacing: '0'
+    fontWeight: "400"
+    lineHeight: "1.5"
+    letterSpacing: "0"
   label:
     fontFamily: TT Commons Pro
     fontSize: 14px
-    fontWeight: '700'
-    lineHeight: '1.25'
-    letterSpacing: '0'
-  display-fallback:
-    fontFamily: Catamaran
-    fontSize: 48px
-    fontWeight: '800'
-    lineHeight: '1.2727'
-    letterSpacing: 0.16em
-    textTransform: uppercase
+    fontWeight: "600" # TT Commons Pro has no Bold (700) — DemiBold 600 is the ceiling
+    lineHeight: "1.25"
+    letterSpacing: "0"
   body-fallback:
     fontFamily: Open Sans
     fontSize: 16px
-    fontWeight: '400'
-    lineHeight: '1.4545'
-    letterSpacing: '0'
+    fontWeight: "400"
+    lineHeight: "1.4545"
+    letterSpacing: "0"
 rounded:
   DEFAULT: 0px
   buttons: 0px
@@ -97,6 +141,7 @@ spacing:
   card-padding: 48px
   gutter: 16px
   page-margin: 16px
+  touch-target-min: 44px # accessibility floor, not a spacing step
 ---
 
 # Design System: Harvey's
@@ -128,24 +173,24 @@ the system and should travel with it.
 
 ### Primary Foundation
 
-| Name | Hex | Print | Role |
-|:---|:---|:---|:---|
-| **Paper White** | `#FFFFFF` | White | Page background, cards, panels |
-| **Pale Wheat** | `#F5F1E7` | tint of PMS 453 | Alternating section background |
-| **Warm Wheat** | `#E7DDC6` | tint of PMS 453 | Saturated section bands (Colors, Writing, Architecture) |
-| **Harvest Wheat** | `#D8C7A2` | PMS 453 · CMYK 0,6,22,14 | Signature accent — eyebrow label chips, wheat swatch |
-| **Soft Cream** | `#F6ECEB` | *use white for print* | Gentle blush-cream surface |
-| **Cool Concrete Gray** | `#E2E1DD` | PMS Cool Grey 4 · CMYK 10,8,10,0 | Neutral surface, logo backgrounds |
+| Name                   | Hex       | Print                            | Role                                                    |
+| :--------------------- | :-------- | :------------------------------- | :------------------------------------------------------ |
+| **Paper White**        | `#FFFFFF` | White                            | Page background, cards, panels                          |
+| **Pale Wheat**         | `#F5F1E7` | tint of PMS 453                  | Alternating section background                          |
+| **Warm Wheat**         | `#E7DDC6` | tint of PMS 453                  | Saturated section bands (Colors, Writing, Architecture) |
+| **Harvest Wheat**      | `#D8C7A2` | PMS 453 · CMYK 0,6,22,14         | Signature accent — eyebrow label chips, wheat swatch    |
+| **Soft Cream**         | `#F6ECEB` | _use white for print_            | Gentle blush surface — primarily a print-design surface; never a name for `#F5F1E7` |
+| **Cool Concrete Gray** | `#E2E1DD` | PMS Cool Grey 4 · CMYK 10,8,10,0 | Neutral surface, logo backgrounds                       |
 
 ### Accent & Interactive
 
-| Name | Hex | Print | Role |
-|:---|:---|:---|:---|
-| **Deep Forest Green** | `#1A4121` | Pantone 2411 C · CMYK 60,0,49,75 | Brand anchor — hero/logo section backgrounds, primary logo color. (`#2B3C1D` appears in specs as a near-duplicate moss variant; consolidate to `#1A4121`.) |
-| **Field Green** | `#296533` | — | Interactive green — buttons, links, tab underlines; hover darkens toward `#2B3C1D` |
-| **Harvest Orange (print)** | `#C05017` | PMS 167 · CMYK 0,58,88,25 | Official brand orange for print and swatches |
-| **Ember Orange (screen)** | `#E56625` | — | Screen-brightened orange — secondary buttons, callout labels, "Rebrand" badges; hover `#E8763C` |
-| **Ink Black** | `#10181F` | PMS Black 6 · CMYK 48,23,0,88 | Not pure black — a deep blue-cast ink used for all body text and negative logos |
+| Name                       | Hex       | Print                            | Role                                                                                                                                                       |
+| :------------------------- | :-------- | :------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Deep Forest Green**      | `#1A4121` | Pantone 2411 C · CMYK 60,0,49,75 | Brand anchor — hero/logo section backgrounds, primary logo color. (`#2B3C1D` appears in specs as a near-duplicate moss variant; consolidate to `#1A4121`.) |
+| **Field Green**            | `#296533` | —                                | Interactive green — buttons, links, tab underlines; hover darkens toward `#2B3C1D`                                                                         |
+| **Harvest Orange (print)** | `#C05017` | PMS 167 · CMYK 0,58,88,25        | Official brand orange for print and swatches                                                                                                               |
+| **Ember Orange (screen)**  | `#E56625` | —                                | Screen-brightened orange — secondary buttons, callout labels, "Rebrand" badges; hover `#E8763C`                                                            |
+| **Ink Black**              | `#10181F` | PMS Black 6 · CMYK 48,23,0,88    | Not pure black — a deep blue-cast ink used for all body text and negative logos                                                                            |
 
 Rule of thumb: green is the brand's voice, orange is its exclamation point.
 Orange appears in small, bold doses (labels, secondary buttons); it never
@@ -161,10 +206,30 @@ floods a layout except in the full-bleed Values band.
 
 ### Functional States
 
-- **Success / Completed** — leaf-green chip: `#60BF71`-range background with Deep Forest Green text, uppercase Chakra Petch bold
-- **Warning / Canceled / Pending** — soft orange chip `#E8773E`-range with white text
+Status runs on a **two-tier chip system** (DR-3): solid poster chips for badge
+text ≥18px, tint chips for table-scale text — solid brand chips fail
+small-text contrast below that.
+
+- **Success / Completed** — solid: `#60BF71` fill with Deep Forest Green text,
+  uppercase Chakra Petch bold; tint: `success-tint #ECF7EE` fill /
+  `primary-interactive #296533` text / `#ABCFAE` border
+- **Warning / Canceled / Pending / Past-due** — solid: `#E8773E` fill with
+  white text; tint: `warning-tint #FBEDE4` / `ember-text #A84413` /
+  `#EEC4A9` border
+- **Info / In-progress** — tint only: `info-tint #E7EEF5` /
+  `info-strong #2A5B88` / `#AEC7E0` border. The `info` slate `#3D76A9` is a
+  derived hue scoped to chips and dataviz slot 6 — never a UI accent
 - **Prohibition / "Don't"** — brick red `#C02617`, used only for ⊘ icons in do/don't lists
-- Focus states — 3px soft ring in the button's own hue (light green `#52BA64`-range or light orange)
+- **Data Red (data-only exception)** — brick `#C02617` may encode negative
+  _numeric_ meaning — losses, negative deltas, down-moves, the low end of
+  diverging signed scales — in domains where users read red-down/green-up.
+  Never in UI chrome: errors, warnings, and destructive intents stay ember
+  orange (see `decisions.md`, DR-1). Its support family (`data-negative-strong
+  #A21C10`, `-deep #791B11`, `-tint #FCECE9`, `-border #E9B6AD`) carries the
+  same DR-1-only restriction
+- **Focus** — 2px solid ring in Sage `focus-ring #52BA64` with a 2px offset,
+  on every interactive control; ember-family controls may instead use the
+  rationed `focus-ring-ember rgba(232,118,60,.35)` soft ring
 
 ## 3. Typography Rules
 
@@ -172,14 +237,17 @@ floods a layout except in the full-bleed Values band.
 
 Two brand typefaces, each with a licensed-font-unavailable fallback:
 
-- **Chakra Petch Bold (700)** — *"funky, unique… both modern and classic."*
+- **Chakra Petch Bold (700)** — _"funky, unique… both modern and classic."_
   Display, headlines, titles, wordmark, accents. Always **UPPERCASE** with wide
   tracking (140/1000 em ≈ `0.1em` on the web) and tight 1.2727 line-height.
   Its squared, semi-technical letterforms are the single most recognizable
   brand gesture.
-- **TT Commons Pro** (Adobe Typekit) — the workhorse. **DemiBold (500)** at
+- **TT Commons Pro** (Adobe Typekit) — the workhorse. **Medium (500)** at
   1.75 line-height for subheads, long headlines, and lead copy 18pt and up;
   **Regular (400)** at 1.5 line-height for body, long text, and UI below 18pt.
+  **The family tops out at DemiBold (600)** — there is no Bold (700), so
+  body-face emphasis is always 600 (`font-semibold`), never 700; 700 belongs
+  to Chakra Petch alone.
   "A versatile sans serif that bestows a dusting of elegance and authority."
 - **Fallbacks** (email, Google products, anywhere fonts can't embed):
   **Catamaran Bold (800)**, tracking 160/1000 em, for headlines;
@@ -188,6 +256,12 @@ Two brand typefaces, each with a licensed-font-unavailable fallback:
 Observed scale: masthead display 3–4rem (`text-5xl`/`text-6xl`); section
 headlines 2.25rem rising to 3rem on desktop; card titles 2.25rem; sub-titles
 1.25–1.5rem; body 1rem; nav links and buttons 0.875rem.
+
+Display headlines use the **responsive ladder 30 → 36 → 48px**
+(`text-3xl sm:text-4xl lg:text-5xl`) rather than a fixed size — a long
+uppercase word at 0.1em tracking overflows a 390px viewport at 36px.
+Tracking: **0.1em for display/headline/title; 0.08em for small caps at 12px
+and below** (0.1em over-opens dense table headers).
 
 ### Spacing Principles
 
@@ -203,11 +277,11 @@ and headlines only. "Harvey Milling" is retired from public branding.
 ### Buttons
 
 Perfectly square — **no border radius**. Padding `24px × 12px`, small bold
-label (0.875rem, TT Commons Pro Bold). Primary: Field Green `#296533` fill,
+label (0.875rem, TT Commons Pro DemiBold 600). Primary: Field Green `#296533` fill,
 white text, darker green hover. Secondary: Ember Orange `#E56625` fill, white
-text, lighter/darker orange hover. All buttons: 3px soft focus ring in their
-own hue, 200ms ease transitions on color. Full-width in forms and mobile
-drawers, auto-width inline.
+text, `#E8763C` hover. All buttons: the 2px Sage `#52BA64` focus ring with 2px
+offset (ember controls may use the soft ember ring), 200ms ease transitions on
+color. Full-width in forms and mobile drawers, auto-width inline.
 
 ### Cards & Spec Panels
 
@@ -221,9 +295,10 @@ in gray with bold values.
 
 ### Navigation
 
-Header sits on a white-to-pale-wheat vertical gradient. Green "H" monogram at
-left; centered horizontal link list (0.875rem, sentence case, hover shifts to
-warm gray `#44403C`); hamburger only below `lg`. Mobile nav is a white
+Green "H" monogram at left; horizontal link list (0.875rem, sentence
+case, hover shifts to warm gray `#44403C`) — end-justified from `xl` to
+`2xl` so it clears the logo, absolutely centered only at `2xl` (1536px)
+and up; hamburger below `xl` (1216px). Mobile nav is a white
 left-drawer over an 80% dark scrim, links stacked at 1.5rem intervals.
 Below the bar, the masthead headline sets "Brand" in near-black green
 (`#13391A`) and "Guidelines" in Field Green — a two-tone display treatment
@@ -231,9 +306,10 @@ worth reusing.
 
 ### Inputs & Forms
 
-Square fields with 1px light gray (`#E7E5E4`) borders, roomy `24px × 12px`
-padding, small text, muted gray placeholders. Focus swaps the border ring for
-a soft 3px gray glow — understated, not colorful. Labels sit above fields in
+Square fields with 1px hairline (`border rgba(16,24,31,.12)`; `border-soft`
+.10 and `border-strong` .20 are the lighter/heavier steps) borders, roomy
+`24px × 12px` padding, small text, muted gray placeholders. Focus adds the
+2px Sage `#52BA64` ring with 2px offset. Labels sit above fields in
 Warm Stone Gray. Checkboxes are 16px squares (2px radius — the only rounding
 in the system); radios are circles filled with a green dot. Links are Field
 Green with underline or darker green on hover.
@@ -249,9 +325,11 @@ inverted (white chip, orange text) on the orange Values band.
 ### Status Chips & Tables
 
 Table status chips: `12px × 4px` padding, uppercase Chakra Petch bold, square
-corners — green chip for Completed, orange chip for Canceled/Pending. Table
-rows alternate white and pale tint with hairline borders; headers are small
-uppercase semi-bold at 40% opacity.
+corners. At badge scale (≥18px text): solid green chip for Completed, solid
+orange chip for Canceled/Pending. At table scale: the tint triads
+(success/warning/info — see Functional States); the seed-tag label size is
+**12px** (`text-xs`), with 10.5–11px permitted only in dense table headers.
+Table rows alternate white and pale tint with hairline borders.
 
 ### Data Visualization
 
@@ -301,6 +379,11 @@ nav collapses to the drawer, display type steps down one size (`text-4xl` →
 
 ## 6. Design System Notes for AI Generation
 
+Retheming an existing app? Do not restyle from this spec alone — follow the
+retheming procedure shipped alongside it (`retheming.md`) end to end. Use the
+token crosswalk (`tokens.md`) for every name → hex mapping, and check
+`decisions.md` before resolving any brand-vs-domain conflict yourself.
+
 ### Language to Use
 
 "Warm heritage agricultural brand." "Squared-off and flat — zero border
@@ -315,12 +398,12 @@ title." "Honest, down-to-earth, never corporate."
 
 - Deep Forest Green `#1A4121` — brand anchor, hero backgrounds, logos
 - Field Green `#296533` — buttons, links, interactive
-- Ember Orange `#E56625` — secondary CTA, emphasis labels (print: `#C05017`, PMS 167)
-- Harvest Wheat `#D8C7A2` — signature accent chips (PMS 453)
-- Warm Wheat `#E7DDC6` / Pale Wheat `#F5F1E7` — section backgrounds
+- Ember Orange `#E56625` — secondary CTA, emphasis labels (hover `#E8763C`; print: `#C05017`, PMS 167; AA text on tints `#A84413`)
+- Wheat `#D8C7A2` — the signature accent, and the family's bare name (PMS 453)
+- Wheat Light `#E7DDC6` / Wheat Pale `#F5F1E7` / Sand `#ECE5D3` — section backgrounds and surfaces
 - Cool Concrete Gray `#E2E1DD` — neutral surfaces (PMS Cool Grey 4)
 - Ink Black `#10181F` — all text (PMS Black 6)
-- Soft Cream `#F6ECEB` — gentle blush surface
+- Soft Cream `#F6ECEB` — blush surface, primarily print; never a name for `#F5F1E7`
 
 ### Component Prompts
 

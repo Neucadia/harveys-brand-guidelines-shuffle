@@ -33,7 +33,7 @@ export default function CatalogueOverlays() {
       <section className="py-20 bg-yellow-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-6">
-            <div className="bg-yellow-100 py-1 px-2 font-bold inline-block">
+            <div className="bg-yellow-100 py-1 px-2 font-semibold inline-block">
               Component Catalogue
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function CatalogueOverlays() {
             does the work.
           </p>
           <div id="c-dialog" className="bg-white p-12 mb-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Dialog &amp; Sheet
             </div>
             <p className="text-gray-500 mb-6 max-w-md">
@@ -94,7 +94,7 @@ export default function CatalogueOverlays() {
           <div className="flex flex-wrap -m-4">
             <div id="c-popover" className="w-full lg:w-1/2 p-4">
               <div className="bg-white p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Popover
                 </div>
                 <Popover>
@@ -114,7 +114,7 @@ export default function CatalogueOverlays() {
             </div>
             <div id="c-tooltip" className="w-full lg:w-1/2 p-4">
               <div className="bg-white p-12 h-full">
-                <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                   Tooltip
                 </div>
                 <TooltipProvider>
@@ -131,7 +131,7 @@ export default function CatalogueOverlays() {
             </div>
           </div>
           <div id="c-sonner" className="bg-white p-12 mt-8">
-            <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+            <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
               Toast (Sonner)
             </div>
             <p className="text-gray-500 mb-6 max-w-md">

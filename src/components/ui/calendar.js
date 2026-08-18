@@ -25,19 +25,19 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
         table: "w-full border-collapse space-y-1",
         head_row: "flex",
         head_cell:
-          "w-9 font-heading text-xs font-bold uppercase tracking-widest text-gray-500",
+          "w-9 font-heading text-xs font-bold uppercase tracking-smallcaps text-hb-text-secondary",
         row: "flex w-full mt-2",
         cell: "h-9 w-9 text-center text-sm p-0 relative focus-within:relative focus-within:z-20",
         day: cn(
-          "h-9 w-9 p-0 font-normal transition duration-200 hover:bg-yellow-50 hover:text-green-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2 aria-selected:opacity-100"
+          "h-9 w-9 p-0 font-normal transition duration-200 hover:bg-hb-wheat-pale hover:text-hb-primary-interactive focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-hb-focus-ring focus-visible:ring-offset-2 aria-selected:opacity-100"
         ),
         day_range_end: "day-range-end",
         day_selected:
-          "bg-green-500 text-white hover:bg-green-600 hover:text-white focus:bg-green-500 focus:text-white",
-        day_today: "bg-yellow-100 text-black",
-        day_outside: "day-outside text-gray-400 aria-selected:bg-yellow-50 aria-selected:text-gray-400",
-        day_disabled: "text-gray-400 opacity-50",
-        day_range_middle: "aria-selected:bg-yellow-50 aria-selected:text-black",
+          "bg-hb-primary-interactive text-white hover:bg-hb-primary-hover hover:text-white focus:bg-hb-primary-interactive focus:text-white",
+        day_today: "bg-hb-wheat text-hb-ink",
+        day_outside: "day-outside text-hb-neutral-gray aria-selected:bg-hb-wheat-pale aria-selected:text-hb-neutral-gray",
+        day_disabled: "text-hb-neutral-gray opacity-50",
+        day_range_middle: "aria-selected:bg-hb-wheat-pale aria-selected:text-hb-ink",
         day_hidden: "invisible",
         ...classNames,
       }}

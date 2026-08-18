@@ -7,7 +7,7 @@ export default function Type() {
         <section className="py-20 ">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
-              <div className="bg-yellow-100 px-2 py-1 font-bold inline-block">
+              <div className="bg-yellow-100 px-2 py-1 font-semibold inline-block">
                 Typography
               </div>
             </div>
@@ -21,7 +21,7 @@ export default function Type() {
             <div className="bg-gray-50 py-7 pr-7 pl-7 md:pl-12 mb-8">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full lg:w-2/3 p-4">
-                  <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                     Headlines
                   </div>
                   <h2 className="font-heading text-4xl font-bold mb-4 uppercase tracking-widest">
@@ -154,20 +154,20 @@ export default function Type() {
                 </div>
                 <div className="w-full lg:w-1/3 p-4">
                   <div className="bg-white py-6 px-12">
-                    <p className="text-center text-xl font-bold mb-1">
+                    <p className="text-center text-xl font-semibold mb-1">
                       weight - bold (700)
                     </p>
-                    <p className="text-center text-xl font-bold mb-1">
+                    <p className="text-center text-xl font-semibold mb-1">
                       line height - 1.2727
                     </p>
-                    <p className="text-xl font-bold text-center mb-1">
+                    <p className="text-xl font-semibold text-center mb-1">
                       tracking - 140
                     </p>
-                    <p className="text-xl font-bold text-center mb-8">
+                    <p className="text-xl font-semibold text-center mb-8">
                       transform - uppercase
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
+                      className="px-6 py-3 mb-3 text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
                       href="#"
                     >
                       Download
@@ -179,7 +179,7 @@ export default function Type() {
             <div className="bg-gray-50 py-7 pr-7 pl-7 md:pl-12 mb-8">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full lg:w-2/3 p-4">
-                  <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                     Subhead and Lead
                   </div>
                   <h2 className="font-sans text-4xl mb-4 font-semibold">
@@ -311,14 +311,14 @@ export default function Type() {
                 </div>
                 <div className="w-full lg:w-1/3 p-4">
                   <div className="bg-white py-6 px-12">
-                    <p className="text-center text-xl font-bold mb-1">
+                    <p className="text-center text-xl font-semibold mb-1">
                       weight - demibold (500)
                     </p>
-                    <p className="text-center text-xl font-bold mb-8">
+                    <p className="text-center text-xl font-semibold mb-8">
                       line height - 1.75
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
                       href="#"
                     >
                       Download
@@ -330,7 +330,7 @@ export default function Type() {
             <div className="bg-gray-50 py-7 pr-7 pl-7 md:pl-12 mb-8">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full lg:w-2/3 p-4">
-                  <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                     Body
                   </div>
                   <h2 className="font-sans font-heading text-4xl mb-4 font-normal">
@@ -461,14 +461,14 @@ export default function Type() {
                 </div>
                 <div className="w-full lg:w-1/3 p-4">
                   <div className="bg-white py-6 px-12">
-                    <p className="text-center text-xl mb-1 font-bold">
+                    <p className="text-center text-xl mb-1 font-semibold">
                       weight - regular (400)
                     </p>
-                    <p className="text-center text-xl font-bold mb-8">
+                    <p className="text-center text-xl font-semibold mb-8">
                       line height - 1.5
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
                       href="#"
                     >
                       Download
@@ -480,7 +480,7 @@ export default function Type() {
             <div className="bg-gray-50 py-7 pr-7 pl-7 md:pl-12 mb-8">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full lg:w-2/3 p-4">
-                  <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                     Web Headline Alternative
                   </div>
                   <h2 className="font-heading text-4xl mb-4 font-serif tracking-widest font-bold uppercase">
@@ -585,17 +585,17 @@ export default function Type() {
                 </div>
                 <div className="w-full lg:w-1/3 p-4">
                   <div className="bg-white py-6 px-12">
-                    <p className="text-center text-xl font-bold mb-1">
+                    <p className="text-center text-xl font-semibold mb-1">
                       weight - bold (800)
                     </p>
-                    <p className="text-center text-xl font-bold mb-1">
+                    <p className="text-center text-xl font-semibold mb-1">
                       line height - 1.2727
                     </p>
-                    <p className="text-center text-xl font-bold mb-8">
+                    <p className="text-center text-xl font-semibold mb-8">
                       tracking - 160
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
                       href="#"
                     >
                       Download
@@ -607,7 +607,7 @@ export default function Type() {
             <div className="bg-gray-50 py-7 pr-7 pl-7 md:pl-12">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full lg:w-2/3 p-4">
-                  <div className="px-2 py-1 mb-4 font-bold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
                     Web Body Alternative
                   </div>
                   <h2 className="text-4xl mb-4 font-sans font-normal">
@@ -711,14 +711,14 @@ export default function Type() {
                 </div>
                 <div className="w-full lg:w-1/3 p-4">
                   <div className="bg-white py-6 px-12">
-                    <p className="text-center text-xl font-bold mb-1">
+                    <p className="text-center text-xl font-semibold mb-1">
                       weight - normal (400)
                     </p>
-                    <p className="text-center text-xl font-bold mb-8">
+                    <p className="text-center text-xl font-semibold mb-8">
                       line height - 1.4545
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
                       href="#"
                     >
                       Download

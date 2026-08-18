@@ -24,7 +24,7 @@ const ChartContainer = React.forwardRef(
           data-chart={chartId}
           ref={ref}
           className={cn(
-            "flex aspect-video justify-center font-body text-xs [&_.recharts-cartesian-axis-tick_text]:fill-gray-500 [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-gray-200 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-gray-200 [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-none [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-gray-200 [&_.recharts-radial-bar-background-sector]:fill-yellow-50 [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-yellow-50 [&_.recharts-reference-line_[stroke='#ccc']]:stroke-gray-200 [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-none [&_.recharts-surface]:outline-none",
+            "flex aspect-video justify-center font-body text-xs [&_.recharts-cartesian-axis-tick_text]:fill-hb-text-secondary [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-hb-neutral-gray [&_.recharts-curve.recharts-tooltip-cursor]:stroke-hb-neutral-gray [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-none [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-hb-neutral-gray [&_.recharts-radial-bar-background-sector]:fill-hb-wheat-pale [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-hb-wheat-pale [&_.recharts-reference-line_[stroke='#ccc']]:stroke-hb-neutral-gray [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-none [&_.recharts-surface]:outline-none",
             className
           )}
           {...props}
@@ -101,7 +101,7 @@ const ChartTooltipContent = React.forwardRef(
 
       if (labelFormatter) {
         return (
-          <div className={cn("font-bold", labelClassName)}>
+          <div className={cn("font-semibold", labelClassName)}>
             {labelFormatter(value, payload)}
           </div>
         );
@@ -111,7 +111,7 @@ const ChartTooltipContent = React.forwardRef(
         return null;
       }
 
-      return <div className={cn("font-bold", labelClassName)}>{value}</div>;
+      return <div className={cn("font-semibold", labelClassName)}>{value}</div>;
     }, [
       label,
       labelFormatter,
@@ -132,7 +132,7 @@ const ChartTooltipContent = React.forwardRef(
       <div
         ref={ref}
         className={cn(
-          "grid min-w-[8rem] items-start gap-1.5 border border-gray-200 bg-white px-2.5 py-1.5 text-xs",
+          "grid min-w-[8rem] items-start gap-1.5 border border-hb-neutral-gray bg-white px-2.5 py-1.5 text-xs",
           className
         )}
       >
@@ -147,7 +147,7 @@ const ChartTooltipContent = React.forwardRef(
               <div
                 key={item.dataKey}
                 className={cn(
-                  "flex w-full flex-wrap items-stretch gap-2 [&>svg]:h-2.5 [&>svg]:w-2.5 [&>svg]:text-gray-500",
+                  "flex w-full flex-wrap items-stretch gap-2 [&>svg]:h-2.5 [&>svg]:w-2.5 [&>svg]:text-hb-text-secondary",
                   indicator === "dot" && "items-center"
                 )}
               >
@@ -179,12 +179,12 @@ const ChartTooltipContent = React.forwardRef(
                     >
                       <div className="grid gap-1.5">
                         {nestLabel ? tooltipLabel : null}
-                        <span className="text-gray-500">
+                        <span className="text-hb-text-secondary">
                           {itemConfig?.label || item.name}
                         </span>
                       </div>
                       {item.value && (
-                        <span className="font-bold tabular-nums text-black">
+                        <span className="font-semibold tabular-nums text-hb-ink">
                           {item.value.toLocaleString()}
                         </span>
                       )}
@@ -227,7 +227,7 @@ const ChartLegendContent = React.forwardRef(
           return (
             <div
               key={item.value}
-              className="flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3 [&>svg]:text-gray-500"
+              className="flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3 [&>svg]:text-hb-text-secondary"
             >
               {itemConfig?.icon && !hideIcon ? (
                 <itemConfig.icon />
@@ -237,7 +237,7 @@ const ChartLegendContent = React.forwardRef(
                   style={{ backgroundColor: item.color }}
                 />
               )}
-              <span className="text-gray-500">{itemConfig?.label}</span>
+              <span className="text-hb-text-secondary">{itemConfig?.label}</span>
             </div>
           );
         })}

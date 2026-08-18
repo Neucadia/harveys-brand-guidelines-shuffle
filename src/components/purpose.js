@@ -8,7 +8,7 @@ export default function Purpose() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center -m-4">
               <div className="w-full lg:w-1/2 p-4">
-                <div className="px-2 py-1 mb-6 font-bold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-6 font-semibold inline-block bg-orange-500 text-white">
                   Our purpose
                 </div>
                 <h1 className="font-heading text-4xl font-bold mb-6 max-w-md uppercase tracking-widest">

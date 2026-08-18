@@ -22,9 +22,9 @@ export default function Header() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2">
+                <div className="ml-auto mr-8 2xl:ml-0 2xl:mr-0 2xl:absolute 2xl:left-1/2 2xl:transform 2xl:-translate-x-1/2">
                   <div className="flex flex-wrap items-center">
-                    <div className="w-auto hidden lg:block">
+                    <div className="w-auto hidden xl:block">
                       <ul className="flex items-center">
                         <li className="mr-9 text-sm hover:text-gray-700">
                           <a href="#story">Story</a>
@@ -41,18 +41,21 @@ export default function Header() {
                         <li className="mr-9 text-sm hover:text-gray-700">
                           <a href="#components">Components</a>
                         </li>
-                        <li className="text-sm hover:text-gray-700">
+                        <li className="mr-9 text-sm hover:text-gray-700">
                           <a href="#colors">Colors</a>
+                        </li>
+                        <li className="text-sm hover:text-gray-700">
+                          <a href="#agent-help">Agents</a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div className="w-auto">
-                  <div className="hidden lg:block">
+                  <div className="hidden xl:block">
                     <div className="inline-block" />
                   </div>
-                  <div className="lg:hidden flex items-center">
+                  <div className="xl:hidden flex items-center">
                     <button
                       onClick={() => {
                         setOpenMenu(true);
@@ -151,12 +154,28 @@ export default function Header() {
                               Writing
                             </a>
                           </li>
-                          <li className="">
+                          <li className="mb-6">
                             <a
                               className="text-sm hover:text-gray-700"
                               href="#components"
                             >
                               Components
+                            </a>
+                          </li>
+                          <li className="mb-6">
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#colors"
+                            >
+                              Colors
+                            </a>
+                          </li>
+                          <li className="">
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#agent-help"
+                            >
+                              Agents
                             </a>
                           </li>
                         </ul>
@@ -180,7 +199,7 @@ export default function Header() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -m-4">
               <div className="w-full lg:w-1/2 p-4">
-                <div className="inline-block px-2 py-1 font-bold mb-6 bg-orange-500 text-white">
+                <div className="inline-block px-2 py-1 font-semibold mb-6 bg-orange-500 text-white">
                   Harvey's Rebrand
                 </div>
                 <h1 className="font-heading text-4xl font-bold mb-6 max-w-sm tracking-widest uppercase">

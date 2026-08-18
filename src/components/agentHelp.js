@@ -3,7 +3,12 @@ import React, { useState } from "react";
 const FETCH_SPEC = [
   "rm -rf /tmp/harveys-brand && git clone --depth 1 \\",
   "  https://github.com/Neucadia/harveys-brand-guidelines-shuffle /tmp/harveys-brand",
-  "mkdir -p docs && cp /tmp/harveys-brand/DESIGN.md docs/HARVEYS-DESIGN.md",
+  "mkdir -p docs/harveys && cp /tmp/harveys-brand/DESIGN.md \\",
+  "  /tmp/harveys-brand/skills/harveys-brand/references/retheming.md \\",
+  "  /tmp/harveys-brand/skills/harveys-brand/references/tokens.md \\",
+  "  /tmp/harveys-brand/skills/harveys-brand/references/decisions.md \\",
+  "  /tmp/harveys-brand/skills/harveys-brand/references/dataviz.md \\",
+  "  /tmp/harveys-brand/.design-sync/conventions.md docs/harveys/",
   "rm -rf /tmp/harveys-brand",
 ].join("\n");
 
@@ -13,12 +18,47 @@ const CLAUDE_COMMANDS = [
 ].join("\n");
 
 const GEMINI_COMMANDS =
-  FETCH_SPEC + "\n" + 'echo "@./docs/HARVEYS-DESIGN.md" >> GEMINI.md';
-
-const AGENTS_COMMANDS =
   FETCH_SPEC +
   "\n" +
-  'echo "Harvey\'s brand: read docs/HARVEYS-DESIGN.md before styling UI" >> AGENTS.md';
+  'echo "@./docs/harveys/DESIGN.md" >> GEMINI.md\n' +
+  'echo "@./docs/harveys/retheming.md" >> GEMINI.md\n' +
+  'echo "@./docs/harveys/tokens.md" >> GEMINI.md\n' +
+  'echo "@./docs/harveys/decisions.md" >> GEMINI.md\n' +
+  'echo "@./docs/harveys/dataviz.md" >> GEMINI.md\n' +
+  'echo "@./docs/harveys/conventions.md" >> GEMINI.md\n' +
+  'echo "Harvey\'s brand: for any retheme follow docs/harveys/retheming.md end to end — docs/harveys/tokens.md maps names to hex, docs/harveys/decisions.md pre-resolves brand-vs-domain conflicts (Data Red, wheat naming, chip tiers, focus ring), docs/harveys/dataviz.md carries the validated chart palettes, docs/harveys/conventions.md has the usage recipes." >> GEMINI.md';
+
+const CODEX_COMMANDS = [
+  "(",
+  "set -e",
+  'HARVEYS_BRAND_TMP="$(mktemp -d)"',
+  'trap \'rm -r -- "$HARVEYS_BRAND_TMP"\' EXIT',
+  "git clone --depth 1 \\",
+  "  https://github.com/Neucadia/harveys-brand-guidelines-shuffle \\",
+  '  "$HARVEYS_BRAND_TMP/repo"',
+  "mkdir -p .agents/skills/harveys-brand/references",
+  "cp \"$HARVEYS_BRAND_TMP/repo/skills/harveys-brand/SKILL.md\" \\",
+  "  .agents/skills/harveys-brand/SKILL.md",
+  "cp \"$HARVEYS_BRAND_TMP/repo/DESIGN.md\" \\",
+  "  .agents/skills/harveys-brand/references/DESIGN.md",
+  "cp \"$HARVEYS_BRAND_TMP/repo\"/skills/harveys-brand/references/*.md \\",
+  "  .agents/skills/harveys-brand/references/",
+  "cp \"$HARVEYS_BRAND_TMP/repo/.design-sync/conventions.md\" \\",
+  "  .agents/skills/harveys-brand/references/conventions.md",
+  "touch AGENTS.md",
+  "grep -Fq 'Use `$harveys-brand`' AGENTS.md || \\",
+  "  printf '\\n## Harvey’s brand\\n\\n- Use `$harveys-brand` for any UI styling or retheme. Follow its full retheme workflow for multi-file color changes.\\n' >> AGENTS.md",
+  'rm -r -- "$HARVEYS_BRAND_TMP"',
+  "trap - EXIT",
+  ")",
+].join("\n");
+
+const RETHEME_PROMPT = [
+  "Retheme this app to the Harvey's brand. Follow the Harvey's retheming",
+  "procedure end to end: settle semantics and the token layer first, make the",
+  "mechanical pass total and idempotent, then verify every page with",
+  "screenshots before calling it done.",
+].join("\n");
 
 function CommandBlock({ vendor, tag, note, command }) {
   const [copied, setCopied] = useState(false);
@@ -35,7 +75,7 @@ function CommandBlock({ vendor, tag, note, command }) {
           {vendor}
         </h2>
         {tag && (
-          <div className="bg-yellow-100 py-1 px-2 text-xs font-bold inline-block">
+          <div className="bg-yellow-100 py-1 px-2 text-xs font-semibold inline-block">
             {tag}
           </div>
         )}
@@ -63,7 +103,7 @@ export default function AgentHelp() {
       <section id="agent-help" className="py-20 bg-green-700">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-6">
-            <div className="bg-green-400 py-1 px-2 text-white font-bold inline-block">
+            <div className="bg-green-400 py-1 px-2 text-white font-semibold inline-block">
               Agent help
             </div>
           </div>
@@ -79,40 +119,76 @@ export default function AgentHelp() {
             <CommandBlock
               vendor="Claude Code"
               tag="Recommended"
-              note="Install the brand as a project-scoped plugin. The harveys-brand skill loads whenever styling comes up and reads the spec straight from this repo."
+              note="Install the brand as a project-scoped plugin. The harveys-brand skill loads whenever styling comes up, reads the spec straight from this repo, and walks the agent through the full retheme procedure."
               command={CLAUDE_COMMANDS}
             />
             <CommandBlock
               vendor="Gemini CLI"
-              note="Fetch the spec into your repo, then let GEMINI.md import it."
+              note="Fetch the spec and retheme kit into your repo, then let GEMINI.md import the spec and point at the rest."
               command={GEMINI_COMMANDS}
             />
             <CommandBlock
               vendor="OpenAI Codex"
-              note="Same fetch, plus a pointer in AGENTS.md — Cursor and GitHub Copilot read the same file."
-              command={AGENTS_COMMANDS}
+              tag="Recommended for Codex"
+              note="Install the full workflow as a repo-scoped Codex skill and add a durable root rule in AGENTS.md. Commit both paths, start a fresh Codex session, then use $harveys-brand with the prompt below."
+              command={CODEX_COMMANDS}
+            />
+            <CommandBlock
+              vendor="The prompt"
+              note="After installing, ask for the retheme in these words — naming the procedure is what keeps results consistent. Works with every agent above."
+              command={RETHEME_PROMPT}
             />
             <div className="flex flex-wrap -m-4 mt-0">
+              <div className="w-full p-4">
+                <h3 className="font-heading text-base font-bold uppercase tracking-widest text-white mb-2">
+                  Using the brand workflow
+                </h3>
+                <p className="text-green-100">
+                  Once installed, the harveys-brand skill loads whenever
+                  styling comes up — "make this on-brand", "build a page", or
+                  the retheme prompt above. Quick touches read DESIGN.md and
+                  the token crosswalk; anything that recolors across files
+                  follows the full retheming procedure, gates included. For
+                  Codex, commit <code className="font-mono">AGENTS.md</code>{" "}
+                  and{" "}
+                  <code className="font-mono">
+                    .agents/skills/harveys-brand/
+                  </code>
+                  . The Claude install writes{" "}
+                  <code className="font-mono">.claude/settings.json</code>, so
+                  commit that file too; every teammate then gets the same
+                  project-scoped workflow instead of a machine-local one.
+                </p>
+              </div>
               <div className="w-full md:w-1/2 p-4">
                 <h3 className="font-heading text-base font-bold uppercase tracking-widest text-white mb-2">
                   What your agent gets
                 </h3>
                 <p className="text-green-100">
-                  DESIGN.md, the canonical design spec: the palette with print
-                  equivalents, typography rules, component stylings, layout
-                  principles, and our voice.
+                  DESIGN.md, the canonical design spec, plus the retheme kit:
+                  the step-by-step retheming procedure, the token crosswalk
+                  (every name-to-hex mapping), pre-resolved brand decisions
+                  (Data Red, the wheat naming, the two chip tiers, the Sage
+                  focus ring), the validated chart palettes, and the
+                  component usage conventions.
                 </p>
               </div>
               <div className="w-full md:w-1/2 p-4">
                 <h3 className="font-heading text-base font-bold uppercase tracking-widest text-white mb-2">
-                  Staying current
+                  Updating the plugin
                 </h3>
                 <p className="text-green-100">
-                  Claude installs track this repo — run{" "}
+                  Run{" "}
                   <code className="font-mono">
                     claude plugin marketplace update harveys
                   </code>{" "}
-                  to refresh. Snapshots refresh by re-running the fetch.
+                  — it pulls this repo's master branch, so spec changes ship
+                  only once merged there (current plugin: v1.2.0). Gemini and
+                  Codex snapshots refresh by re-running the fetch; vendored
+                  components refresh with{" "}
+                  <code className="font-mono">brand-sync.mjs --sync</code>.
+                  Full lifecycle docs — install, use, update, publish —
+                  live at <code className="font-mono">docs/plugin.md</code>.
                 </p>
               </div>
               <div className="w-full md:w-1/2 p-4">
@@ -130,9 +206,11 @@ export default function AgentHelp() {
                   Want the components too?
                 </h3>
                 <p className="text-green-100">
-                  The React UI kit ships separately through design-sync — find
-                  Harvey's in Claude Design, or start from
-                  .design-sync/conventions.md in this repo.
+                  The React UI kit lives in packages/ui, styled by the
+                  semantic tokens in packages/tokens — vendor both with
+                  packages/sync/brand-sync.mjs (recorded provenance, drift
+                  checks). Previews stay in Claude Design via design-sync;
+                  usage rules in .design-sync/conventions.md.
                 </p>
               </div>
             </div>

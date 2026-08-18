@@ -7,9 +7,9 @@ const alertVariants = cva(
   {
     variants: {
       variant: {
-        default: "border-hairline bg-yellow-50 text-black [&>svg]:text-green-500",
+        default: "border-hb-border bg-hb-wheat-pale text-hb-ink [&>svg]:text-hb-primary-interactive",
         destructive:
-          "border-orange-700 bg-red-50 text-orange-700 [&>svg]:text-orange-700",
+          "border-hb-secondary bg-hb-cream text-hb-secondary [&>svg]:text-hb-secondary",
       },
     },
     defaultVariants: {

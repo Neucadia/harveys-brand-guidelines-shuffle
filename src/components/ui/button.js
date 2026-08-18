@@ -4,17 +4,17 @@ import { cva } from "class-variance-authority";
 import { cn } from "./utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-hb-focus-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed",
   {
     variants: {
       variant: {
-        default: "bg-green-500 text-white hover:bg-green-600",
-        secondary: "bg-yellow-500 text-black hover:bg-sand",
-        destructive: "bg-orange-700 text-white hover:bg-orange-950",
+        default: "bg-hb-primary-interactive text-white hover:bg-hb-primary-hover",
+        secondary: "bg-hb-wheat-light text-hb-ink hover:bg-hb-sand",
+        destructive: "bg-hb-secondary text-white hover:bg-hb-ember-text",
         outline:
-          "border-2 border-green-500 bg-white text-green-500 hover:bg-yellow-50",
-        ghost: "text-green-500 hover:bg-yellow-50",
-        link: "text-green-500 hover:underline",
+          "border-2 border-hb-primary-interactive bg-white text-hb-primary-interactive hover:bg-hb-wheat-pale",
+        ghost: "text-hb-primary-interactive hover:bg-hb-wheat-pale",
+        link: "text-hb-primary-interactive hover:underline",
       },
       size: {
         default: "px-6 py-3 text-sm",

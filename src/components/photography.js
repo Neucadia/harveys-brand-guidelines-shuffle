@@ -8,7 +8,7 @@ export default function IndexSection__structures29() {
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-5xl mx-auto">
               <div className="flex justify-center mb-6">
-                <div className="bg-green-400 py-1 px-2 text-white font-bold inline-block">
+                <div className="bg-green-400 py-1 px-2 text-white font-semibold inline-block">
                   Photography
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function IndexSection__structures29() {
                   </h1>
                   <div className="flex items-center">
                     <div className="text-left">
-                      <p className="text-gray-600 text-xl font-bold mb-8">
+                      <p className="text-gray-600 text-xl font-semibold mb-8">
                         Brings a playful personality to our brand
                       </p>
                       <p>
@@ -215,7 +215,7 @@ export default function IndexSection__structures29() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold mb-4">
+                      <h3 className="text-green-500 text-xl font-semibold mb-4">
                         Models
                       </h3>
                       <p className="text-gray-500">
@@ -238,7 +238,7 @@ export default function IndexSection__structures29() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold mb-4">
+                      <h3 className="text-green-500 text-xl font-semibold mb-4">
                         Focal length
                       </h3>
                       <p className="text-gray-500">
@@ -261,7 +261,7 @@ export default function IndexSection__structures29() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold mb-4">
+                      <h3 className="text-green-500 text-xl font-semibold mb-4">
                         Light
                       </h3>
                       <p className="text-gray-500">
@@ -284,7 +284,7 @@ export default function IndexSection__structures29() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold mb-4">
+                      <h3 className="text-green-500 text-xl font-semibold mb-4">
                         Mood
                       </h3>
                       <p className="text-gray-500">
@@ -306,7 +306,7 @@ export default function IndexSection__structures29() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold mb-4">
+                      <h3 className="text-green-500 text-xl font-semibold mb-4">
                         Composition
                       </h3>
                       <p className="text-gray-500">
@@ -330,7 +330,7 @@ export default function IndexSection__structures29() {
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
-                      <h3 className="text-green-500 text-xl font-bold mb-4">
+                      <h3 className="text-green-500 text-xl font-semibold mb-4">
                         Color/Filter
                       </h3>
                       <p className="text-gray-500">
@@ -345,7 +345,7 @@ export default function IndexSection__structures29() {
             </div>
             <div className="mx-auto lg:w-1/2">
               <a
-                className="px-6 py-3 hidden text-center bg-green-500 text-white text-sm font-bold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
+                className="px-6 py-3 hidden text-center bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
                 href="#"
               >
                 Download Photo Library

@@ -13,13 +13,13 @@ const Toaster = ({ ...props }) => {
         style: { borderRadius: 0, boxShadow: "none" },
         classNames: {
           toast:
-            "group toast group-[.toaster]:bg-white group-[.toaster]:text-black group-[.toaster]:border group-[.toaster]:border-gray-200 group-[.toaster]:shadow-none group-[.toaster]:rounded-none",
-          title: "group-[.toast]:font-bold",
-          description: "group-[.toast]:text-gray-500",
+            "group toast group-[.toaster]:bg-white group-[.toaster]:text-hb-ink group-[.toaster]:border group-[.toaster]:border-hb-neutral-gray group-[.toaster]:shadow-none group-[.toaster]:rounded-none",
+          title: "group-[.toast]:font-semibold",
+          description: "group-[.toast]:text-hb-text-secondary",
           actionButton:
-            "group-[.toast]:bg-green-500 group-[.toast]:text-white group-[.toast]:font-bold group-[.toast]:rounded-none",
+            "group-[.toast]:bg-hb-primary-interactive group-[.toast]:text-white group-[.toast]:font-semibold group-[.toast]:rounded-none",
           cancelButton:
-            "group-[.toast]:bg-yellow-50 group-[.toast]:text-gray-500 group-[.toast]:font-bold group-[.toast]:rounded-none",
+            "group-[.toast]:bg-hb-wheat-pale group-[.toast]:text-hb-text-secondary group-[.toast]:font-semibold group-[.toast]:rounded-none",
         },
       }}
       {...props}

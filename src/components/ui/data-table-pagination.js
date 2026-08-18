@@ -17,13 +17,13 @@ import {
 function DataTablePagination({ table, pageSizeOptions = [5, 10, 20, 50] }) {
   return (
     <div className="flex flex-wrap items-center justify-between gap-4 py-4">
-      <div className="text-sm text-gray-500">
+      <div className="text-sm text-hb-text-secondary">
         {table.getFilteredSelectedRowModel().rows.length} of{" "}
         {table.getFilteredRowModel().rows.length} row(s) selected.
       </div>
       <div className="flex flex-wrap items-center gap-6">
         <div className="flex items-center gap-2">
-          <p className="text-sm font-bold">Rows per page</p>
+          <p className="text-sm font-semibold">Rows per page</p>
           <Select
             value={`${table.getState().pagination.pageSize}`}
             onValueChange={(value) => {
@@ -44,7 +44,7 @@ function DataTablePagination({ table, pageSizeOptions = [5, 10, 20, 50] }) {
             </SelectContent>
           </Select>
         </div>
-        <div className="text-sm font-bold">
+        <div className="text-sm font-semibold">
           Page {table.getState().pagination.pageIndex + 1} of{" "}
           {table.getPageCount()}
         </div>

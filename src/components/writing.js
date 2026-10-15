@@ -1,4 +1,5 @@
 import React from "react";
+import EmailTemplate from "./emailTemplate";
 
 export default function Writing() {
   return (
@@ -384,7 +385,14 @@ export default function Writing() {
                         Keep sales messaging clean and focused—highlight the
                         value, not just the discount. Use bold imagery to draw
                         customers in and short captions to create urgency. For
-                        events, flyers may be used as an email template.
+                        events, flyers may be used as{" "}
+                        <a
+                          className="text-green-500 hover:underline"
+                          href="#email"
+                        >
+                          an email template
+                        </a>
+                        .
                       </p>
                     </div>
                   </div>
@@ -394,6 +402,7 @@ export default function Writing() {
             </div>
           </div>
         </section>
+        <EmailTemplate />
         <section className="py-10 ">
           <div className="container mx-auto px-4">
             <h2 className="font-heading uppercase tracking-widest text-orange-500 font-bold text-center py-10 text-4xl">

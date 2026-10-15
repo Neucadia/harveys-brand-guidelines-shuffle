@@ -44,6 +44,9 @@ export default function Header() {
                         <li className="mr-9 text-sm hover:text-gray-700">
                           <a href="#colors">Colors</a>
                         </li>
+                        <li className="mr-9 text-sm hover:text-gray-700">
+                          <a href="#email">Email</a>
+                        </li>
                         <li className="text-sm hover:text-gray-700">
                           <a href="#agent-help">Agents</a>
                         </li>
@@ -168,6 +171,14 @@ export default function Header() {
                               href="#colors"
                             >
                               Colors
+                            </a>
+                          </li>
+                          <li className="mb-6">
+                            <a
+                              className="text-sm hover:text-gray-700"
+                              href="#email"
+                            >
+                              Email
                             </a>
                           </li>
                           <li className="">

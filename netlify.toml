@@ -1,0 +1,11 @@
+# Netlify build settings, versioned so the site survives toolchain changes.
+# The UI settings for this site were created for Create React App; this file
+# takes precedence for the keys it sets.
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  # Vite 8 needs Node 20.19+ or 22.12+. Netlify also honors the
+  # packageManager field in package.json for the pnpm version.
+  NODE_VERSION = "22"

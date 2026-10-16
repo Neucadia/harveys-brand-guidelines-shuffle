@@ -1,13 +1,13 @@
 # brand-sync — the vendoring channel (ADR 0003)
 
-`brand-sync.mjs` copies declared brand artifacts from this repo's **master**
+`brand-sync.mjs` copies declared brand artifacts from this repo's **main**
 branch into a consumer repo, records the source commit and per-file sha256
 hashes in the consumer's `brand-sync.json`, and detects drift both ways:
 
 - `--check` **fails** on locally modified vendored files (fix upstream, then
-  re-sync — never patch the copy) and **warns** when upstream master has
+  re-sync — never patch the copy) and **warns** when upstream main has
   moved past the pinned commit (consumers upgrade on their own cadence).
-- `--sync` re-clones master (or `--from <local-clone>` for pre-merge
+- `--sync` re-clones main (or `--from <local-clone>` for pre-merge
   testing) and rewrites the pins.
 
 Bootstrap a consumer:

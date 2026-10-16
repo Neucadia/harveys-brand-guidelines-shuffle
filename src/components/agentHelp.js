@@ -182,7 +182,7 @@ export default function AgentHelp() {
                   <code className="font-mono">
                     claude plugin marketplace update harveys
                   </code>{" "}
-                  — it pulls this repo's master branch, so spec changes ship
+                  — it pulls this repo's main branch, so spec changes ship
                   only once merged there (current plugin: v1.2.0). Gemini and
                   Codex snapshots refresh by re-running the fetch; vendored
                   components refresh with{" "}

@@ -7,7 +7,7 @@ the retheme kit to any agent working in a consumer repo: `DESIGN.md`, the
 `decisions.md`, `dataviz.md`) plus `.design-sync/conventions.md`.
 
 Names are public API (ADR 0001): the marketplace is `harveys`, the plugin is
-`harveys-brand`, and the GitHub **default branch is `master`** — installs and
+`harveys-brand`, and the GitHub **default branch is `main`** — installs and
 updates clone the default branch, so nothing ships until it is merged there.
 
 ## Install (once per project)
@@ -58,7 +58,7 @@ Design project via design-sync.
 claude plugin marketplace update harveys
 ```
 
-Pulls the current `master`. If content looks stale, the usual cause is that
+Pulls the current `main`. If content looks stale, the usual cause is that
 a change is still only on `develop`. Gemini/Codex snapshot consumers
 re-run the fetch block from the site's Agent Help section; vendored
 components refresh with `node scripts/brand-sync.mjs --sync`.
@@ -72,8 +72,8 @@ components refresh with `node scripts/brand-sync.mjs --sync`.
    unbumped version can cache as "already current".
 3. Regenerate anything derived: `npm run tokens` (if `DESIGN.md` frontmatter
    changed) and `npm run css`; run `node --test packages/tokens/tokens.test.mjs`.
-4. **Merge `develop` → `master` and push** — this *is* the publish act.
-   The `.claude-plugin/` scaffolding must always remain present on `master`.
+4. **Merge `develop` → `main` and push** — this *is* the publish act.
+   The `.claude-plugin/` scaffolding must always remain present on `main`.
 5. Consumers pick it up with `claude plugin marketplace update harveys`.
    Announce breaking reference renames in the commit message — the snapshot
    echo lines in `GEMINI.md`/`AGENTS.md` files point at fixed paths.
@@ -83,6 +83,6 @@ components refresh with `node scripts/brand-sync.mjs --sync`.
 | Symptom | Cause |
 |---|---|
 | Teammate doesn't have the skill | consumer's `.claude/settings.json` not committed |
-| Update pulls nothing new | change not merged to `master`, or version not bumped |
+| Update pulls nothing new | change not merged to `main`, or version not bumped |
 | `marketplace add` fails | no clone access to the Neucadia repo, or a stale local-path marketplace named `harveys` is registered |
 | Agent styles off-spec despite plugin | it skipped the skill — re-ask using the retheme prompt above, which names the procedure |

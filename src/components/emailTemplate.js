@@ -4,7 +4,7 @@ const TEMPLATE_HREF = "/email/harveys-mailchimp-flyer.html";
 const EXAMPLE_HREF = "/email/examples/bird-feeding-month.html";
 const PREVIEW_SRC = "/email/preview/bird-feeding-month.html";
 const GUIDE_HREF =
-  "https://github.com/Neucadia/harveys-brand-guidelines-shuffle/blob/master/templates/email/README.md";
+  "https://github.com/Neucadia/harveys-brand-guidelines-shuffle/blob/main/templates/email/README.md";
 
 const VIEWS = {
   desktop: { label: "Desktop", width: 640 },

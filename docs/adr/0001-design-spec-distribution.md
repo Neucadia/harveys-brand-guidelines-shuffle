@@ -1,5 +1,8 @@
 # DESIGN.md is the canonical agent-facing Design Spec, distributed as a Claude Code plugin
 
+> Amended 2026-10-15: the publish branch was renamed from `master` to `main`.
+> Read `master` below as `main`.
+
 Fellow employees need to Harvey's-theme their own projects with AI agents. We
 committed the formerly untracked Stitch aesthetic spec as root `DESIGN.md` and
 made this repo a Claude Code plugin marketplace (`.claude-plugin/` +

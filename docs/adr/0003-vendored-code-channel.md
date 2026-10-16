@@ -1,5 +1,8 @@
 # Components and tokens ship to consumers as vendored code with recorded provenance
 
+> Amended 2026-10-15: the publish branch was renamed from `master` to `main`.
+> Read `master` below as `main`.
+
 ADR 0001 gave the estate two distribution channels — the Design Spec
 (DESIGN.md + skills, via plugin/clone-snapshot) and the DS Bundle
 (design-sync → claude.ai/design) — and explicitly rejected "vendored copies

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Harvey's brand-sync — the vendoring channel for consumer repos (ADR 0003).
-// Copies declared artifacts from this repo's master branch into a consumer,
+// Copies declared artifacts from this repo's main branch into a consumer,
 // records the source commit + content hashes, and detects both local
 // tampering and upstream staleness. Vendored (committed) code deliberately
 // beats install-time git deps: Vercel builds need committed files, and clone
@@ -10,7 +10,7 @@
 // create <consumer>/brand-sync.json:
 //   {
 //     "source": "https://github.com/Neucadia/harveys-brand-guidelines-shuffle",
-//     "branch": "master",
+//     "branch": "main",
 //     "takes": [
 //       { "from": "packages/tokens/dist/tokens.css",  "to": "src/styles/harveys-tokens.css" },
 //       { "from": "packages/tokens/dist/tokens.ts",   "to": "src/lib/harveys-tokens.ts" }
@@ -19,7 +19,7 @@
 //     "fileHashes": {}
 //   }
 //
-//   node scripts/brand-sync.mjs --sync                 pull from master, rewrite pins
+//   node scripts/brand-sync.mjs --sync                 pull from main, rewrite pins
 //   node scripts/brand-sync.mjs --sync --from <path>   pull from a local clone (pre-merge testing)
 //   node scripts/brand-sync.mjs --check                fail on local edits; warn if upstream moved
 import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, cpSync } from "node:fs";
@@ -56,12 +56,12 @@ if (mode === "check") {
   try {
     const remote = execFileSync(
       "git",
-      ["ls-remote", manifest.source, manifest.branch || "master"],
+      ["ls-remote", manifest.source, manifest.branch || "main"],
       { encoding: "utf8" }
     ).split("\t")[0];
     if (remote && manifest.pinnedCommit && remote !== manifest.pinnedCommit) {
       console.warn(
-        `note: upstream ${manifest.branch || "master"} is at ${remote.slice(0, 10)}, ` +
+        `note: upstream ${manifest.branch || "main"} is at ${remote.slice(0, 10)}, ` +
           `vendored from ${manifest.pinnedCommit.slice(0, 10)} — upgrade with --sync when ready`
       );
     }
@@ -82,7 +82,7 @@ if (fromIdx !== -1) {
 } else {
   scratch = join(tmpdir(), `harveys-brand-sync-${Date.now()}`);
   execFileSync("git", [
-    "clone", "--depth", "1", "-b", manifest.branch || "master",
+    "clone", "--depth", "1", "-b", manifest.branch || "main",
     manifest.source, scratch,
   ], { stdio: "inherit" });
   srcRoot = scratch;

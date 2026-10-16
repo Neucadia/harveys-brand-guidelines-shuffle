@@ -32,5 +32,5 @@ node --test packages/tokens/tokens.test.mjs
 Edit kit components in `packages/ui/src` (never `src/components/ui/` — it
 gets overwritten by `sync-ui`). Token changes start in `DESIGN.md`'s
 frontmatter, then `npm run tokens`. Branch flow: feature branches →
-`develop` → **`master` is the publish gate** — plugin installs, snapshot
-fetches, and brand-sync all read `master` only.
+`develop` → **`main` is the publish gate** — plugin installs, snapshot
+fetches, and brand-sync all read `main` only.

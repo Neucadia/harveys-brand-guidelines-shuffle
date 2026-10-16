@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 // packages/ui/src is the kit's source of truth; src/components/ui is a
-// generated, byte-identical copy kept so CRA compiles from src/ (CRA5 cannot
-// transpile workspace JSX) and so agents find the kit where it has always
-// lived. This script maintains the copy. It runs before every CRA build and
+// generated, byte-identical copy kept so the site compiles from src/ (the copy
+// predates Vite, which could import the workspace directly, but agents and the
+// design-sync config find the kit where it has always
+// lived). This script maintains the copy. It runs before every site build and
 // inside the design-sync buildCmd, so hand edits to the copy are overwritten
 // — edit packages/ui/src instead.
 //

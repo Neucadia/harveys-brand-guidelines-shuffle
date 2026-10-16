@@ -31,7 +31,7 @@ token-parity test asserting its values round-trip to the vendored canon.
 - The brand repo's `master` is the only publishing act — nothing new to
   operate. Consumers upgrade deliberately by re-running `--sync`.
 - `src/components/ui/` here is now a **generated copy** of
-  `packages/ui/src` (`scripts/sync-ui.mjs`, wired into the CRA build and the
+  `packages/ui/src` (`scripts/sync-ui.mjs`, wired into the site build and the
   design-sync buildCmd); the kit is edited in `packages/ui/src` only.
 - The kit's classes are semantic (`hb-*`, with baked hex fallbacks), so a
   vendored component renders correctly even before a consumer loads

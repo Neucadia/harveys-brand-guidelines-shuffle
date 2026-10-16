@@ -9,7 +9,7 @@
 //                                                  sample values, for the
 //                                                  site's inline preview
 //
-// It runs before every CRA build. Hand edits under public/email are
+// It runs before every site build. Hand edits under public/email are
 // overwritten — edit templates/email instead.
 //
 //   node scripts/sync-email.mjs          publish

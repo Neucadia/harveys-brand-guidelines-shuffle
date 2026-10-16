@@ -16,14 +16,15 @@ channels that deliver all of it to product repos and their AI agents.
 | **Component previews** | design-sync → Claude Design | `.design-sync/` config; usage contract in `.design-sync/conventions.md`. |
 | **Email template** | `templates/email/` | Mailchimp flyer-to-email template, resolved example, and the PSD-to-email guide. `scripts/sync-email.mjs` publishes copies to `public/email/` for the site's download links and inline preview. |
 | **Decisions** | `docs/consistency/DECISIONS.md`, `docs/adr/`, `skills/harveys-brand/references/decisions.md` | The 2026-08-06 cross-product decision record, ADRs, and the agent-facing DR summaries. |
-| **The site** | `src/` (CRA) | The guidelines site itself — brand sections + the component catalogue, including Agent Help with copy-paste setup commands. |
+| **The site** | `src/` (Vite + React) | The guidelines site itself — brand sections + the component catalogue, including Agent Help with copy-paste setup commands. |
 
 ## Working on this repo
 
 ```bash
 npm install
-npm start           # sync-ui + tailwind + CRA dev server
-npm run build       # production build (same pipeline)
+npm start           # sync-ui + sync-email + tailwind + Vite dev server (http://localhost:5173)
+npm run build       # production build into build/ (same pipeline)
+npm run preview     # serve the production build locally
 npm run tokens      # regenerate packages/tokens/dist from DESIGN.md
 node --test packages/tokens/tokens.test.mjs
 ```

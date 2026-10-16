@@ -1,6 +1,6 @@
-// Library build for design-sync. react-scripts has no library output, so this
-// compiles the brand-section components (CRA-style JSX in .js files, plus
-// CRA/SVGR `import { ReactComponent }` svg imports) into plain JS under
+// Library build for design-sync. The Vite app build has no library output, so this
+// compiles the brand-section components (JSX in .js files, plus
+// SVGR-style `import { ReactComponent }` svg imports) into plain JS under
 // .design-sync/.cache/lib/, with a ds-entry.mjs barrel the converter bundles.
 // Deps (esbuild, @svgr/core) resolve through the .design-sync/node_modules
 // symlink -> ../.ds-sync/node_modules (recreate on a fresh clone:
@@ -37,7 +37,7 @@ let svgCount = 0;
 async function svgModuleFor(absSvgPath) {
   if (svgModules.has(absSvgPath)) return svgModules.get(absSvgPath);
   const base = basename(absSvgPath, '.svg').replace(/[^A-Za-z0-9-]/g, '') + '.js';
-  // SVGR classic-runtime output — the same transform CRA applies to these
+  // SVGR classic-runtime output — the same transform the app applies to these
   // imports, so the inline-svg render is identical to the app's.
   const jsx = await svgr(
     readFileSync(absSvgPath, 'utf8'),

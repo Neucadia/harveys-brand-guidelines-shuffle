@@ -1,10 +1,10 @@
-# design-sync notes — Harvey's brand guidelines (CRA/Shuffle repo)
+# design-sync notes — Harvey's brand guidelines (Vite/Shuffle repo)
 
 Repo-specific gotchas for future syncs. Config: `.design-sync/config.json`; project: https://claude.ai/design/p/e50eaf05-9bee-4791-9212-d74848835279
 
 ## Build pipeline
 - **Lockfile is pnpm v6 format (pnpm 8).** System pnpm 10 refuses it — install with `npx -y pnpm@8 install --frozen-lockfile`.
-- **No library build exists** (Create React App; `react-scripts` only bundles the app). `.design-sync/build-lib.mjs` is the added library build: it compiles the 30 section components (JSX in `.js` files — esbuild's default `.js` loader can't parse that) and converts CRA/SVGR `import { ReactComponent }` svg imports into inline-SVG React modules (same transform CRA applies, via @svgr/core). Output: `.design-sync/.cache/lib/` (entry `ds-entry.mjs`, stylesheet `harveys.css`).
+- **No library build exists** (the Vite config only bundles the app). `.design-sync/build-lib.mjs` is the added library build: it compiles the 30 section components (JSX in `.js` files — esbuild's default `.js` loader can't parse that) and converts SVGR-style `import { ReactComponent }` svg imports into inline-SVG React modules (the same transform vite-plugin-svgr applies in the app, via @svgr/core). Output: `.design-sync/.cache/lib/` (entry `ds-entry.mjs`, stylesheet `harveys.css`).
 - `buildCmd` = `npm run css && node .design-sync/build-lib.mjs` — the first half regenerates `public/css/tailwind/tailwind.css` (the Tailwind CLI is v3; the compiled file only rewrites when content changes, so stale mtimes are normal).
 - `build-lib.mjs` needs the deps symlink — **on a fresh clone recreate it**: `ln -sfn ../.ds-sync/node_modules .design-sync/node_modules`, and `.ds-sync` needs `esbuild @svgr/core @svgr/plugin-jsx` plus `playwright@1.58.0 playwright-core@1.58.0` (pinned to the cached chromium-1208; verify against `~/Library/Caches/ms-playwright/`).
 - `cfg.cssEntry` must stay pointed at the **generated** `.design-sync/.cache/lib/harveys.css` — the converter copies cssEntry verbatim into `_ds_bundle.css`, so a file with local relative `@import`s ships dangling imports. harveys.css inlines `public/css/main.css` + compiled Tailwind and hoists the remote font imports.

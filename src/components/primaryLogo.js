@@ -31,7 +31,7 @@ const PrimaryLogo = () => {
           When space is limited or legibility is sacrificed, refer to horizontal
           lockup.
         </p>
-        <ul className="mx-auto text-left max-w-sm grid grid-cols-2 mb-4">
+        <ul className="mx-auto text-left max-w-sm grid grid-cols-1 sm:grid-cols-2 mb-4">
           <li className="flex gap-2 items-center mb-1">
             <span>
               <svg
@@ -43,14 +43,14 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M8 11.5L11 14.5L17 8.5"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -70,14 +70,14 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M8 11.5L11 14.5L17 8.5"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -97,14 +97,14 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M8 11.5L11 14.5L17 8.5"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -124,14 +124,14 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M8 11.5L11 14.5L17 8.5"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -151,14 +151,14 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M8 11.5L11 14.5L17 8.5"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -178,14 +178,14 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M8 11.5L11 14.5L17 8.5"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -205,14 +205,14 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M8 11.5L11 14.5L17 8.5"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -232,14 +232,14 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M8 11.5L11 14.5L17 8.5"
-                  stroke="#006251"
+                  stroke="#296533"
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -283,9 +283,11 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <a
+            <button
+              type="button"
+              aria-label="Recolor logo: ink black"
               onClick={() => setFill("#10181f")}
-              className="ml-2 absolute inset-0"
+              className="ml-2 absolute inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
             >
               <svg
                 width={82}
@@ -296,10 +298,10 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M37 0C44.6995 9.18154e-08 52.2702 1.97555 58.988 5.73768C65.7057 9.49981 71.3458 14.9227 75.3688 21.4876C79.3918 28.0525 81.663 35.5398 81.9653 43.2333C82.2676 50.9268 80.5908 58.5693 77.0953 65.4296C73.5998 72.2899 68.4025 78.1385 62.0007 82.4161C55.5988 86.6937 48.2064 89.2572 40.5307 89.8613C32.8549 90.4654 25.1526 89.0899 18.1603 85.8664C11.1681 82.643 5.11988 77.6794 0.594241 71.4503L2.41453 70.1278C6.71389 76.0454 12.4597 80.7608 19.1023 83.8231C25.7449 86.8854 33.0622 88.1921 40.3541 87.6182C47.6461 87.0443 54.6688 84.609 60.7506 80.5453C66.8324 76.4816 71.7698 70.9254 75.0905 64.4081C78.4112 57.8908 80.0042 50.6305 79.717 43.3216C79.4299 36.0128 77.2722 28.8998 73.4504 22.6632C69.6285 16.4265 64.2704 11.2748 57.8886 7.7008C51.5067 4.12677 44.3145 2.25 37 2.25V0Z"
-                  fill="#006251"
+                  fill="#296533"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
         <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
@@ -320,9 +322,11 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <a
+            <button
+              type="button"
+              aria-label="Recolor logo: deep green"
               onClick={() => setFill("#2b3c1d")}
-              className="ml-2 absolute inset-0"
+              className="ml-2 absolute inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
             >
               <svg
                 width={82}
@@ -333,10 +337,10 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M37 0C44.6995 9.18154e-08 52.2702 1.97555 58.988 5.73768C65.7057 9.49981 71.3458 14.9227 75.3688 21.4876C79.3918 28.0525 81.663 35.5398 81.9653 43.2333C82.2676 50.9268 80.5908 58.5693 77.0953 65.4296C73.5998 72.2899 68.4025 78.1385 62.0007 82.4161C55.5988 86.6937 48.2064 89.2572 40.5307 89.8613C32.8549 90.4654 25.1526 89.0899 18.1603 85.8664C11.1681 82.643 5.11988 77.6794 0.594241 71.4503L2.41453 70.1278C6.71389 76.0454 12.4597 80.7608 19.1023 83.8231C25.7449 86.8854 33.0622 88.1921 40.3541 87.6182C47.6461 87.0443 54.6688 84.609 60.7506 80.5453C66.8324 76.4816 71.7698 70.9254 75.0905 64.4081C78.4112 57.8908 80.0042 50.6305 79.717 43.3216C79.4299 36.0128 77.2722 28.8998 73.4504 22.6632C69.6285 16.4265 64.2704 11.2748 57.8886 7.7008C51.5067 4.12677 44.3145 2.25 37 2.25V0Z"
-                  fill="#006251"
+                  fill="#296533"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
         <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
@@ -357,9 +361,11 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <a
+            <button
+              type="button"
+              aria-label="Recolor logo: orange"
               onClick={() => setFill("#C05017")}
-              className="ml-2 absolute inset-0"
+              className="ml-2 absolute inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
             >
               <svg
                 width={82}
@@ -370,10 +376,10 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M37 0C44.6995 9.18154e-08 52.2702 1.97555 58.988 5.73768C65.7057 9.49981 71.3458 14.9227 75.3688 21.4876C79.3918 28.0525 81.663 35.5398 81.9653 43.2333C82.2676 50.9268 80.5908 58.5693 77.0953 65.4296C73.5998 72.2899 68.4025 78.1385 62.0007 82.4161C55.5988 86.6937 48.2064 89.2572 40.5307 89.8613C32.8549 90.4654 25.1526 89.0899 18.1603 85.8664C11.1681 82.643 5.11988 77.6794 0.594241 71.4503L2.41453 70.1278C6.71389 76.0454 12.4597 80.7608 19.1023 83.8231C25.7449 86.8854 33.0622 88.1921 40.3541 87.6182C47.6461 87.0443 54.6688 84.609 60.7506 80.5453C66.8324 76.4816 71.7698 70.9254 75.0905 64.4081C78.4112 57.8908 80.0042 50.6305 79.717 43.3216C79.4299 36.0128 77.2722 28.8998 73.4504 22.6632C69.6285 16.4265 64.2704 11.2748 57.8886 7.7008C51.5067 4.12677 44.3145 2.25 37 2.25V0Z"
-                  fill="#006251"
+                  fill="#296533"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
         <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
@@ -394,9 +400,11 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <a
+            <button
+              type="button"
+              aria-label="Recolor logo: wheat"
               onClick={() => setFill("#D8C7A2")}
-              className="ml-2 absolute inset-0"
+              className="ml-2 absolute inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
             >
               <svg
                 width={82}
@@ -407,10 +415,10 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M37 0C44.6995 9.18154e-08 52.2702 1.97555 58.988 5.73768C65.7057 9.49981 71.3458 14.9227 75.3688 21.4876C79.3918 28.0525 81.663 35.5398 81.9653 43.2333C82.2676 50.9268 80.5908 58.5693 77.0953 65.4296C73.5998 72.2899 68.4025 78.1385 62.0007 82.4161C55.5988 86.6937 48.2064 89.2572 40.5307 89.8613C32.8549 90.4654 25.1526 89.0899 18.1603 85.8664C11.1681 82.643 5.11988 77.6794 0.594241 71.4503L2.41453 70.1278C6.71389 76.0454 12.4597 80.7608 19.1023 83.8231C25.7449 86.8854 33.0622 88.1921 40.3541 87.6182C47.6461 87.0443 54.6688 84.609 60.7506 80.5453C66.8324 76.4816 71.7698 70.9254 75.0905 64.4081C78.4112 57.8908 80.0042 50.6305 79.717 43.3216C79.4299 36.0128 77.2722 28.8998 73.4504 22.6632C69.6285 16.4265 64.2704 11.2748 57.8886 7.7008C51.5067 4.12677 44.3145 2.25 37 2.25V0Z"
-                  fill="#006251"
+                  fill="#296533"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
         <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
@@ -431,9 +439,11 @@ const PrimaryLogo = () => {
                 />
               </svg>
             </span>
-            <a
+            <button
+              type="button"
+              aria-label="Recolor logo: cream"
               onClick={() => setFill("#f6eceb")}
-              className="ml-2 absolute inset-0"
+              className="ml-2 absolute inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
             >
               <svg
                 width={82}
@@ -444,10 +454,10 @@ const PrimaryLogo = () => {
               >
                 <path
                   d="M37 0C44.6995 9.18154e-08 52.2702 1.97555 58.988 5.73768C65.7057 9.49981 71.3458 14.9227 75.3688 21.4876C79.3918 28.0525 81.663 35.5398 81.9653 43.2333C82.2676 50.9268 80.5908 58.5693 77.0953 65.4296C73.5998 72.2899 68.4025 78.1385 62.0007 82.4161C55.5988 86.6937 48.2064 89.2572 40.5307 89.8613C32.8549 90.4654 25.1526 89.0899 18.1603 85.8664C11.1681 82.643 5.11988 77.6794 0.594241 71.4503L2.41453 70.1278C6.71389 76.0454 12.4597 80.7608 19.1023 83.8231C25.7449 86.8854 33.0622 88.1921 40.3541 87.6182C47.6461 87.0443 54.6688 84.609 60.7506 80.5453C66.8324 76.4816 71.7698 70.9254 75.0905 64.4081C78.4112 57.8908 80.0042 50.6305 79.717 43.3216C79.4299 36.0128 77.2722 28.8998 73.4504 22.6632C69.6285 16.4265 64.2704 11.2748 57.8886 7.7008C51.5067 4.12677 44.3145 2.25 37 2.25V0Z"
-                  fill="#006251"
+                  fill="#296533"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </div>

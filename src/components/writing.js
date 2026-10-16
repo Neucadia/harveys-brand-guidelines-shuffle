@@ -1,4 +1,26 @@
 import React from "react";
+
+const PRESS_BIO =
+  "Founded in 1945 and headquartered in Carson City, Michigan, Harvey's is a diversified agricultural leader specializing in premium seed solutions, customized livestock nutrition, agile commodities logistics, quality retail products, and seasonal lawn and garden offerings. Harvey's operates through five collaborative divisions—Seed, Feed, Commodities, Retail, and the Garden Center.";
+
+function CopyText({ text }) {
+  const [copied, setCopied] = React.useState(false);
+  const copy = () => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    });
+  };
+  return (
+    <button
+      type="button"
+      onClick={copy}
+      className="inline-block text-green-500 hover:text-green-600 transition duration-200 font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
+    >
+      {copied ? "Copied" : "Copy"}
+    </button>
+  );
+}
 import EmailTemplate from "./emailTemplate";
 
 export default function Writing() {
@@ -12,9 +34,9 @@ export default function Writing() {
                 Writing
               </div>
             </div>
-            <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+            <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
               Voice &amp; tone
-            </h1>
+            </h2>
             <p className="text-gray-600 text-center max-w-xl mx-auto mb-6">
               How we communicate to our audience tells our customers everything
               they need to know about us. Do we pay attention to the details? Do
@@ -74,9 +96,9 @@ export default function Writing() {
             </div>
             <div className="flex flex-wrap items-center -m-4 mb-12">
               <div className="w-full lg:w-1/2 p-4">
-                <h1 className="font-heading font-bold text-4xl lg:text-5xl max-w-md lg:max-w-xl uppercase tracking-widest">
+                <h2 className="font-heading font-bold text-4xl lg:text-5xl max-w-md lg:max-w-xl uppercase tracking-widest">
                   How we communicate
-                </h1>
+                </h2>
               </div>
               <div className="w-full lg:w-1/2 p-4">
                 <p className="text-gray-600 max-w-md">
@@ -108,14 +130,14 @@ export default function Writing() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -135,14 +157,14 @@ export default function Writing() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -162,14 +184,14 @@ export default function Writing() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -189,14 +211,14 @@ export default function Writing() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -229,7 +251,6 @@ export default function Writing() {
                             strokeWidth={2}
                             stroke="currentColor"
                             aria-hidden="true"
-                            className
                           >
                             <path
                               strokeLinecap="round"
@@ -252,7 +273,6 @@ export default function Writing() {
                             strokeWidth={2}
                             stroke="currentColor"
                             aria-hidden="true"
-                            className
                           >
                             <path
                               strokeLinecap="round"
@@ -275,7 +295,6 @@ export default function Writing() {
                             strokeWidth={2}
                             stroke="currentColor"
                             aria-hidden="true"
-                            className
                           >
                             <path
                               strokeLinecap="round"
@@ -298,7 +317,6 @@ export default function Writing() {
                             strokeWidth={2}
                             stroke="currentColor"
                             aria-hidden="true"
-                            className
                           >
                             <path
                               strokeLinecap="round"
@@ -324,9 +342,9 @@ export default function Writing() {
                 <div className="bg-yellow-500 px-2 py-1 mb-6 text-xs font-semibold inline-block">
                   Email campaigns
                 </div>
-                <h1 className="font-heading text-4xl font-bold mb-6 max-w-md uppercase tracking-widest">
+                <h2 className="font-heading text-4xl font-bold mb-6 max-w-md uppercase tracking-widest">
                   Email guidelines
-                </h1>
+                </h2>
                 <p className="text-gray-500 max-w-md mb-6">
                   Our email campaigns are a key touchpoint with
                   customers—offering them a window into what’s new, what’s in
@@ -351,25 +369,25 @@ export default function Writing() {
                         lifestyle images.
                       </p>
                       <ul className="list-disc">
-                        <li className>Include brand and product name</li>
-                        <li className>
+                        <li>Include brand and product name</li>
+                        <li>
                           Feature individual product shots with short,
                           compelling captions
                         </li>
-                        <li className>
+                        <li>
                           Include key details (e.g. fabric, fit) in 1–2 short
                           sentences
                         </li>
-                        <li className>
+                        <li>
                           If applicable, always include a clear link to shop the
                           item on our website
                         </li>
-                        <li className>
+                        <li>
                           Mix and match products from brands we carry (like
                           Carhartt, Kuhl, prAna, and Patagonia) to tell seasonal
                           or lifestyle stories
                         </li>
-                        <li className>
+                        <li>
                           Incorporate ‘top picks, ’ ‘customer favorites,’ or
                           styled sets that pair well together
                         </li>
@@ -418,7 +436,7 @@ export default function Writing() {
                 </h2>
                 <img
                   alt="facebook post"
-                  src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Screenshot-2025-03-19-at-7-53-06-PM.jpg"
+                  src="/images/sample-facebook-post-garden.jpg"
                 />
                 <p className="text-gray-600 mt-4 mb-4">
                   We prefer to show customers or use professional photos from
@@ -436,7 +454,7 @@ export default function Writing() {
                 </h2>
                 <img
                   alt="Instagram post"
-                  src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Screenshot-2025-03-19-at-7-52-28-PM.jpg"
+                  src="/images/sample-facebook-post-family.jpg"
                 />
                 <p className="text-gray-600 mt-4 mb-4">
                   When promoting new products, showing actual customers enjoying
@@ -461,12 +479,7 @@ export default function Writing() {
                   collaborative divisions—Seed, Feed, Commodities, Retail, and
                   the Garden Center.
                 </p>
-                <a
-                  className="inline-block text-green-500 hover:text-green-600 transition duration-200 font-semibold"
-                  href="#"
-                >
-                  copy
-                </a>
+                <CopyText text={PRESS_BIO} />
               </div>
             </div>
           </div>

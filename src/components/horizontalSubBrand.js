@@ -27,39 +27,39 @@ import { ReactComponent as RetailWhiteSVG } from "../assets/logos/horizontal-ret
 
 const subBrandSVGs = {
   Commodities: {
-    black: <CommoditiesBlackSVG />,
-    green: <CommoditiesGreenSVG />,
-    orange: <CommoditiesOrangeSVG />,
-    wheat: <CommoditiesWheatSVG />,
-    white: <CommoditiesWhiteSVG />,
+    black: <CommoditiesBlackSVG className="h-full w-auto max-w-full" />,
+    green: <CommoditiesGreenSVG className="h-full w-auto max-w-full" />,
+    orange: <CommoditiesOrangeSVG className="h-full w-auto max-w-full" />,
+    wheat: <CommoditiesWheatSVG className="h-full w-auto max-w-full" />,
+    white: <CommoditiesWhiteSVG className="h-full w-auto max-w-full" />,
   },
   Seed: {
-    black: <SeedBlackSVG />,
-    green: <SeedGreenSVG />,
-    orange: <SeedOrangeSVG />,
-    wheat: <SeedWheatSVG />,
-    white: <SeedWhiteSVG />,
+    black: <SeedBlackSVG className="h-full w-auto max-w-full" />,
+    green: <SeedGreenSVG className="h-full w-auto max-w-full" />,
+    orange: <SeedOrangeSVG className="h-full w-auto max-w-full" />,
+    wheat: <SeedWheatSVG className="h-full w-auto max-w-full" />,
+    white: <SeedWhiteSVG className="h-full w-auto max-w-full" />,
   },
   Feed: {
-    black: <FeedBlackSVG />,
-    green: <FeedGreenSVG />,
-    orange: <FeedOrangeSVG />,
-    wheat: <FeedWheatSVG />,
-    white: <FeedWhiteSVG />,
+    black: <FeedBlackSVG className="h-full w-auto max-w-full" />,
+    green: <FeedGreenSVG className="h-full w-auto max-w-full" />,
+    orange: <FeedOrangeSVG className="h-full w-auto max-w-full" />,
+    wheat: <FeedWheatSVG className="h-full w-auto max-w-full" />,
+    white: <FeedWhiteSVG className="h-full w-auto max-w-full" />,
   },
   "Garden Center": {
-    black: <GardenCenterBlackSVG />,
-    green: <GardenCenterGreenSVG />,
-    orange: <GardenCenterOrangeSVG />,
-    wheat: <GardenCenterWheatSVG />,
-    white: <GardenCenterWhiteSVG />,
+    black: <GardenCenterBlackSVG className="h-full w-auto max-w-full" />,
+    green: <GardenCenterGreenSVG className="h-full w-auto max-w-full" />,
+    orange: <GardenCenterOrangeSVG className="h-full w-auto max-w-full" />,
+    wheat: <GardenCenterWheatSVG className="h-full w-auto max-w-full" />,
+    white: <GardenCenterWhiteSVG className="h-full w-auto max-w-full" />,
   },
   Retail: {
-    black: <RetailBlackSVG />,
-    green: <RetailGreenSVG />,
-    orange: <RetailOrangeSVG />,
-    wheat: <RetailWheatSVG />,
-    white: <RetailWhiteSVG />,
+    black: <RetailBlackSVG className="h-full w-auto max-w-full" />,
+    green: <RetailGreenSVG className="h-full w-auto max-w-full" />,
+    orange: <RetailOrangeSVG className="h-full w-auto max-w-full" />,
+    wheat: <RetailWheatSVG className="h-full w-auto max-w-full" />,
+    white: <RetailWhiteSVG className="h-full w-auto max-w-full" />,
   },
 };
 
@@ -103,7 +103,7 @@ const HorizontalSubBrand = () => {
           brand.
         </p>
         <div className="mb-6 w-40 self-center">
-          <label className="block mb-2 text-sm font-semibold" htmlFor>
+          <label className="block mb-2 text-sm font-semibold">
             Select sub-brand
           </label>
           <select
@@ -151,9 +151,11 @@ const HorizontalSubBrand = () => {
                 />
               </svg>
             </span>
-            <a
+            <button
+              type="button"
+              aria-label="Recolor logo: black"
               onClick={() => setFill("black")}
-              className="ml-2 absolute inset-0"
+              className="ml-2 absolute inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
             >
               <svg
                 width={82}
@@ -164,10 +166,10 @@ const HorizontalSubBrand = () => {
               >
                 <path
                   d="M37 0C44.6995 9.18154e-08 52.2702 1.97555 58.988 5.73768C65.7057 9.49981 71.3458 14.9227 75.3688 21.4876C79.3918 28.0525 81.663 35.5398 81.9653 43.2333C82.2676 50.9268 80.5908 58.5693 77.0953 65.4296C73.5998 72.2899 68.4025 78.1385 62.0007 82.4161C55.5988 86.6937 48.2064 89.2572 40.5307 89.8613C32.8549 90.4654 25.1526 89.0899 18.1603 85.8664C11.1681 82.643 5.11988 77.6794 0.594241 71.4503L2.41453 70.1278C6.71389 76.0454 12.4597 80.7608 19.1023 83.8231C25.7449 86.8854 33.0622 88.1921 40.3541 87.6182C47.6461 87.0443 54.6688 84.609 60.7506 80.5453C66.8324 76.4816 71.7698 70.9254 75.0905 64.4081C78.4112 57.8908 80.0042 50.6305 79.717 43.3216C79.4299 36.0128 77.2722 28.8998 73.4504 22.6632C69.6285 16.4265 64.2704 11.2748 57.8886 7.7008C51.5067 4.12677 44.3145 2.25 37 2.25V0Z"
-                  fill="#006251"
+                  fill="#296533"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
         <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
@@ -188,9 +190,11 @@ const HorizontalSubBrand = () => {
                 />
               </svg>
             </span>
-            <a
+            <button
+              type="button"
+              aria-label="Recolor logo: green"
               onClick={() => setFill("green")}
-              className="ml-2 absolute inset-0"
+              className="ml-2 absolute inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
             >
               <svg
                 width={82}
@@ -201,10 +205,10 @@ const HorizontalSubBrand = () => {
               >
                 <path
                   d="M37 0C44.6995 9.18154e-08 52.2702 1.97555 58.988 5.73768C65.7057 9.49981 71.3458 14.9227 75.3688 21.4876C79.3918 28.0525 81.663 35.5398 81.9653 43.2333C82.2676 50.9268 80.5908 58.5693 77.0953 65.4296C73.5998 72.2899 68.4025 78.1385 62.0007 82.4161C55.5988 86.6937 48.2064 89.2572 40.5307 89.8613C32.8549 90.4654 25.1526 89.0899 18.1603 85.8664C11.1681 82.643 5.11988 77.6794 0.594241 71.4503L2.41453 70.1278C6.71389 76.0454 12.4597 80.7608 19.1023 83.8231C25.7449 86.8854 33.0622 88.1921 40.3541 87.6182C47.6461 87.0443 54.6688 84.609 60.7506 80.5453C66.8324 76.4816 71.7698 70.9254 75.0905 64.4081C78.4112 57.8908 80.0042 50.6305 79.717 43.3216C79.4299 36.0128 77.2722 28.8998 73.4504 22.6632C69.6285 16.4265 64.2704 11.2748 57.8886 7.7008C51.5067 4.12677 44.3145 2.25 37 2.25V0Z"
-                  fill="#006251"
+                  fill="#296533"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
         <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
@@ -225,9 +229,11 @@ const HorizontalSubBrand = () => {
                 />
               </svg>
             </span>
-            <a
+            <button
+              type="button"
+              aria-label="Recolor logo: orange"
               onClick={() => setFill("orange")}
-              className="ml-2 absolute inset-0"
+              className="ml-2 absolute inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
             >
               <svg
                 width={82}
@@ -238,10 +244,10 @@ const HorizontalSubBrand = () => {
               >
                 <path
                   d="M37 0C44.6995 9.18154e-08 52.2702 1.97555 58.988 5.73768C65.7057 9.49981 71.3458 14.9227 75.3688 21.4876C79.3918 28.0525 81.663 35.5398 81.9653 43.2333C82.2676 50.9268 80.5908 58.5693 77.0953 65.4296C73.5998 72.2899 68.4025 78.1385 62.0007 82.4161C55.5988 86.6937 48.2064 89.2572 40.5307 89.8613C32.8549 90.4654 25.1526 89.0899 18.1603 85.8664C11.1681 82.643 5.11988 77.6794 0.594241 71.4503L2.41453 70.1278C6.71389 76.0454 12.4597 80.7608 19.1023 83.8231C25.7449 86.8854 33.0622 88.1921 40.3541 87.6182C47.6461 87.0443 54.6688 84.609 60.7506 80.5453C66.8324 76.4816 71.7698 70.9254 75.0905 64.4081C78.4112 57.8908 80.0042 50.6305 79.717 43.3216C79.4299 36.0128 77.2722 28.8998 73.4504 22.6632C69.6285 16.4265 64.2704 11.2748 57.8886 7.7008C51.5067 4.12677 44.3145 2.25 37 2.25V0Z"
-                  fill="#006251"
+                  fill="#296533"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
         <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
@@ -262,9 +268,11 @@ const HorizontalSubBrand = () => {
                 />
               </svg>
             </span>
-            <a
+            <button
+              type="button"
+              aria-label="Recolor logo: wheat"
               onClick={() => setFill("wheat")}
-              className="ml-2 absolute inset-0"
+              className="ml-2 absolute inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
             >
               <svg
                 width={82}
@@ -275,10 +283,10 @@ const HorizontalSubBrand = () => {
               >
                 <path
                   d="M37 0C44.6995 9.18154e-08 52.2702 1.97555 58.988 5.73768C65.7057 9.49981 71.3458 14.9227 75.3688 21.4876C79.3918 28.0525 81.663 35.5398 81.9653 43.2333C82.2676 50.9268 80.5908 58.5693 77.0953 65.4296C73.5998 72.2899 68.4025 78.1385 62.0007 82.4161C55.5988 86.6937 48.2064 89.2572 40.5307 89.8613C32.8549 90.4654 25.1526 89.0899 18.1603 85.8664C11.1681 82.643 5.11988 77.6794 0.594241 71.4503L2.41453 70.1278C6.71389 76.0454 12.4597 80.7608 19.1023 83.8231C25.7449 86.8854 33.0622 88.1921 40.3541 87.6182C47.6461 87.0443 54.6688 84.609 60.7506 80.5453C66.8324 76.4816 71.7698 70.9254 75.0905 64.4081C78.4112 57.8908 80.0042 50.6305 79.717 43.3216C79.4299 36.0128 77.2722 28.8998 73.4504 22.6632C69.6285 16.4265 64.2704 11.2748 57.8886 7.7008C51.5067 4.12677 44.3145 2.25 37 2.25V0Z"
-                  fill="#006251"
+                  fill="#296533"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
         <div className="w-1/5 p-0 md:p-4 mb-6 lg:mb-0 text-center flex justify-center">
@@ -299,9 +307,11 @@ const HorizontalSubBrand = () => {
                 />
               </svg>
             </span>
-            <a
+            <button
+              type="button"
+              aria-label="Recolor logo: white"
               onClick={() => setFill("white")}
-              className="ml-2 absolute inset-0"
+              className="ml-2 absolute inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
             >
               <svg
                 width={82}
@@ -312,10 +322,10 @@ const HorizontalSubBrand = () => {
               >
                 <path
                   d="M37 0C44.6995 9.18154e-08 52.2702 1.97555 58.988 5.73768C65.7057 9.49981 71.3458 14.9227 75.3688 21.4876C79.3918 28.0525 81.663 35.5398 81.9653 43.2333C82.2676 50.9268 80.5908 58.5693 77.0953 65.4296C73.5998 72.2899 68.4025 78.1385 62.0007 82.4161C55.5988 86.6937 48.2064 89.2572 40.5307 89.8613C32.8549 90.4654 25.1526 89.0899 18.1603 85.8664C11.1681 82.643 5.11988 77.6794 0.594241 71.4503L2.41453 70.1278C6.71389 76.0454 12.4597 80.7608 19.1023 83.8231C25.7449 86.8854 33.0622 88.1921 40.3541 87.6182C47.6461 87.0443 54.6688 84.609 60.7506 80.5453C66.8324 76.4816 71.7698 70.9254 75.0905 64.4081C78.4112 57.8908 80.0042 50.6305 79.717 43.3216C79.4299 36.0128 77.2722 28.8998 73.4504 22.6632C69.6285 16.4265 64.2704 11.2748 57.8886 7.7008C51.5067 4.12677 44.3145 2.25 37 2.25V0Z"
-                  fill="#006251"
+                  fill="#296533"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function Values() {
             <div className="mx-auto py-1 font-semibold inline-block bg-white text-orange-500 absolute top-0 lg:mt-20 mt-10 px-2 w-32 -ml-16">
               Our values
             </div>
-            <div className>
+            <div>
               <h2 className="font-bold text-white font-heading tracking-widest uppercase text-xl md:text-3xl">
                 We are passionate about people and the work they do
               </h2>

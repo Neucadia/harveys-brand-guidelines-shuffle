@@ -8,29 +8,29 @@ export default function UIElements() {
           <div className="mb-10 flex md:hidden">
             <img
               className="w-40"
-              src="cronos-assets/elements/left-top-corner.svg"
-              alt
+              src="/elements/left-top-corner.svg"
+              alt=""
             />
           </div>
           <img
             className="absolute hidden lg:block top-0 left-0"
-            src="cronos-assets/elements/left-top-corner.svg"
-            alt
+            src="/elements/left-top-corner.svg"
+            alt=""
           />
           <img
             className="absolute hidden lg:block top-0 right-0"
-            src="cronos-assets/elements/right-top-corner.svg"
-            alt
+            src="/elements/right-top-corner.svg"
+            alt=""
           />
           <img
             className="absolute hidden lg:block bottom-0 left-0"
-            src="cronos-assets/elements/left-bottom-corner.svg"
-            alt
+            src="/elements/left-bottom-corner.svg"
+            alt=""
           />
           <img
             className="absolute hidden lg:block bottom-0 right-0"
-            src="cronos-assets/elements/right-bottom-corner.svg"
-            alt
+            src="/elements/right-bottom-corner.svg"
+            alt=""
           />
           <div className="container mx-auto px-4">
             <div className="max-w-xl mx-auto">
@@ -91,7 +91,7 @@ export default function UIElements() {
                     Button
                   </button>
                   <div className="mb-6">
-                    <label className="block mb-2 text-gray-500" htmlFor>
+                    <label className="block mb-2 text-gray-500">
                       Label for textarea
                     </label>
                     <textarea
@@ -103,7 +103,7 @@ export default function UIElements() {
                     />
                   </div>
                   <div className="mb-6">
-                    <label className="block mb-2 text-gray-500" htmlFor>
+                    <label className="block mb-2 text-gray-500">
                       Label for select
                     </label>
                     <select
@@ -131,7 +131,7 @@ export default function UIElements() {
                             viewBox="0 0 8 8"
                             fill="none"
                           >
-                            <circle cx={4} cy={4} r={4} fill="#006251" />
+                            <circle cx={4} cy={4} r={4} fill="#296533" />
                           </svg>
                         </div>
                       </div>
@@ -158,7 +158,7 @@ export default function UIElements() {
                             viewBox="0 0 8 8"
                             fill="none"
                           >
-                            <circle cx={4} cy={4} r={4} fill="#006251" />
+                            <circle cx={4} cy={4} r={4} fill="#296533" />
                           </svg>
                         </div>
                       </div>
@@ -187,8 +187,8 @@ export default function UIElements() {
                       <div className="w-auto mr-14">
                         <a href="">
                           <img
-                            src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/H-Harveys-Green.svg"
-                            alt
+                            src="/images/lockup-horizontal-green.svg"
+                            alt="Harvey's"
                             className="w-full"
                           />
                         </a>
@@ -281,8 +281,8 @@ export default function UIElements() {
                           <div className="w-auto p-2">
                             <a className="inline-block" href="#">
                               <img
-                                src="cronos-assets/logos/cronos-logo.svg"
-                                alt
+                                src="/images/lockup-horizontal-green.svg"
+                                alt="Harvey's"
                               />
                             </a>
                           </div>
@@ -791,8 +791,8 @@ export default function UIElements() {
           <div className="mt-10 flex lg:hidden">
             <img
               className="ml-auto w-40"
-              src="cronos-assets/elements/right-bottom-corner.svg"
-              alt
+              src="/elements/right-bottom-corner.svg"
+              alt=""
             />
           </div>
         </section>

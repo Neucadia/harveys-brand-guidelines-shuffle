@@ -11,9 +11,9 @@ export default function Origins() {
                 Our origins
               </div>
             </div>
-            <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+            <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
               A LONG WAY FROM A LITTLE MILL ON FISH CREEK
-            </h1>
+            </h2>
             <p className="text-gray-600 text-center max-w-xl mx-auto mb-6 text-xl">
               What began as a sawmill in 1866 evolved into a gristmill before
               Harvey Waldron transformed it into a livestock feed operation in
@@ -23,8 +23,8 @@ export default function Origins() {
             <div className="relative" style={{ height: 512 }}>
               <img
                 className="relative w-full object-cover h-full"
-                src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/history-1.jpg"
-                alt
+                src="/images/history-mill-crew.jpg"
+                alt="History mill crew"
               />
             </div>
           </div>
@@ -32,9 +32,9 @@ export default function Origins() {
         <section className="pt-20 pb-10 bg-yellow-50">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-12">
-              <h1 className="font-heading text-4xl font-bold mb-6 text-center lg:text-5xl max-w-2xl lg:max-w-5xl mx-auto uppercase tracking-widest">
+              <h2 className="font-heading text-4xl font-bold mb-6 text-center lg:text-5xl max-w-2xl lg:max-w-5xl mx-auto uppercase tracking-widest">
                 upholding tradition
-              </h1>
+              </h2>
               <div className="flex items-center justify-center">
                 <div className="mr-4"></div>
                 <div className="text-left">
@@ -50,8 +50,8 @@ export default function Origins() {
             <div className="mb-12 relative">
               <img
                 className="w-full object-cover mx-auto"
-                src="https://static.shuffle.dev/uploads/files/61/61d552f6a2f836b26c9c27fbebc5b63130cdd6f2/history-2-1.jpg"
-                alt
+                src="/images/history-mill-drawing.jpg"
+                alt="History mill drawing"
               />
             </div>
           </div>
@@ -65,41 +65,40 @@ export default function Origins() {
                   <li className="mb-6">
                     <h2
                       className="font-bold font-heading text-4xl lg:text-5xl max-w-2xl lg:max-w-5xl mx-auto uppercase tracking-widest text-green-500 text-green-500"
-                      href="#"
                     >
                       honoring the past, forging the future
                     </h2>
                   </li>
                   <li className="mb-6 text-black">
-                    <a className="text-gray-600 text-xl" href="#">
+                    <p className="text-gray-600 text-xl">
                       Over the decades, we’ve evolved to meet the needs of our
                       customers, growing from a small feed operation into a
                       multi-division company offering Feed, Seed, Commodities,
                       Garden, and Retail services.
-                    </a>
+                    </p>
                   </li>
                 </ul>
                 <img
                   className="w-full object-cover"
                   style={{ height: 445 }}
-                  src="https://static.shuffle.dev/uploads/files/61/61d552f6a2f836b26c9c27fbebc5b63130cdd6f2/486352657-1203409291787301-1729855104243629523-n.jpg"
-                  alt
+                  src="/images/garden-center-flats.jpg"
+                  alt="Garden center flats"
                 />
               </div>
               <div className="w-full lg:w-2/3 p-4">
                 <div className="flex flex-wrap -m-4">
                   <div className="w-full lg:w-1/3 p-4">
                     <img
-                      src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/amber-kipp-Mm-D-kbvTUM-unsplash.jpg"
-                      class="h-full object-cover"
+                      src="/images/calf-in-barn.jpg"
+                      className="h-full object-cover"
                     />
                   </div>
                   <div className="w-full lg:w-2/3 p-4">
                     <img
                       className="w-full object-cover"
                       style={{ height: 445 }}
-                      src="https://static.shuffle.dev/uploads/files/61/61d552f6a2f836b26c9c27fbebc5b63130cdd6f2/Mill-Exterior.jpg"
-                      alt
+                      src="/images/mill-exterior.jpg"
+                      alt="Mill exterior"
                     />
                   </div>
                   <div className="w-full lg:w-2/3 p-4">
@@ -107,8 +106,8 @@ export default function Origins() {
                       <img
                         className="w-full object-cover"
                         style={{ height: 445 }}
-                        src="https://static.shuffle.dev/uploads/files/61/61d552f6a2f836b26c9c27fbebc5b63130cdd6f2/Harveys22-0020-5-copy.jpg"
-                        alt
+                        src="/images/retail-apparel-wall.jpg"
+                        alt="Retail apparel wall"
                       />
                     </div>
                   </div>
@@ -117,8 +116,8 @@ export default function Origins() {
                       <img
                         className="w-full object-cover"
                         style={{ height: 445 }}
-                        src="https://static.shuffle.dev/uploads/files/61/61d552f6a2f836b26c9c27fbebc5b63130cdd6f2/foodplot-quinn-2-7.jpg"
-                        alt
+                        src="/images/food-plot-seed.jpg"
+                        alt="Food plot seed"
                       />
                     </div>
                   </div>
@@ -130,9 +129,9 @@ export default function Origins() {
         <section className="py-20 bg-yellow-50">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-12">
-              <h1 className="font-heading text-4xl font-bold mb-6 text-center lg:text-5xl max-w-2xl lg:max-w-5xl mx-auto uppercase tracking-widest">
+              <h2 className="font-heading text-4xl font-bold mb-6 text-center lg:text-5xl max-w-2xl lg:max-w-5xl mx-auto uppercase tracking-widest">
                 Standing By farmers from the start
-              </h1>
+              </h2>
               <div className="flex items-center justify-center">
                 <div className="mr-4"></div>
                 <div className="text-left">
@@ -147,19 +146,9 @@ export default function Origins() {
             </div>
             <div className="mb-12 relative">
               <img
-                className="absolute hidden lg:block top-0 right-0 w-40 h-40 z-10"
-                src="cronos-assets/elements/warning-light-small.svg"
-                alt
-              />
-              <img
-                className="absolute hidden lg:block bottom-0 left-0 w-40 h-40 z-10"
-                src="cronos-assets/elements/white-green-dark.svg"
-                alt
-              />
-              <img
                 className="w-full object-cover"
-                src="https://static.shuffle.dev/uploads/files/61/61d552f6a2f836b26c9c27fbebc5b63130cdd6f2/Harveys22-0006-copy.jpg"
-                alt
+                src="/images/feed-bagging.jpg"
+                alt="Feed bagging"
               />
             </div>
           </div>

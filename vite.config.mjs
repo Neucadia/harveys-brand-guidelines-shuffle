@@ -53,5 +53,6 @@ export default defineConfig({
   // The dev dependency scanner is rolldown without user transforms; tell it
   // the same thing so it can read imports out of the JSX-bearing .js files.
   optimizeDeps: { rolldownOptions: { moduleTypes: { ".js": "jsx" } } },
+  define: { __BUILD_DATE__: JSON.stringify(new Date().toISOString().slice(0, 10)) },
   build: { outDir: "build" },
 });

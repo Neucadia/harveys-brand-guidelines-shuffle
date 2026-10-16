@@ -9,9 +9,9 @@ export default function Architecture() {
             Architecture
           </div>
         </div>
-        <h1 className="font-heading text-4xl lg:text-5xl text-center mx-auto mb-16 text-black font-bold max-w-lg lg:max-w-3xl uppercase tracking-widest">
+        <h2 className="font-heading text-4xl lg:text-5xl text-center mx-auto mb-16 text-black font-bold max-w-lg lg:max-w-3xl uppercase tracking-widest">
           BRAND HIERARCHY
-        </h1>
+        </h2>
         <div className="flex flex-wrap -m-4">
           <div className="w-full p-4">
             <div className="bg-white p-12 flex flex-col items-center">

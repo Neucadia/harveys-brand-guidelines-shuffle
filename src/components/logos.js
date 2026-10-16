@@ -24,9 +24,9 @@ export default function Logos() {
                 Visuals
               </div>
             </div>
-            <h1 className="font-heading text-white text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+            <h2 className="font-heading text-white text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
               Logos
-            </h1>
+            </h2>
             <p className="text-green-100 text-center max-w-xl mx-auto mb-6">
               The primary visual symbol of the Harvey's brand. Use the buttons
               to download all logos or select individual colors and logos below.
@@ -62,9 +62,9 @@ export default function Logos() {
                 Visuals
               </div>
             </div>
-            <h1 className="font-heading text-white text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+            <h2 className="font-heading text-white text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
               Secondary logos
-            </h1>
+            </h2>
             <p className="text-green-100 text-center max-w-xl mx-auto mb-6">
               When the primary logo don't fit the use case, there are a few
               alternate lockups.
@@ -94,9 +94,9 @@ export default function Logos() {
                 Visuals
               </div>
             </div>
-            <h1 className="font-heading text-white text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+            <h2 className="font-heading text-white text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
               SUB-BRAND LOGOS
-            </h1>
+            </h2>
             <p className="text-green-100 text-center max-w-xl mx-auto mb-20">
               All of Harvey's sub-brands have their own lockup to use for direct
               marketing.
@@ -118,9 +118,9 @@ export default function Logos() {
                 Visuals
               </div>
             </div>
-            <h1 className="font-heading text-white text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+            <h2 className="font-heading text-white text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
               Sizing and spacing
-            </h1>
+            </h2>
             <p className="text-green-100 text-center max-w-xl mx-auto mb-6">
               Guidelines for maintaining brand unity across applications
             </p>
@@ -358,7 +358,7 @@ export default function Logos() {
             <div className="w-full shadow-lg bg-white flex flex-col mb-10">
               <div className="py-20 px-8 flex-col justify-center flex-grow flex">
                 <span className="mb-6 flex justify-center">
-                  <img src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/positioning.png" />
+                  <img src="/images/logo-positioning.png" />
                 </span>
                 <h2 className="text-xl text-center mb-4">
                   General positioning

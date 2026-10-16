@@ -12,9 +12,9 @@ export default function Icons() {
                   Iconography
                 </div>
               </div>
-              <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold text-white max-w-2xl lg:max-w-6xl mx-auto mb-4 uppercase tracking-widest">
+              <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold text-white max-w-2xl lg:max-w-6xl mx-auto mb-4 uppercase tracking-widest">
                 Icons
-              </h1>
+              </h2>
               <p className="text-green-100 text-center max-w-xl mx-auto mb-6">
                 There are times when an icon can greatly enhance the utility of
                 a piece of UI; however, most of the time icons are used

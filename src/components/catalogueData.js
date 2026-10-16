@@ -102,7 +102,7 @@ function TrialsDataTable() {
   });
 
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-x-auto">
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (

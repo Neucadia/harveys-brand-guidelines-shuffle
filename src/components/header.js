@@ -1,21 +1,31 @@
 import React from "react";
 
+const NAV = [
+  ["#story", "Story"],
+  ["#logos", "Logos"],
+  ["#colors", "Colors"],
+  ["#type", "Type"],
+  ["#photography", "Photography"],
+  ["#downloads", "Downloads"],
+  ["#writing", "Voice"],
+  ["#developers", "Developers"],
+];
+
 export default function Header() {
   const [openMenu, setOpenMenu] = React.useState(false);
   return (
     <React.Fragment>
       <>
-        <section className="bg-gradient-to-b from-white to-yellow-50">
-          <div className>
+        <div className="sticky top-0 z-40 bg-white border-b border-gray-200">
             <div className="container mx-auto px-4">
               <div className="flex items-center justify-between py-5 -px-4 relative">
                 <div className="w-auto">
                   <div className="flex flex-wrap items-center">
                     <div className="w-auto mr-14">
-                      <a href="#">
+                      <a href="/">
                         <img
-                          src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/H-Harveys-Green.svg"
-                          alt
+                          src="/images/lockup-horizontal-green.svg"
+                          alt="Harvey's"
                           className="w-full"
                         />
                       </a>
@@ -26,30 +36,14 @@ export default function Header() {
                   <div className="flex flex-wrap items-center">
                     <div className="w-auto hidden xl:block">
                       <ul className="flex items-center">
-                        <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#story">Story</a>
-                        </li>
-                        <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#logos">Logos</a>
-                        </li>
-                        <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#architecture">Architecture</a>
-                        </li>
-                        <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#writing">Writing</a>
-                        </li>
-                        <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#components">Components</a>
-                        </li>
-                        <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#colors">Colors</a>
-                        </li>
-                        <li className="mr-9 text-sm hover:text-gray-700">
-                          <a href="#email">Email</a>
-                        </li>
-                        <li className="text-sm hover:text-gray-700">
-                          <a href="#agent-help">Agents</a>
-                        </li>
+                        {NAV.map(([href, label], i) => (
+                          <li
+                            key={href}
+                            className={`text-sm hover:text-gray-700${i < NAV.length - 1 ? " mr-9" : ""}`}
+                          >
+                            <a href={href}>{label}</a>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>
@@ -60,6 +54,7 @@ export default function Header() {
                   </div>
                   <div className="xl:hidden flex items-center">
                     <button
+                      aria-label="Open menu"
                       onClick={() => {
                         setOpenMenu(true);
                       }}
@@ -75,7 +70,7 @@ export default function Header() {
                           fillRule="evenodd"
                           clipRule="evenodd"
                           d="M3.5 7C3.22386 7 3 6.77614 3 6.5C3 6.22386 3.22386 6 3.5 6H20.5C20.7761 6 21 6.22386 21 6.5C21 6.77614 20.7761 7 20.5 7H3.5ZM3.5 12C3.22386 12 3 11.7761 3 11.5C3 11.2239 3.22386 11 3.5 11H20.5C20.7761 11 21 11.2239 21 11.5C21 11.7761 20.7761 12 20.5 12H3.5ZM3 16.5C3 16.7761 3.22386 17 3.5 17H20.5C20.7761 17 21 16.7761 21 16.5C21 16.2239 20.7761 16 20.5 16H3.5C3.22386 16 3 16.2239 3 16.5Z"
-                          fill="#006251"
+                          fill="#296533"
                         />
                       </svg>
                     </button>
@@ -96,16 +91,16 @@ export default function Header() {
                     <div className="w-full">
                       <div className="flex items-center justify-between -m-2 mb-10">
                         <div className="w-auto p-2">
-                          <a className="inline-block" href="#">
+                          <a className="inline-block" href="/">
                             <img
-                              src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/H-Harveys-Green.svg"
-                              alt
+                              src="/images/lockup-horizontal-green.svg"
+                              alt="Harvey's"
                               className="w-full"
                             />
                           </a>
                         </div>
                         <div className="w-auto p-2">
-                          <button onClick={() => setOpenMenu(false)}>
+                          <button aria-label="Close menu" onClick={() => setOpenMenu(false)}>
                             <svg
                               style={{ width: 18, height: 18 }}
                               xmlns="http://www.w3.org/2000/svg"
@@ -125,70 +120,17 @@ export default function Header() {
                       </div>
                       <div className="flex flex-col w-full">
                         <ul>
-                          <li className="mb-6">
-                            <a
-                              className="text-sm hover:text-gray-700"
-                              href="#story"
-                            >
-                              Story
-                            </a>
-                          </li>
-                          <li className="mb-6">
-                            <a
-                              className="text-sm hover:text-gray-700"
-                              href="#logos"
-                            >
-                              Logos
-                            </a>
-                          </li>
-                          <li className="mb-6">
-                            <a
-                              className="text-sm hover:text-gray-700"
-                              href="#architecture"
-                            >
-                              Architecture
-                            </a>
-                          </li>
-                          <li className="mb-6">
-                            <a
-                              className="text-sm hover:text-gray-700"
-                              href="#writing"
-                            >
-                              Writing
-                            </a>
-                          </li>
-                          <li className="mb-6">
-                            <a
-                              className="text-sm hover:text-gray-700"
-                              href="#components"
-                            >
-                              Components
-                            </a>
-                          </li>
-                          <li className="mb-6">
-                            <a
-                              className="text-sm hover:text-gray-700"
-                              href="#colors"
-                            >
-                              Colors
-                            </a>
-                          </li>
-                          <li className="mb-6">
-                            <a
-                              className="text-sm hover:text-gray-700"
-                              href="#email"
-                            >
-                              Email
-                            </a>
-                          </li>
-                          <li className="">
-                            <a
-                              className="text-sm hover:text-gray-700"
-                              href="#agent-help"
-                            >
-                              Agents
-                            </a>
-                          </li>
+                          {NAV.map(([href, label], i) => (
+                            <li key={href} className={i < NAV.length - 1 ? "mb-6" : ""}>
+                              <a
+                                className="text-sm hover:text-gray-700"
+                                href={href}
+                                onClick={() => setOpenMenu(false)}
+                              >
+                                {label}
+                              </a>
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </div>
@@ -197,12 +139,13 @@ export default function Header() {
                 </nav>
               </div>
             </div>
-          </div>
+        </div>
+        <section className="bg-yellow-50">
           <div className="container mx-auto mt-12">
-            <h1 className="text-center text-green-900 text-5xl lg:text-6xl font-bold max-w-sm lg:max-w-lg mx-auto pb-10">
-              <span className>Brand </span>
+            <h2 className="text-center text-green-900 text-5xl lg:text-6xl font-bold max-w-sm lg:max-w-lg mx-auto pb-10">
+              <span>Brand </span>
               <span className="text-green-500">Guidelines</span>
-            </h1>
+            </h2>
             <div className="flex flex-wrap justify-center -m-4" />
           </div>
         </section>
@@ -213,9 +156,9 @@ export default function Header() {
                 <div className="inline-block px-2 py-1 font-semibold mb-6 bg-orange-500 text-white">
                   Harvey's Rebrand
                 </div>
-                <h1 className="font-heading text-4xl font-bold mb-6 max-w-sm tracking-widest uppercase">
+                <h2 className="font-heading text-4xl font-bold mb-6 max-w-sm tracking-widest uppercase">
                   Why now?
-                </h1>
+                </h2>
                 <p className="text-gray-500 max-w-md">
                   Harvey’s has expanded its offerings and portfolio in recent
                   years and needs to communicate alignment of organizational

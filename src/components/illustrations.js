@@ -11,9 +11,9 @@ export default function Illustrations() {
                 Illustrations
               </div>
             </div>
-            <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold mb-4 max-w-3xl mx-auto uppercase tracking-widest">
+            <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold mb-4 max-w-3xl mx-auto uppercase tracking-widest">
               Adding some personality
-            </h1>
+            </h2>
             <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
               Illustrations are great for in-house print materials as they use
               less ink than photography. We're currently sparse on our available
@@ -26,8 +26,8 @@ export default function Illustrations() {
                   <img
                     className="mb-6 w-full"
                     style={{ height: 223 }}
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/HMC01.svg"
-                    alt
+                    src="/images/illustration-dog.svg"
+                    alt="Harvey the store dog, illustrated"
                   />
                   <h3 className="text-green-500 text-xl font-semibold text-center mb-2">
                     Harvey primary
@@ -37,9 +37,9 @@ export default function Illustrations() {
                   </p>
                   <a
                     className="px-6 py-3 text-center w-full sm:w-auto bg-orange-900 text-white text-sm font-semibold hover:bg-orange-950 focus:ring focus:ring-orange-700 transition duration-200 hidden"
-                    href="#"
+                    href="/images/illustration-dog.svg" download="harveys-mascot-illustration.svg"
                   >
-                    Download
+                    Download SVG
                   </a>
                 </div>
               </div>

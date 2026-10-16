@@ -8,12 +8,12 @@ export default function Purpose() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center -m-4">
               <div className="w-full lg:w-1/2 p-4">
-                <div className="px-2 py-1 mb-6 font-semibold inline-block bg-orange-500 text-white">
+                <div className="px-2 py-1 mb-6 font-semibold inline-block bg-orange-700 text-white">
                   Our purpose
                 </div>
-                <h1 className="font-heading text-4xl font-bold mb-6 max-w-md uppercase tracking-widest">
+                <h2 className="font-heading text-4xl font-bold mb-6 max-w-md uppercase tracking-widest">
                   WE are hardworking and serve hardworking people
-                </h1>
+                </h2>
                 <p className="text-gray-500 max-w-sm mb-2">
                   At Harvey’s, we believe in the value of hard work, and we’re
                   proud to serve people who live by it every day. Our customers
@@ -41,7 +41,7 @@ export default function Purpose() {
                         OUR Mission
                       </h2>
                       <p className="text-gray-500">
-                        Our journey began 79 years ago, but our mission remains
+                        Our journey began 80 years ago, but our mission remains
                         unchanged: to serve our farming community with
                         integrity, offer products of unmatched quality, and
                         continue the legacy of trust that Harvey's has built.

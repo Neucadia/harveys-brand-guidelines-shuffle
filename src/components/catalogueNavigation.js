@@ -87,11 +87,11 @@ export default function CatalogueNavigation() {
                 <Breadcrumb>
                   <BreadcrumbList>
                     <BreadcrumbItem>
-                      <BreadcrumbLink href="#">Home</BreadcrumbLink>
+                      <BreadcrumbLink href="#components">Home</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
-                      <BreadcrumbLink href="#">Seed</BreadcrumbLink>
+                      <BreadcrumbLink href="#components">Seed</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
@@ -109,24 +109,24 @@ export default function CatalogueNavigation() {
                 <Pagination>
                   <PaginationContent>
                     <PaginationItem>
-                      <PaginationPrevious href="#" />
+                      <PaginationPrevious href="#components" />
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#">1</PaginationLink>
+                      <PaginationLink href="#components">1</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#" isActive>
+                      <PaginationLink href="#components" isActive>
                         2
                       </PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href="#">3</PaginationLink>
+                      <PaginationLink href="#components">3</PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
                       <PaginationEllipsis />
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationNext href="#" />
+                      <PaginationNext href="#components" />
                     </PaginationItem>
                   </PaginationContent>
                 </Pagination>

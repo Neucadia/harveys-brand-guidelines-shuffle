@@ -1,5 +1,28 @@
 import React from "react";
 
+function CopyValue({ value }) {
+  const [copied, setCopied] = React.useState(false);
+  const copy = () => {
+    navigator.clipboard.writeText(value).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    });
+  };
+  return (
+    <span className="inline-flex items-center gap-2">
+      <span className="font-semibold">{value}</span>
+      <button
+        type="button"
+        onClick={copy}
+        aria-label={`Copy ${value}`}
+        className="font-heading text-xs font-bold uppercase tracking-smallcaps text-green-500 hover:text-green-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2"
+      >
+        {copied ? "Copied" : "Copy"}
+      </button>
+    </span>
+  );
+}
+
 export default function Colors() {
   return (
     <React.Fragment>
@@ -7,7 +30,7 @@ export default function Colors() {
         <section id="colors"
           className="py-20 bg-yellow-500 bg-no-repeat bg-cover bg-center"
           style={{
-            backgroundImage: 'url("cronos-assets/elements/lines2.svg")',
+            backgroundImage: 'url("/elements/contour-wheat.svg")',
           }}
         >
           <div className="container mx-auto px-4">
@@ -16,9 +39,9 @@ export default function Colors() {
                 Colors
               </div>
             </div>
-            <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+            <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
               Harvey's color palette
-            </h1>
+            </h2>
             <p className="text-gray-600 text-center max-w-xl mx-auto mb-6">
               We've simplified colors across the brands and chosen 6 muted,
               modern colors that should look great in print and digital.
@@ -38,16 +61,16 @@ export default function Colors() {
                     Black
                   </h2>
                   <p className="text-gray-500">
-                    PMS: <span className="font-semibold">Black 6</span>
+                    PMS: <CopyValue value="Black 6" />
                   </p>
                   <p className="text-gray-500">
-                    CMYK: <span className="font-semibold">48, 23, 0, 88</span>
+                    CMYK: <CopyValue value="48, 23, 0, 88" />
                   </p>
                   <p className="text-gray-500">
-                    RGB: <span className="font-semibold">16, 24, 31</span>
+                    RGB: <CopyValue value="16, 24, 31" />
                   </p>
                   <p className="text-gray-500">
-                    HEX: <span className="font-semibold">#10181f</span>
+                    HEX: <CopyValue value="#10181F" />
                   </p>
                 </div>
               </div>
@@ -60,16 +83,16 @@ export default function Colors() {
                     Gray
                   </h2>
                   <p className="text-gray-500">
-                    PMS: <span className="font-semibold">Cool Grey 4</span>
+                    PMS: <CopyValue value="Cool Grey 4" />
                   </p>
                   <p className="text-gray-500">
-                    CMYK: <span className="font-semibold">10,8,10,0</span>
+                    CMYK: <CopyValue value="10,8,10,0" />
                   </p>
                   <p className="text-gray-500">
-                    RGB: <span className="font-semibold">226,225,221</span>
+                    RGB: <CopyValue value="226,225,221" />
                   </p>
                   <p className="text-gray-500">
-                    HEX: <span className="font-semibold">#E2E1DD</span>
+                    HEX: <CopyValue value="#E2E1DD" />
                   </p>
                 </div>
               </div>
@@ -82,16 +105,16 @@ export default function Colors() {
                     green
                   </h2>
                   <p className="text-gray-500">
-                    Pantone: <span className="font-semibold">2411 C</span>
+                    PMS: <CopyValue value="2411 C" />
                   </p>
                   <p className="text-gray-500">
-                    CMYK: <span className="font-semibold">60, 0, 49, 75</span>
+                    CMYK: <CopyValue value="60, 0, 49, 75" />
                   </p>
                   <p className="text-gray-500">
-                    RGB: <span className="font-semibold">26, 65, 33</span>
+                    RGB: <CopyValue value="26, 65, 33" />
                   </p>
                   <p className="text-gray-500">
-                    HEX: <span className="font-semibold">#2B3C1D</span>
+                    HEX: <CopyValue value="#1A4121" />
                   </p>
                 </div>
               </div>
@@ -104,16 +127,16 @@ export default function Colors() {
                     orange
                   </h2>
                   <p className="text-gray-500">
-                    PMS: <span className="font-semibold">167</span>
+                    PMS: <CopyValue value="167" />
                   </p>
                   <p className="text-gray-500">
-                    CMYK: <span className="font-semibold">0, 58, 88, 25</span>
+                    CMYK: <CopyValue value="0, 58, 88, 25" />
                   </p>
                   <p className="text-gray-500">
-                    RGB: <span className="font-semibold">192, 80, 23</span>
+                    RGB: <CopyValue value="192, 80, 23" />
                   </p>
                   <p className="text-gray-500">
-                    HEX: <span className="font-semibold">#C05017</span>
+                    HEX: <CopyValue value="#C05017" />
                   </p>
                 </div>
               </div>
@@ -126,16 +149,16 @@ export default function Colors() {
                     Wheat
                   </h2>
                   <p className="text-gray-500">
-                    PMS: <span className="font-semibold">453</span>
+                    PMS: <CopyValue value="453" />
                   </p>
                   <p className="text-gray-500">
-                    CMYK: <span className="font-semibold">0, 6, 22, 14</span>
+                    CMYK: <CopyValue value="0, 6, 22, 14" />
                   </p>
                   <p className="text-gray-500">
-                    RGB: <span className="font-semibold">220, 206, 171</span>
+                    RGB: <CopyValue value="216, 199, 162" />
                   </p>
                   <p className="text-gray-500">
-                    HEX: <span className="font-semibold">#D8C7A2</span>
+                    HEX: <CopyValue value="#D8C7A2" />
                   </p>
                 </div>
               </div>
@@ -148,17 +171,16 @@ export default function Colors() {
                     Cream
                   </h2>
                   <p className="text-gray-500">
-                    PMS:
-                    <span className="font-semibold">*use white for print*</span>
+                    PMS: <CopyValue value="use white for print" />
                   </p>
                   <p className="text-gray-500">
-                    CMYK: <span className="font-semibold">2, 7, 4, 0</span>
+                    CMYK: <CopyValue value="2, 7, 4, 0" />
                   </p>
                   <p className="text-gray-500">
-                    RGB: <span className="font-semibold">246, 236, 235</span>
+                    RGB: <CopyValue value="246, 236, 235" />
                   </p>
                   <p className="text-gray-500">
-                    HEX: <span className="font-semibold uppercase">#f6eceb</span>
+                    HEX: <CopyValue value="#F6ECEB" />
                   </p>
                 </div>
               </div>

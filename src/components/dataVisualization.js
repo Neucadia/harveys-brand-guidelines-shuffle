@@ -6,7 +6,7 @@ export default function DataVisualization() {
       <>
         <section
           className="py-20 bg-yellow-50 bg-no-repeat bg-cover bg-center"
-          style={{ backgroundImage: 'url("cronos-assets/elements/lines.svg")' }}
+          style={{ backgroundImage: 'url("/elements/contour-pale.svg")' }}
         >
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
@@ -14,9 +14,9 @@ export default function DataVisualization() {
                 Data Visualization
               </div>
             </div>
-            <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+            <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
               Sometimes we need to show how good we are
-            </h1>
+            </h2>
             <p className="text-gray-600 text-center max-w-xl mx-auto mb-6">
               A large part of Harvey's business comes down to selecting product
               lines that perform in the real world and we often have to tell
@@ -24,7 +24,7 @@ export default function DataVisualization() {
             </p>
             <div className="w-full md:w-3/4 lg:w-1/2 mx-auto bg-white p-10">
               <img
-                src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/chart1.jpg"
+                src="/images/chart-example.jpg"
                 alt="chart.jpg"
               />
             </div>

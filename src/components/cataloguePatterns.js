@@ -28,9 +28,9 @@ export default function CataloguePatterns() {
               Component Catalogue
             </div>
           </div>
-          <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+          <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
             Brand patterns
-          </h1>
+          </h2>
           <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">
             The components the products invented, promoted into the kit:
             section openers, status tints, KPI tiles, the brand loader,

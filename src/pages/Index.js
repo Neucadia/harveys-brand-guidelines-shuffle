@@ -13,8 +13,6 @@ import Photography from "../components/photography";
 import Icons from "../components/icons";
 import Illustrations from "../components/illustrations";
 import Assets from "../components/assets";
-import DataVisualization from "../components/dataVisualization";
-import UIElements from "../components/uiElements";
 import CatalogueActions from "../components/catalogueActions";
 import CatalogueForms from "../components/catalogueForms";
 import CatalogueLayout from "../components/catalogueLayout";
@@ -25,6 +23,8 @@ import CataloguePatterns from "../components/cataloguePatterns";
 import Writing from "../components/writing";
 import AgentHelp from "../components/agentHelp";
 import Architecture from "../components/architecture";
+import DevelopersDivider from "../components/developersDivider";
+import Footer from "../components/footer";
 
 const meta = {
   title: "",
@@ -63,6 +63,8 @@ export default function Index() {
       <Icons />
       <Illustrations />
       <Assets />
+      <Writing />
+      <DevelopersDivider />
       <CatalogueActions />
       <CatalogueForms />
       <CatalogueLayout />
@@ -70,8 +72,8 @@ export default function Index() {
       <CatalogueOverlays />
       <CatalogueData />
       <CataloguePatterns />
-      <Writing />
       <AgentHelp />
+      <Footer />
     </React.Fragment>
   );
 }

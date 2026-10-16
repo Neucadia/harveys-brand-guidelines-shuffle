@@ -107,9 +107,9 @@ export default function AgentHelp() {
               Agent help
             </div>
           </div>
-          <h1 className="font-heading text-white text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+          <h2 className="font-heading text-white text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
             Theme your project
-          </h1>
+          </h2>
           <p className="text-green-100 text-center max-w-xl mx-auto mb-16">
             Give your AI agent the Harvey's design spec — colors, type, and
             voice — in one command. Our team works Claude-first, so start

@@ -4,7 +4,7 @@ export default function IndexSection__structures29() {
   return (
     <React.Fragment>
       <>
-        <section className="relative bg-green-700 py-20">
+        <section id="photography" className="relative bg-green-700 py-20">
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-5xl mx-auto">
               <div className="flex justify-center mb-6">
@@ -12,9 +12,9 @@ export default function IndexSection__structures29() {
                   Photography
                 </div>
               </div>
-              <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold text-white max-w-2xl lg:max-w-6xl mx-auto mb-4 uppercase tracking-widest">
+              <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold text-white max-w-2xl lg:max-w-6xl mx-auto mb-4 uppercase tracking-widest">
                 PHOTOGRAPHY STANDARDS
-              </h1>
+              </h2>
               <p className="text-green-100 text-center max-w-xl mx-auto mb-6">
                 Photography is Harvey's best marketing tool for communicating
                 our values and purpose. Our photography emphasizes storytelling;
@@ -42,8 +42,8 @@ export default function IndexSection__structures29() {
               <div className="w-full lg:w-7/12 p-4 order-1 lg:order-2">
                 <img
                   className="w-full object-cover max-h-96"
-                  src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Mill-Exterior-1-1-2-copy.jpg"
-                  alt
+                  src="/images/mill-exterior-2.jpg"
+                  alt="Mill exterior"
                 />
               </div>
             </div>
@@ -51,8 +51,8 @@ export default function IndexSection__structures29() {
               <div className="w-full lg:w-7/12 p-4">
                 <img
                   className="w-full object-cover max-h-96"
-                  src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Emberglow-0016-1-copy.jpg"
-                  alt
+                  src="/images/harvest-field-aerial.jpg"
+                  alt="Harvest field aerial"
                 />
               </div>
               <div className="w-full lg:w-5/12 p-4">
@@ -78,8 +78,8 @@ export default function IndexSection__structures29() {
               <div className="w-full lg:w-7/12 p-4 order-1 lg:order-2">
                 <img
                   className="w-full object-cover max-h-96"
-                  src="https://images.unsplash.com/photo-1567547921486-f280c2f53b5d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHwyfHxjb3JuJTIwZmllbGR8ZW58MHx8fHwxNzQyNDAwMjk1fDA&ixlib=rb-4.0.3&q=85&w=1920"
-                  alt
+                  src="/images/cornfield.jpg"
+                  alt="Cornfield"
                 />
               </div>
             </div>
@@ -87,8 +87,8 @@ export default function IndexSection__structures29() {
               <div className="w-full lg:w-7/12 p-4">
                 <img
                   className="w-full object-cover max-h-96"
-                  src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/IMG-3540.JPG"
-                  alt
+                  src="/images/feed-bag-carry.jpg"
+                  alt="Feed bag carry"
                 />
               </div>
               <div className="w-full lg:w-5/12 p-4">
@@ -106,9 +106,9 @@ export default function IndexSection__structures29() {
         </section>
         <section className="bg-yellow-50 pt-20">
           <div className="container mx-auto px-4">
-            <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-8 uppercase tracking-widest">
+            <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-8 uppercase tracking-widest">
               retail store photography
-            </h1>
+            </h2>
             <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">
               For our retail store photography, we use a mix of up-close product
               shots, merchandise displays, and lifestyle photos to bring our
@@ -121,8 +121,8 @@ export default function IndexSection__structures29() {
                 <div className="relative">
                   <img
                     className="w-full h-72 object-cover"
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Harveys22-0025-4-copy.jpg"
-                    alt
+                    src="/images/retail-shirts.jpg"
+                    alt="Retail shirts"
                   />
                 </div>
               </div>
@@ -130,8 +130,8 @@ export default function IndexSection__structures29() {
                 <div className="relative">
                   <img
                     className="w-full h-72 object-cover"
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Harveys22-0018-1-copy-jpg-1742387935302.webp"
-                    alt
+                    src="/images/retail-rack.webp"
+                    alt="Retail rack"
                   />
                 </div>
               </div>
@@ -139,24 +139,24 @@ export default function IndexSection__structures29() {
                 <div className="relative">
                   <img
                     className="w-full h-72 object-cover"
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Harveys22-0009-6-copy.jpg"
-                    alt
+                    src="/images/retail-outerwear.jpg"
+                    alt="Retail outerwear"
                   />
                 </div>
               </div>
               <div className="w-full lg:w-1/3 p-4">
                 <img
                   className="w-full h-72 object-cover"
-                  src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Harveys22-0027-2-copy.jpg"
-                  alt
+                  src="/images/carhartt-bags.jpg"
+                  alt="Carhartt bags"
                 />
               </div>
               <div className="w-full lg:w-1/3 p-4">
                 <div className="relative">
                   <img
                     className="w-full h-72 object-cover"
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Harveys22-0019-3-copy.jpg"
-                    alt
+                    src="/images/irish-setter-boots.jpg"
+                    alt="Irish setter boots"
                   />
                 </div>
               </div>
@@ -170,17 +170,17 @@ export default function IndexSection__structures29() {
           >
             <img
               className="w-full object-cover h-full lg:mt-20"
-              src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Harveys-US127-028-2-copy.jpg"
-              alt
+              src="/images/dog-in-cornfield-2.jpg"
+              alt="Dog in cornfield"
             />
           </div>
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap -m-4 lg:py-32">
               <div className="w-full lg:w-1/2 p-4 mb-12 lg:mb-0 ml-auto">
                 <div className="pt-10 lg:pt-0 lg:max-w-md ml-auto">
-                  <h1 className="font-heading text-4xl font-bold mb-6 max-w-md tracking-widest">
+                  <h2 className="font-heading text-4xl font-bold mb-6 max-w-md tracking-widest">
                     HARVEY– OUR STORE DOG &amp; MASCOT
-                  </h1>
+                  </h2>
                   <div className="flex items-center">
                     <div className="text-left">
                       <p className="text-gray-600 text-xl font-semibold mb-8">
@@ -210,8 +210,8 @@ export default function IndexSection__structures29() {
                       <img
                         className="w-full object-cover"
                         style={{ height: 223 }}
-                        src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/F7A8118.jpeg"
-                        alt
+                        src="/images/feed-delivery-red-barn.jpg"
+                        alt="Feed delivery red barn"
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
@@ -233,8 +233,8 @@ export default function IndexSection__structures29() {
                       <img
                         className="w-full object-cover"
                         style={{ height: 223 }}
-                        src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/F7A7950.jpg"
-                        alt
+                        src="/images/feed-bag-sewing.jpg"
+                        alt="Feed bag sewing"
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
@@ -256,8 +256,8 @@ export default function IndexSection__structures29() {
                       <img
                         className="w-full object-cover"
                         style={{ height: 223 }}
-                        src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/F7A7994.jpg"
-                        alt
+                        src="/images/feed-pallet.jpg"
+                        alt="Feed pallet"
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
@@ -279,8 +279,8 @@ export default function IndexSection__structures29() {
                       <img
                         className="w-full object-cover"
                         style={{ height: 223 }}
-                        src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/muck-bags.jpg"
-                        alt
+                        src="/images/feed-loading-truck.jpg"
+                        alt="Feed loading truck"
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
@@ -301,8 +301,8 @@ export default function IndexSection__structures29() {
                       <img
                         className="w-full object-cover"
                         style={{ height: 223 }}
-                        src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/F7A8042.jpg"
-                        alt
+                        src="/images/carhartt-detail.jpg"
+                        alt="Carhartt detail"
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
@@ -325,8 +325,8 @@ export default function IndexSection__structures29() {
                       <img
                         className="w-full object-cover"
                         style={{ height: 223 }}
-                        src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/Harveys-US127-028.jpg"
-                        alt
+                        src="/images/dog-in-cornfield.jpg"
+                        alt="Dog in cornfield"
                       />
                     </div>
                     <div className="w-full lg:w-1/2 p-4">
@@ -345,10 +345,10 @@ export default function IndexSection__structures29() {
             </div>
             <div className="mx-auto lg:w-1/2">
               <a
-                className="px-6 py-3 hidden text-center bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
-                href="#"
+                className="px-6 py-3 text-center bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200"
+                href="/photos/harveys-photography.zip" download
               >
-                Download Photo Library
+                Download photo library (ZIP, 11 MB)
               </a>
             </div>
           </div>
@@ -372,14 +372,9 @@ export default function IndexSection__structures29() {
               <div className="w-full p-4">
                 <div className="relative">
                   <img
-                    className="absolute hidden lg:block left-0 -ml-20 z-10 -bottom-20"
-                    src="cronos-assets/elements/green-light-left.svg"
-                    alt
-                  />
-                  <img
                     className="w-full object-cover"
                     style={{ height: 500 }}
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/edit-F20-Ging-Farm-Texas-3210-1.tif"
+                    src="/images/lifestyle-fence-family.jpg"
                     alt="alt"
                   />
                 </div>
@@ -389,7 +384,7 @@ export default function IndexSection__structures29() {
                   <img
                     className="w-full object-cover"
                     style={{ height: 500 }}
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/edit-MartinezPhoto-S22-WomensBreadthofPuropleColorStory-20210817-7V0A3056-3.tiff"
+                    src="/images/lifestyle-fence-apparel.jpg"
                     alt="alt"
                   />
                 </div>
@@ -400,9 +395,9 @@ export default function IndexSection__structures29() {
         <section className="py-20 bg-yellow-50">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6" />
-            <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 tracking-widest">
+            <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 tracking-widest">
               STUDIO PHOTOGRAPHY
-            </h1>
+            </h2>
             <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">
               Studio photography plays a key role in showcasing our products
               with clarity and consistency. Product shots ensure a polished,
@@ -417,8 +412,8 @@ export default function IndexSection__structures29() {
                   <img
                     className="w-full object-cover"
                     style={{ height: 400 }}
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/00019.jpg"
-                    alt
+                    src="/images/maple-syrup.jpg"
+                    alt="Maple syrup"
                   />
                 </div>
                 <h2 className="font-heading font-bold max-w-lg mb-4 tracking-widest text-2xl">
@@ -438,8 +433,8 @@ export default function IndexSection__structures29() {
                   <img
                     className="w-full object-cover"
                     style={{ height: 400 }}
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/lg-harvey-1.jpg"
-                    alt
+                    src="/images/plush-dog.jpg"
+                    alt="Plush dog"
                   />
                 </div>
                 <h2 className="font-heading font-bold max-w-lg mb-4 tracking-widest text-2xl">
@@ -457,8 +452,8 @@ export default function IndexSection__structures29() {
                   <img
                     className="w-full object-cover"
                     style={{ height: 400 }}
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/106904-A35-WS25-e-V2.jpg"
-                    alt
+                    src="/images/carhartt-jacket.jpg"
+                    alt="Carhartt jacket"
                   />
                 </div>
                 <h2 className="font-heading font-bold max-w-lg mb-4 tracking-widest text-2xl">
@@ -488,14 +483,9 @@ export default function IndexSection__structures29() {
               <div className="w-full lg:w-1/2 p-4">
                 <div className="relative">
                   <img
-                    className="absolute hidden lg:block top-0 left-0 -ml-20 -mt-20"
-                    src="cronos-assets/elements/light-warning-dark-warning.svg"
-                    alt
-                  />
-                  <img
                     className="w-full"
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/monogram-1.jpg"
-                    alt
+                    src="/images/monogram-dog-treats.jpg"
+                    alt="Monogram dog treats"
                   />
                 </div>
               </div>
@@ -503,22 +493,8 @@ export default function IndexSection__structures29() {
                 <div className="relative">
                   <img
                     className="w-full"
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/monogram-2.jpg"
-                    alt
-                  />
-                </div>
-              </div>
-              <div className="w-full p-4 lg:w-1/2">
-                <div className="relative">
-                  <img
-                    className="absolute hidden lg:block left-0 -ml-20 z-10 -bottom-20"
-                    src="cronos-assets/elements/green-light-left.svg"
-                    alt
-                  />
-                  <img
-                    className="w-full"
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/monogram-3.jpg"
-                    alt
+                    src="/images/monogram-muck-boots.jpg"
+                    alt="Monogram muck boots"
                   />
                 </div>
               </div>
@@ -526,8 +502,17 @@ export default function IndexSection__structures29() {
                 <div className="relative">
                   <img
                     className="w-full"
-                    src="https://static.shuffle.dev/uploads/files/ee/ee137d2a3df0a9e3dc5d8722b3ba155636636edc/monogram-4.jpg"
-                    alt
+                    src="/images/monogram-cutouts.jpg"
+                    alt="Monogram cutouts"
+                  />
+                </div>
+              </div>
+              <div className="w-full p-4 lg:w-1/2">
+                <div className="relative">
+                  <img
+                    className="w-full"
+                    src="/images/monogram-stickers.jpg"
+                    alt="Monogram stickers"
                   />
                 </div>
               </div>

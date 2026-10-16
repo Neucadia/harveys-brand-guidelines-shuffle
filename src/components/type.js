@@ -4,16 +4,16 @@ export default function Type() {
   return (
     <React.Fragment>
       <>
-        <section className="py-20 ">
+        <section id="type" className="py-20">
           <div className="container mx-auto px-4">
             <div className="flex justify-center mb-6">
               <div className="bg-yellow-100 px-2 py-1 font-semibold inline-block">
                 Typography
               </div>
             </div>
-            <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+            <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
               We've simplified type choice
-            </h1>
+            </h2>
             <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">
               We're using two fonts in a range of typeset options in order to
               bring harmony and increased professionalism to the Harvey's brand.
@@ -21,7 +21,7 @@ export default function Type() {
             <div className="bg-gray-50 py-7 pr-7 pl-7 md:pl-12 mb-8">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full lg:w-2/3 p-4">
-                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-700 text-white">
                     Headlines
                   </div>
                   <h2 className="font-heading text-4xl font-bold mb-4 uppercase tracking-widest">
@@ -46,14 +46,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -75,14 +75,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -104,14 +104,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -133,14 +133,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -167,10 +167,10 @@ export default function Type() {
                       transform - uppercase
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
-                      href="#"
+                      className="px-6 py-3 mb-3 text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 "
+                      href="/fonts/chakra-petch.zip" download
                     >
-                      Download
+                      Download fonts (ZIP)
                     </a>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ export default function Type() {
             <div className="bg-gray-50 py-7 pr-7 pl-7 md:pl-12 mb-8">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full lg:w-2/3 p-4">
-                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-700 text-white">
                     Subhead and Lead
                   </div>
                   <h2 className="font-sans text-4xl mb-4 font-semibold">
@@ -203,14 +203,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -232,14 +232,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -261,14 +261,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -290,14 +290,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -318,10 +318,10 @@ export default function Type() {
                       line height - 1.75
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
-                      href="#"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 "
+                      href="https://fonts.adobe.com/fonts/tt-commons-pro" target="_blank" rel="noreferrer"
                     >
-                      Download
+                      Get on Adobe Fonts
                     </a>
                   </div>
                 </div>
@@ -330,7 +330,7 @@ export default function Type() {
             <div className="bg-gray-50 py-7 pr-7 pl-7 md:pl-12 mb-8">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full lg:w-2/3 p-4">
-                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-700 text-white">
                     Body
                   </div>
                   <h2 className="font-sans font-heading text-4xl mb-4 font-normal">
@@ -353,14 +353,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -382,14 +382,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -411,14 +411,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -440,14 +440,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -468,10 +468,10 @@ export default function Type() {
                       line height - 1.5
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
-                      href="#"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 "
+                      href="https://fonts.adobe.com/fonts/tt-commons-pro" target="_blank" rel="noreferrer"
                     >
-                      Download
+                      Get on Adobe Fonts
                     </a>
                   </div>
                 </div>
@@ -480,7 +480,7 @@ export default function Type() {
             <div className="bg-gray-50 py-7 pr-7 pl-7 md:pl-12 mb-8">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full lg:w-2/3 p-4">
-                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-700 text-white">
                     Web Headline Alternative
                   </div>
                   <h2 className="font-heading text-4xl mb-4 font-serif tracking-widest font-bold uppercase">
@@ -505,14 +505,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -534,14 +534,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -563,14 +563,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -595,10 +595,10 @@ export default function Type() {
                       tracking - 160
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
-                      href="#"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 "
+                      href="/fonts/catamaran.zip" download
                     >
-                      Download
+                      Download fonts (ZIP)
                     </a>
                   </div>
                 </div>
@@ -607,7 +607,7 @@ export default function Type() {
             <div className="bg-gray-50 py-7 pr-7 pl-7 md:pl-12">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full lg:w-2/3 p-4">
-                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-500 text-white">
+                  <div className="px-2 py-1 mb-4 font-semibold inline-block bg-orange-700 text-white">
                     Web Body Alternative
                   </div>
                   <h2 className="text-4xl mb-4 font-sans font-normal">
@@ -631,14 +631,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -660,14 +660,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -689,14 +689,14 @@ export default function Type() {
                           >
                             <path
                               d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
                             />
                             <path
                               d="M8 11.5L11 14.5L17 8.5"
-                              stroke="#006251"
+                              stroke="#296533"
                               strokeWidth={2}
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -718,10 +718,10 @@ export default function Type() {
                       line height - 1.4545
                     </p>
                     <a
-                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 hidden"
-                      href="#"
+                      className="px-6 py-3 mb-3 block text-center w-full sm:w-auto bg-green-500 text-white text-sm font-semibold hover:bg-green-600 focus:ring focus:ring-green-300 transition duration-200 "
+                      href="/fonts/open-sans.zip" download
                     >
-                      Download
+                      Download fonts (ZIP)
                     </a>
                   </div>
                 </div>

@@ -15,9 +15,9 @@ export default function CatalogueActions() {
               Component Catalogue
             </div>
           </div>
-          <h1 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
+          <h2 className="font-heading text-center text-4xl lg:text-5xl font-bold max-w-2xl lg:max-w-5xl mx-auto mb-4 uppercase tracking-widest">
             Branded components
-          </h1>
+          </h2>
           <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">
             A shared, Harvey's-branded set of shadcn components for every
             internal and external project. Flat and square, hairline borders,

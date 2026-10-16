@@ -46,6 +46,8 @@
     "Writing": "src/components/writing.js",
     "AgentHelp": "src/components/agentHelp.js",
     "EmailTemplate": "src/components/emailTemplate.js",
+    "DevelopersDivider": "src/components/developersDivider.js",
+    "Footer": "src/components/footer.js",
     "Logos": "src/components/logos.js",
     "PrimaryLogo": "src/components/primaryLogo.js",
     "Wordmark": "src/components/wordmark.js",

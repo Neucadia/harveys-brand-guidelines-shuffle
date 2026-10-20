@@ -19,7 +19,7 @@ const SectionHeader = React.forwardRef(
         <span
           className={cn(
             "inline-block px-2 py-1 font-heading text-xs font-bold uppercase tracking-smallcaps",
-            emphasis ? "bg-hb-secondary-interactive text-white" : "bg-hb-wheat text-hb-ink"
+            emphasis ? "bg-hb-secondary text-white" : "bg-hb-wheat text-hb-ink"
           )}
         >
           {eyebrow}

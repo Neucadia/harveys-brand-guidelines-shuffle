@@ -38,10 +38,11 @@ export const HB: Record<string, string> = {
   "data-negative-deep": "#791b11",
   "data-negative-tint": "#fcece9",
   "data-negative-border": "#e9b6ad",
-  "focus-ring": "#52ba64",
+  "focus-ring": "#30783d",
   "focus-ring-ember": "rgba(232,118,60,0.35)",
   "border-soft": "rgba(16,24,31,0.10)",
   "border": "rgba(16,24,31,0.12)",
+  "border-control": "#8c8984",
   "border-strong": "rgba(16,24,31,0.20)",
   "scrim": "rgba(16,24,31,0.4)",
   "black": "#10181f",
@@ -85,10 +86,11 @@ export const DATA_NEGATIVE_STRONG = "#a21c10";
 export const DATA_NEGATIVE_DEEP = "#791b11";
 export const DATA_NEGATIVE_TINT = "#fcece9";
 export const DATA_NEGATIVE_BORDER = "#e9b6ad";
-export const FOCUS_RING = "#52ba64";
+export const FOCUS_RING = "#30783d";
 export const FOCUS_RING_EMBER = "rgba(232,118,60,0.35)";
 export const BORDER_SOFT = "rgba(16,24,31,0.10)";
 export const BORDER = "rgba(16,24,31,0.12)";
+export const BORDER_CONTROL = "#8c8984";
 export const BORDER_STRONG = "rgba(16,24,31,0.20)";
 export const SCRIM = "rgba(16,24,31,0.4)";
 export const BLACK = "#10181f";

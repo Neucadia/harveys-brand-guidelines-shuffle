@@ -40,10 +40,11 @@ colors:
   data-negative-deep: "#791b11"
   data-negative-tint: "#fcece9"
   data-negative-border: "#e9b6ad"
-  focus-ring: "#52ba64" # 2px solid + 2px offset, all interactive controls
+  focus-ring: "#30783d" # 2px solid + 2px offset, all interactive controls; 5.4:1 on white, 3.2:1 on wheat, 3.3:1 on ink (the old sage #52ba64 was 2.5:1 on white)
   focus-ring-ember: "rgba(232,118,60,0.35)" # ember-family controls only, rationed
   border-soft: "rgba(16,24,31,0.10)"
   border: "rgba(16,24,31,0.12)"
+  border-control: "#8c8984" # field boundaries only (input, textarea, select trigger): 3.5:1 on white, 3.1:1 on wheat-pale; neutral-gray hairlines are 1.3:1
   border-strong: "rgba(16,24,31,0.20)"
   scrim: "rgba(16,24,31,0.4)"
   black: "#10181f"
@@ -227,9 +228,15 @@ small-text contrast below that.
   orange (see `decisions.md`, DR-1). Its support family (`data-negative-strong
   #A21C10`, `-deep #791B11`, `-tint #FCECE9`, `-border #E9B6AD`) carries the
   same DR-1-only restriction
-- **Focus** — 2px solid ring in Sage `focus-ring #52BA64` with a 2px offset,
-  on every interactive control; ember-family controls may instead use the
-  rationed `focus-ring-ember rgba(232,118,60,.35)` soft ring
+- **Focus** — 2px solid ring in `focus-ring #30783D` with a 2px white offset,
+  on every interactive control. It clears 3:1 on white, wheat and ink, so one
+  ring serves every ground; the white offset is what reads on dark grounds.
+  Ember-family controls may instead use the rationed
+  `focus-ring-ember rgba(232,118,60,.35)` soft ring
+- **Field boundaries** — inputs, textareas and select triggers draw their 1px
+  border in `border-control #8C8984` (3.5:1 on white). `neutral-gray` hairlines
+  stay for panels, tables and menus, where the border is not the only thing
+  that marks a control
 
 ## 3. Typography Rules
 
@@ -398,7 +405,7 @@ title." "Honest, down-to-earth, never corporate."
 
 - Deep Forest Green `#1A4121` — brand anchor, hero backgrounds, logos
 - Field Green `#296533` — buttons, links, interactive
-- Ember Orange `#E56625` — secondary CTA, emphasis labels (hover `#E8763C`; print: `#C05017`, PMS 167; AA text on tints `#A84413`)
+- Ember Orange `#E56625` — secondary CTA (hover `#E8763C`; print: `#C05017`, PMS 167; AA text on tints `#A84413`). White text on it is 3.4:1, so the emphasis chip and any white label sit on `#C05017` (4.8:1)
 - Wheat `#D8C7A2` — the signature accent, and the family's bare name (PMS 453)
 - Wheat Light `#E7DDC6` / Wheat Pale `#F5F1E7` / Sand `#ECE5D3` — section backgrounds and surfaces
 - Cool Concrete Gray `#E2E1DD` — neutral surfaces (PMS Cool Grey 4)

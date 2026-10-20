@@ -38,10 +38,11 @@
   --hb-data-negative-deep: #791b11;
   --hb-data-negative-tint: #fcece9;
   --hb-data-negative-border: #e9b6ad;
-  --hb-focus-ring: #52ba64;
+  --hb-focus-ring: #30783d;
   --hb-focus-ring-ember: rgba(232,118,60,0.35);
   --hb-border-soft: rgba(16,24,31,0.10);
   --hb-border: rgba(16,24,31,0.12);
+  --hb-border-control: #8c8984;
   --hb-border-strong: rgba(16,24,31,0.20);
   --hb-scrim: rgba(16,24,31,0.4);
   --hb-black: #10181f;
